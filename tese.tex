@@ -1,0 +1,294 @@
+%%% Exemplo de utilização da classe ITA
+% * <rodrigo.aragao.santos@gmail.com> 2018-07-04T00:55:14.659Z:
+%
+% ^.
+%%%
+%%%   por        Fábio Fagundes Silveira   -  ffs [at] ita [dot] br
+%%%              Benedito C. O. Maciel     -  bcmaciel [at] ita [dot] br
+%%%              Giovani Volnei Meinertz   -  giovani [at] ita [dot] br
+%%%    	         Hudson Alberto Bode       -  bode [at] ita [dot]br
+%%%    	         P. I. Braga de Queiroz    -  pi [at] ita [dot] br
+%%%    	         Jorge A. B. Gripp         -  gripp [at] ita [dot] br
+%%%    	         Juliano Monte-Mor         -  jamontemor [at] yahoo [dot] com [dot] br
+%%%    	         Tarcisio A. B. Gripp      -  tarcisio.gripp [at] gmail [dot] com
+%%%    	         
+%%%
+%%%  IMPORTANTE: O texto contido neste exemplo nao significa absolutamente nada.  :-)
+%%%              O intuito aqui eh demonstrar os comandos criados na classe e suas
+%%%              respectivas utilizacoes.
+%%%
+%%%  Tese.tex  2016-08-25
+%%%  $HeadURL: http://www.apgita.org.br/apgita/teses-e-latex.php $
+%%%
+%%% ITALUS
+%%% Instituto Tecnológico de Aeronáutica --- ITA, Sao Jose dos Campos, Brasil
+%%%                   http://groups.yahoo.com/group/italus/
+%%% Discussion list: italus {at} yahoogroups.com
+%%%
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Para alterar o TIPO DE DOCUMENTO, preencher a linha abaixo \documentclass[?]{?}
+%   \documentclass[tg]{ita}			= Trabalho de Graduacao
+%   \documentclass[tgfem]{ita}	= Para Engenheiras
+%   								msc     		= Dissertacao de Mestrado
+%   								mscfem   		= Para Mestras
+%   								dsc      		= Tese de Doutorado
+%   								dscfem   		= Para Doutoras
+%   								quali    		= Exame de Qualificacao
+%   								qualifem 		= Exame de Qualificacao para Doutoras
+% Para 'Draft Version'/'Versao Preliminar' com data no rodape, adicionar 'dv':
+%   \documentclass[dsc, dv]{ita} 
+% Para trabalhos em Inglês, adicionar 'eng':
+%   \documentclass[dsc, eng]{ita}
+%		\documentclass[dsc, eng, dv]{ita}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\documentclass[msc, eng]{ita}    % ITA.cls based on standard book.cls 
+% Quando alterar a classe, por exemplo de [msc] para [msc, eng]) rode mais uma vez o botão BUILD OUTPUT caso haja erro
+\usepackage{ae}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{matrix,calc}
+\usepackage{epstopdf}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb} 
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{tkz-graph}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{pdfpages}
+\usepackage{colortbl}
+\usepackage{soul}
+\usepackage{titlecaps}
+%\usepackage{subfig}
+%\usepackage[utf8]{inputenc}
+\usepackage{caption}
+\usepackage{subcaption}
+\usetikzlibrary{arrows,automata}
+\tikzset{
+  LabelStyle/.style = {
+  	rectangle,
+    rounded corners,
+    draw,
+    minimum width = 2em, 
+    font = \bfseries
+  },
+  VertexStyle/.append style = {
+  	inner sep=5pt,
+	font = \Large\bfseries
+  },
+  EdgeStyle/.append style = {
+  	->,
+    bend left
+  }
+}
+\usepackage{listings}
+\lstset { %
+    language=C++,
+    breaklines=true,
+    %backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
+    tabsize=3, % tab space width
+    frame=single,
+}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Espaçamento padrão de todo o documento
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\onehalfspacing
+
+%singlespacing Para um espaçamento simples
+%onehalfspacing Para um espaçamento de 1,5
+%doublespacing Para um espaçamento duplo
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Identificacoes (se o trabalho for em inglês, insira os dados em inglês)
+% Para entradas abreviadas de Professora (Profa.) em português escreva: Prof$^\textnormal{a}$.
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\course{Electronics Engineering} % Programa de PG ou Curso de Graduação
+
+% Autor do trabalho: Nome Sobrenome
+\authorgender{masc} %sexo: masc ou fem
+\author{Rodrigo Aragão}{Santos}
+\itaauthoraddress{Rua Bandeira Paulista 97}{São Paulo -- Sp}
+
+% Titulo da Tese/Dissertação
+\title{Spatial Textures SAR Data for Forest Mapping and Target Changing Detection}
+
+% Orientador
+\advisorgender{masc}                    % masc ou fem
+\advisor{}{}{Prof.~Dr.~Marcelo da Silva Pinho}
+
+% Coorientador (Caso não haja coorientador, colocar ambas as variáveis \coadvisorgender e \coadvisor comentadas, com um % na frente)
+%\coadvisorgender{fem}	% masc ou fem
+%\coadvisor{Prof$^\textnormal{a}$.~Dr$^\textnormal{a}$.}{Doralice Serra}{OVNI}
+
+% Pró-reitor da Pós-graduação
+\bossgender{masc}	% masc ou fem
+\boss{Prof.~Dr.}{Flávio Mendes Neto}
+
+%Coordenador do curso no caso de TG
+\bosscoursegender{masc} % masc ou fem
+\bosscourse{Prof.~Dr.}{Marcelo Gomes da Silva Bruno}
+
+% Palavras-Chaves informadas pela Biblioteca -> utilizada na CIP
+\kwcip{Radares de abertura sintética}
+\kwcip{SAR}
+\kwcip{Land Cover Classification}
+\kwcip{Engenharia eletrônica}
+\kwcip{Machine Learning}
+
+% membros da banca examinadora
+
+\examiner{Prof. Dr.}{Marcelo da Silva Pinho}{Presidente}{ITA}
+\examiner{Prof. Dr.}{Renato Machado}{}{ITA}
+\examiner{Prof. Dr.}{Felix Dieter Antreich}{}{ITA}
+
+% Data da defesa (mês em maiúsculo, se trabalho em inglês, e minúsculo se trabalho em português) 
+\date{18}{Novembro}{2020}
+
+% Número CDU - (somente para TG)
+\cdu{621.396.96}
+
+% Glossario
+\makeglossary
+\frontmatter
+\usepackage{url}
+\begin{document} % Folha de Rosto e Capa para o caso do TG
+\maketitle % faz folha de rosto e a capa do TG
+
+% Dedicatoria: Nao esqueca essa secao  ... :-)
+\begin{itadedication}
+A todos que tornaram um pouco mais fácil a jornada até aqui
+\end{itadedication}
+
+% Agradecimentos
+\begin{itathanks}
+\input{Cap0/agradecimentos}
+\end{itathanks}
+
+% Epígrafe
+\thispagestyle{empty}
+\ifhyperref\pdfbookmark[0]{\nameepigraphe}{epigrafe}\fi
+\begin{flushright}
+\begin{spacing}{1}
+\mbox{}\vfill
+{\sffamily\itshape
+``There’s some good in this world, and it’s worth fighting for.''\\}
+--- \textsc{J.R.R. Tolkien}
+\end{spacing}
+\end{flushright}
+
+% Resumo
+\begin{abstract}
+\noindent
+\input{Cap0/resumo}
+\end{abstract}
+
+% Abstract
+\begin{englishabstract}
+\noindent
+\input{Cap0/abstract}
+\end{englishabstract}
+
+% Lista de figuras
+\listoffigures %opcional
+
+% Lista de tabelas
+%\listoftables %opcional
+
+% Lista de abreviaturas
+\listofabbreviations
+\input{Cap0/listaabreviaturas} %opcional
+
+% Lista de simbolos
+%\listofsymbols
+%\input{Cap0/listasimbolos} %opcional
+
+% Sumario
+\tableofcontents
+
+\mainmatter
+% Os capitulos comecam aqui
+\chapter{Introduction}
+\input{Cap0-Introducao/introducao}
+
+\chapter{Theoretical Background}
+\label{cap:intro}
+\input{Cap1/cap1}
+
+\chapter{Classification Maps generated with SAR Images}
+\label{cap:requisitos}
+\input{Cap2/cap2}
+
+\chapter{Material}
+\label{cap:material rondonia}
+\input{Chapter2-real/chapter2_real.tex}
+
+\chapter{Textures Methods for Image Analysis}
+\label{cap:texture_methods}
+\input{Chapter3/chapter3.tex}
+
+\chapter{Analysis of Texture Results}
+\label{cap:analysis_texture_results}
+\input{Chapter4/chapter4.tex}
+
+\chapter{Classification Results}
+\label{cap:classification_results}
+\input{Chapter5/chapter5.tex}
+
+% \chapter{Methodology}
+% \input{metodologia}
+
+% \chapter{Final Remarks}
+% \label{cap:comentarios finais}
+% \input{Final Remarks/finalremarks}
+
+
+% REFERENCIAS BIBLIOGRAFICAS
+\renewcommand\bibname{\itareferencesnamebabel} %renomear título do capítulo referências
+\bibliography{Referencias/referencias}
+
+% apendices
+%\appendix
+%\chapter{Código \textit{Mathematica} desenvolvido} %opcional
+%\label{appendix:apeA}
+%\input{ApeA/apendiceA}
+
+%\chapter{Geração da modulação digital}
+%\label{appendix:apeB}
+%\input{ApeB/apendiceB}
+
+% % Glossario%
+\itaglossary
+\printglossary
+
+
+% Folha de Registro do Documento
+% Valores dos campos do formulario
+\FRDitadata{15 de dezembro de 2020}
+\FRDitadocnro{DCTA/ITA/TC-047/2020} %(o número de registro você solicita a biblioteca)
+\FRDitaorgaointerno{Instituto Tecnológico de Aeronáutica -- ITA}
+%Exemplo no caso de pós-graduação: Instituto Tecnol{\'o}gico de Aeron{\'a}utica -- ITA
+\FRDitapalavrasautor{
+Radares de abertura sintética; SAR; Land Cover Classification; Engenharia eletrônica; Machine Learning
+}
+\FRDitapalavrasresult{Radares de abertura sintética; Processamento de imagens; Aprendizagem (inteligência artificial);
+Redes neurais; Algoritmos; Engenharia eletrônica.}
+%Exemplo no caso de graduação (TG):
+\FRDitapalavraapresentacao{ITA, São José dos Campos. Curso de Graduação em Engenharia Eletrônica. Orientador: Prof. Dr.
+Marcelo da Silva Pinho. Publicado em 2020.}
+%Exemplo no caso de pós-graduação (msc, dsc):
+%\FRDitapalavraapresentacao{ITA, São José dos Campos. Curso de Graduação. Programa de Graduação em Engenharia Eletrônica. Área de Microondas e Optoeletrônica. Orientador: Prof.~José Edimar Barbosa Oliveira. Defesa em 25/06/2018. Publicada em 25/06/2018.}
+\FRDitaresumo{\input{Cap0/abstract}}
+%  Primeiro Parametro: Nacional ou Internacional -- N/I
+%  Segundo parametro: Ostensivo, Reservado, Confidencial ou Secreto -- O/R/C/S
+\FRDitaOpcoes{N}{O}
+% Cria o formulario
+\itaFRD
+
+\end{document}
+% Fim do Documento. O massacre acabou!!! :-)

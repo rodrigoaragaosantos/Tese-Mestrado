@@ -1,0 +1,9 @@
+In this work it was presented a brief introduction to Synthetic Aperture Radars and how it is used nowadays for several imaging purposes, but the main focus was the generation of landcover classification maps. A Synthetic Aperture Radar used with imaging purposes can create a grey scale image of an area, where each pixel is related to the Backscatter(or refletivity) value of that single pixel. It was also shown that it is possible to combine interferometric data to further improve this classification.
+
+In this work it was presented an approach to even further improve these classification maps. By combining backscatter, interferometric and temporal information it is possible to model the temporal decorrelation of a scene as an exponential decay, whose fitting parameters serve as additional information for machine learning classifiers.
+
+The methodology was tested using Sentinel-1 C-Band data over Europe and the Amazon Rainforest using three classes: artificial surfaces, forests, and non-forested areas. The results show an accuracy of over 91\% for Europe and over 85\% for the Amazon Rainforest.
+
+It is also suggested that this framework can be even further improved by using strategies to extract spatial information combined with the temporal information as shown in \cite{rodrigo}.
+
+The final goal is to extend this method to investigate the possibility of creating a worldwide landcover classification map, with an increased number of classes, and maintaining the accuracy obtained.
