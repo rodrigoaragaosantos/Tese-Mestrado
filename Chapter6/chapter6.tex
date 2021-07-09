@@ -1,0 +1,30 @@
+\section{Summary}
+In this chapter we will use the textural developed in previous chapters 
+to create a change detection algorithm (CDA). The CDA will be assessed
+using the CARABAS-II image dataset, which is a set of images acquired by a Very High Frequency (VHF) Ultra Wideband (UWB) SAR system.
+The CDA is based on the UNET convolutional neural network (CNN) architecture and will use the 
+textura information as additional inputs for image classification.
+It will be demonstrated that the 
+use of textural information can improve the overall performance of the algorithm
+in terms of probability of detection and false alarm rate. 
+
+\section{Wavelength Resolution SAR Systems}
+Wavelength resolution SAR images are radar systems with resolution in the order of 
+the radar system Wavelength. According to (ref), the resolution of a cell of a SAR image can be
+calculated by:
+
+\begin{equation}
+    \delta = \frac{\lambda_c c}{4 \theta_H B}
+\end{equation}
+
+where $\lambda_c$ is the wavelength corresponding to the radar central frequency, $\theta_H$
+is the aperture angle (in radians), $c$ is the speed of light and $B$ is the system bandwidth.
+According to (17ref), Wavelength SAR systems are not sensitive to small scatterers inside the resolution cell,
+thus the scattering process is mainly due to scatterers with dimensions in the order of the system wavelength.
+Since the resolution of the cell is similar to the resolution of the scatterer, there can be only one single scatterer inside each cell, 
+therefore the image will not be greatly affected by speckle noise.
+
+Due to all that, according to (63ref), low resolution SAR systems are better suited to Foliage Penetrating (FOPEN) applications.
+Also according to (63ref), VHF-band is the optimal radar system for FOPEN applications for vehicle-sized target detection.
+
+\section{The Carabas-II Dataset}

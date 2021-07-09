@@ -32,5 +32,9 @@
 \contentsline {section}{\numberline {7.1}TANDEM-X Data Analysis}{70}{section.7.1}
 \contentsline {section}{\numberline {7.2}Sentinel1 Data Analysis}{73}{section.7.2}
 \contentsline {section}{\numberline {7.3}Performance of Random forest and parameters tuning}{82}{section.7.3}
-\contentsline {chapter}{Bibliography}{85}{chapter.8}
-\contentsline {chapter}{Glossary}{87}{chapter.9}
+\contentsline {chapter}{\numberline {8}Application of Textural methods to Change Detection Algorithms}{85}{chapter.8}
+\contentsline {section}{\numberline {8.1}Summary}{85}{section.8.1}
+\contentsline {section}{\numberline {8.2}Wavelength Resolution SAR Systems}{85}{section.8.2}
+\contentsline {section}{\numberline {8.3}The Carabas-II Dataset}{86}{section.8.3}
+\contentsline {chapter}{Bibliography}{87}{chapter.9}
+\contentsline {chapter}{Glossary}{89}{chapter.10}
