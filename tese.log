@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.3)  9 JUL 2021 16:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.3)  11 JUL 2021 15:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -913,7 +913,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 161.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<folharod (1).pdf, id=208, 597.50829pt x 845.0471pt>
+<folharod (1).pdf, id=83, 597.50829pt x 845.0471pt>
 File: folharod (1).pdf Graphic file (type pdf)
 <use folharod (1).pdf>
 Package pdftex.def Info: folharod (1).pdf  used on input line 161.
@@ -922,7 +922,7 @@ File: folharod (1).pdf Graphic file (type pdf)
 <use folharod (1).pdf>
 Package pdftex.def Info: folharod (1).pdf  used on input line 161.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<folharod (1).pdf, id=211, page=1, 597.50829pt x 845.0471pt>
+<folharod (1).pdf, id=86, page=1, 597.50829pt x 845.0471pt>
 File: folharod (1).pdf Graphic file (type pdf)
 <use folharod (1).pdf, page 1>
 Package pdftex.def Info: folharod (1).pdf , page1 used on input line 161.
@@ -955,7 +955,7 @@ Package hyperref Info: Anchor `aprovacao.0' on input line 161.
 
 
 pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/folha (1).pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<folha (1).pdf, id=262, 597.50829pt x 845.0471pt>
+<folha (1).pdf, id=137, 597.50829pt x 845.0471pt>
 File: folha (1).pdf Graphic file (type pdf)
 <use folha (1).pdf>
 Package pdftex.def Info: folha (1).pdf  used on input line 161.
@@ -973,7 +973,7 @@ pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/
 
 
 pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/folha (1).pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<folha (1).pdf, id=265, page=1, 597.50829pt x 845.0471pt>
+<folha (1).pdf, id=140, page=1, 597.50829pt x 845.0471pt>
 File: folha (1).pdf Graphic file (type pdf)
 <use folha (1).pdf, page 1>
 Package pdftex.def Info: folha (1).pdf , page1 used on input line 161.
@@ -1032,117 +1032,22 @@ Package hyperref Info: Anchor `page.viii' on input line 198.
 Package hyperref Info: Anchor `chapter*.4' on input line 198.
 Package hyperref Info: Anchor `listafiguras.0' on input line 198.
  (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.lof
-Package hyperref Info: Reference (link) `figure.caption.7' on input line 4.
-Package hyperref Info: Reference (cite) `cite.tutorial' on input line 4.
-Package hyperref Info: Reference (cite) `cite.tutorial' on input line 4.
-Package backref Info: Back cite `tutorial' on input line 4.
-Package hyperref Info: Reference (link) `figure.caption.8' on input line 5.
-Package hyperref Info: Reference (link) `figure.caption.9' on input line 6.
-Package hyperref Info: Reference (cite) `cite.tutorial' on input line 6.
-Package hyperref Info: Reference (cite) `cite.tutorial' on input line 6.
-Package backref Info: Back cite `tutorial' on input line 6.
+Package hyperref Info: Reference (link) `figure.caption.9' on input line 3.
 
-Overfull \hbox (7.30957pt too wide) in paragraph at lines 6--6
- [][] [][][]\T1/aer/m/n/12 Summary of SAR com-pres-sion in range and az-imuth di-rec-tions ([][]MOR- 
+Overfull \hbox (44.82117pt too wide) in paragraph at lines 3--3
+ [][] [][][]\T1/aer/m/n/12 Military ve-hi-cles used as tar-get. Left:TGB11. Mid-dle:TGB30. Right:TGB40. 
  []
 
-Package hyperref Info: Reference (link) `figure.caption.10' on input line 7.
-Package hyperref Info: Reference (cite) `cite.Small' on input line 7.
-Package hyperref Info: Reference (cite) `cite.Small' on input line 7.
-Package backref Info: Back cite `Small' on input line 7.
-Package hyperref Info: Reference (link) `figure.caption.11' on input line 8.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 8.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 8.
-Package backref Info: Back cite `Paolathesis' on input line 8.
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 9.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 9.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 9.
-Package backref Info: Back cite `Paolathesis' on input line 9.
-Package hyperref Info: Reference (link) `figure.caption.13' on input line 10.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 10.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 10.
-Package backref Info: Back cite `Paolathesis' on input line 10.
-Package hyperref Info: Reference (link) `figure.caption.14' on input line 11.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 11.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 11.
-Package backref Info: Back cite `Paolathesis' on input line 11.
-Package hyperref Info: Reference (link) `figure.caption.15' on input line 12.
-Package hyperref Info: Reference (cite) `cite.Bamler' on input line 12.
-Package hyperref Info: Reference (cite) `cite.Bamler' on input line 12.
-Package backref Info: Back cite `Bamler' on input line 12.
-Package hyperref Info: Reference (link) `figure.caption.16' on input line 14.
-Package hyperref Info: Reference (link) `figure.caption.17' on input line 15.
-Package hyperref Info: Reference (link) `figure.caption.18' on input line 17.
-Package hyperref Info: Anchor `page.ix' on input line 18.
-[9
-
-Package `hyperref' Info: End of reference (cite) `cite.tutorial', line 4.
-Package `hyperref' Info: End of reference (cite) `cite.tutorial', line 4.
-Package `hyperref' Info: End of reference (link) `figure.caption.7', line 4.
-Package `hyperref' Info: End of reference (link) `figure.caption.8', line 5.
-Package `hyperref' Info: End of reference (cite) `cite.tutorial', line 6.
-Package `hyperref' Info: End of reference (cite) `cite.tutorial', line 6.
-Package `hyperref' Info: End of reference (link) `figure.caption.9', line 6.
-Package `hyperref' Info: End of reference (cite) `cite.Small', line 7.
-Package `hyperref' Info: End of reference (cite) `cite.Small', line 7.
-Package `hyperref' Info: End of reference (link) `figure.caption.10', line 7.
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 8.
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 8.
-Package `hyperref' Info: End of reference (link) `figure.caption.11', line 8.
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 9.
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 9.
-Package `hyperref' Info: End of reference (link) `figure.caption.12', line 9.
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 10.
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 10.
-Package `hyperref' Info: End of reference (link) `figure.caption.13', line 10.
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 11.
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 11.
-Package `hyperref' Info: End of reference (link) `figure.caption.14', line 11.
-Package `hyperref' Info: End of reference (cite) `cite.Bamler', line 12.
-Package `hyperref' Info: End of reference (cite) `cite.Bamler', line 12.
-Package `hyperref' Info: End of reference (link) `figure.caption.15', line 12.
-Package `hyperref' Info: End of reference (link) `figure.caption.16', line 14.
-Package `hyperref' Info: End of reference (link) `figure.caption.17', line 15.
-]
-Package hyperref Info: Reference (link) `figure.caption.19' on input line 18.
-Package hyperref Info: Reference (link) `figure.caption.20' on input line 19.
-Package hyperref Info: Reference (link) `figure.caption.22' on input line 21.
-Package hyperref Info: Reference (link) `figure.caption.26' on input line 23.
-Package hyperref Info: Reference (link) `figure.caption.34' on input line 24.
-Package hyperref Info: Reference (link) `figure.caption.48' on input line 26.
-Package hyperref Info: Reference (link) `figure.caption.50' on input line 27.
-Package hyperref Info: Reference (link) `figure.caption.51' on input line 28.
-Package hyperref Info: Reference (link) `figure.caption.53' on input line 29.
-Package hyperref Info: Reference (link) `figure.caption.55' on input line 30.
-Package hyperref Info: Reference (link) `figure.caption.56' on input line 31.
-Package hyperref Info: Reference (link) `figure.caption.57' on input line 32.
-Package hyperref Info: Reference (link) `figure.caption.58' on input line 33.
-Package hyperref Info: Reference (link) `figure.caption.59' on input line 34.
-Package hyperref Info: Reference (link) `figure.caption.60' on input line 35.
-Package hyperref Info: Reference (link) `figure.caption.61' on input line 36.
+Package hyperref Info: Reference (link) `figure.caption.10' on input line 4.
 )
 \tf@lof=\write6
 \openout6 = `tese.lof'.
 
-Package hyperref Info: Anchor `page.x' on input line 204.
- [10
-Package `hyperref' Info: End of reference (link) `figure.caption.18', line 17.
-Package `hyperref' Info: End of reference (link) `figure.caption.19', line 18.
-Package `hyperref' Info: End of reference (link) `figure.caption.20', line 19.
-Package `hyperref' Info: End of reference (link) `figure.caption.22', line 21.
-Package `hyperref' Info: End of reference (link) `figure.caption.26', line 23.
-Package `hyperref' Info: End of reference (link) `figure.caption.34', line 24.
-Package `hyperref' Info: End of reference (link) `figure.caption.48', line 26.
-Package `hyperref' Info: End of reference (link) `figure.caption.50', line 27.
-Package `hyperref' Info: End of reference (link) `figure.caption.51', line 28.
-Package `hyperref' Info: End of reference (link) `figure.caption.53', line 29.
-Package `hyperref' Info: End of reference (link) `figure.caption.55', line 30.
-Package `hyperref' Info: End of reference (link) `figure.caption.56', line 31.
-Package `hyperref' Info: End of reference (link) `figure.caption.57', line 32.
-Package `hyperref' Info: End of reference (link) `figure.caption.58', line 33.
-Package `hyperref' Info: End of reference (link) `figure.caption.59', line 34.
-Package `hyperref' Info: End of reference (link) `figure.caption.60', line 35.
-Package `hyperref' Info: End of reference (link) `figure.caption.61', line 36.
+Package hyperref Info: Anchor `page.ix' on input line 204.
+ [9
+
+Package `hyperref' Info: End of reference (link) `figure.caption.9', line 3.
+Package `hyperref' Info: End of reference (link) `figure.caption.10', line 4.
 ]
 Package hyperref Info: Anchor `chapter*.5' on input line 204.
 Package hyperref Info: Anchor `listaabreviaturas.0' on input line 204.
@@ -1153,8 +1058,8 @@ Package hyperref Info: Anchor `listaabreviaturas.0' on input line 204.
  (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0/listaabreviaturas.tex
 Package hyperref Info: Anchor `table.0.1' on input line 10.
 )
-Package hyperref Info: Anchor `page.xi' on input line 212.
- [11
+Package hyperref Info: Anchor `page.x' on input line 212.
+ [10
 
 ]
 Package hyperref Info: Anchor `chapter*.6' on input line 212.
@@ -1165,1621 +1070,146 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--2
  []
 
 Package hyperref Info: Reference (link) `chapter.1' on input line 2.
+Package hyperref Info: Reference (link) `section.1.1' on input line 3.
+Package hyperref Info: Reference (link) `section.1.2' on input line 4.
+Package hyperref Info: Reference (link) `section.1.3' on input line 5.
+Package hyperref Info: Reference (link) `section.1.4' on input line 6.
+Package hyperref Info: Reference (link) `section.1.5' on input line 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--3
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
  []  
  []
 
-Package hyperref Info: Reference (link) `chapter.2' on input line 3.
-Package hyperref Info: Reference (link) `section.2.1' on input line 4.
-Package hyperref Info: Reference (link) `subsection.2.1.1' on input line 5.
-Package hyperref Info: Reference (link) `section.2.2' on input line 6.
-Package hyperref Info: Reference (link) `subsection.2.2.1' on input line 7.
-Package hyperref Info: Reference (link) `subsection.2.2.2' on input line 8.
-Package hyperref Info: Reference (link) `subsection.2.2.3' on input line 9.
-Package hyperref Info: Reference (link) `subsection.2.2.4' on input line 10.
+Package hyperref Info: Reference (link) `chapter.2' on input line 8.
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--11
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
  []  
  []
 
-Package hyperref Info: Reference (link) `chapter.3' on input line 11.
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--12
- []  
- []
-
-Package hyperref Info: Reference (link) `chapter.4' on input line 12.
-Package hyperref Info: Reference (link) `section.4.1' on input line 13.
-Package hyperref Info: Reference (link) `section.4.2' on input line 14.
-Package hyperref Info: Reference (link) `section.4.3' on input line 15.
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--16
- []  
- []
-
-Package hyperref Info: Reference (link) `chapter.5' on input line 16.
-Package hyperref Info: Reference (link) `section.5.1' on input line 17.
-Package hyperref Info: Reference (link) `section.5.2' on input line 18.
-Package hyperref Info: Reference (link) `section.5.3' on input line 19.
-Package hyperref Info: Reference (link) `section.5.4' on input line 20.
-Package hyperref Info: Reference (link) `section.5.5' on input line 21.
-Package hyperref Info: Reference (link) `subsection.5.5.1' on input line 22.
-Package hyperref Info: Reference (link) `subsection.5.5.2' on input line 23.
-Package hyperref Info: Anchor `page.xii' on input line 24.
-[12
-
-Package `hyperref' Info: End of reference (link) `chapter.1', line 2.
-Package `hyperref' Info: End of reference (link) `chapter.2', line 3.
-Package `hyperref' Info: End of reference (link) `section.2.1', line 4.
-Package `hyperref' Info: End of reference (link) `subsection.2.1.1', line 5.
-Package `hyperref' Info: End of reference (link) `section.2.2', line 6.
-Package `hyperref' Info: End of reference (link) `subsection.2.2.1', line 7.
-Package `hyperref' Info: End of reference (link) `subsection.2.2.2', line 8.
-Package `hyperref' Info: End of reference (link) `subsection.2.2.3', line 9.
-Package `hyperref' Info: End of reference (link) `subsection.2.2.4', line 10.
-Package `hyperref' Info: End of reference (link) `chapter.3', line 11.
-Package `hyperref' Info: End of reference (link) `chapter.4', line 12.
-Package `hyperref' Info: End of reference (link) `section.4.1', line 13.
-Package `hyperref' Info: End of reference (link) `section.4.2', line 14.
-Package `hyperref' Info: End of reference (link) `section.4.3', line 15.
-Package `hyperref' Info: End of reference (link) `chapter.5', line 16.
-Package `hyperref' Info: End of reference (link) `section.5.1', line 17.
-Package `hyperref' Info: End of reference (link) `section.5.2', line 18.
-Package `hyperref' Info: End of reference (link) `section.5.3', line 19.
-Package `hyperref' Info: End of reference (link) `section.5.4', line 20.
-Package `hyperref' Info: End of reference (link) `section.5.5', line 21.
-Package `hyperref' Info: End of reference (link) `subsection.5.5.1', line 22.
-]
-Package hyperref Info: Reference (link) `subsection.5.5.3' on input line 24.
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
- []  
- []
-
-Package hyperref Info: Reference (link) `chapter.6' on input line 25.
-Package hyperref Info: Reference (link) `section.6.1' on input line 26.
-Package hyperref Info: Reference (link) `subsection.6.1.1' on input line 27.
-Package hyperref Info: Reference (link) `subsection.6.1.2' on input line 28.
-Package hyperref Info: Reference (link) `section.6.2' on input line 29.
-Package hyperref Info: Reference (link) `section.6.3' on input line 30.
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
- []  
- []
-
-Package hyperref Info: Reference (link) `chapter.7' on input line 31.
-Package hyperref Info: Reference (link) `section.7.1' on input line 32.
-Package hyperref Info: Reference (link) `section.7.2' on input line 33.
-Package hyperref Info: Reference (link) `section.7.3' on input line 34.
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
- []  
- []
-
-Package hyperref Info: Reference (link) `chapter.8' on input line 35.
-Package hyperref Info: Reference (link) `section.8.1' on input line 36.
-Package hyperref Info: Reference (link) `section.8.2' on input line 37.
-Package hyperref Info: Reference (link) `section.8.3' on input line 38.
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
- []  
- []
-
-Package hyperref Info: Reference (link) `chapter.9' on input line 39.
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
- []  
- []
-
-Package hyperref Info: Reference (link) `chapter.10' on input line 40.
+Package hyperref Info: Reference (link) `chapter.3' on input line 9.
 )
 \tf@toc=\write8
 \openout8 = `tese.toc'.
 
-Package hyperref Info: Anchor `page.xiii' on input line 214.
- [13
-Package `hyperref' Info: End of reference (link) `subsection.5.5.2', line 23.
-Package `hyperref' Info: End of reference (link) `subsection.5.5.3', line 24.
-Package `hyperref' Info: End of reference (link) `chapter.6', line 25.
-Package `hyperref' Info: End of reference (link) `section.6.1', line 26.
-Package `hyperref' Info: End of reference (link) `subsection.6.1.1', line 27.
-Package `hyperref' Info: End of reference (link) `subsection.6.1.2', line 28.
-Package `hyperref' Info: End of reference (link) `section.6.2', line 29.
-Package `hyperref' Info: End of reference (link) `section.6.3', line 30.
-Package `hyperref' Info: End of reference (link) `chapter.7', line 31.
-Package `hyperref' Info: End of reference (link) `section.7.1', line 32.
-Package `hyperref' Info: End of reference (link) `section.7.2', line 33.
-Package `hyperref' Info: End of reference (link) `section.7.3', line 34.
-Package `hyperref' Info: End of reference (link) `chapter.8', line 35.
-Package `hyperref' Info: End of reference (link) `section.8.1', line 36.
-Package `hyperref' Info: End of reference (link) `section.8.2', line 37.
-Package `hyperref' Info: End of reference (link) `section.8.3', line 38.
-Package `hyperref' Info: End of reference (link) `chapter.9', line 39.
-Package `hyperref' Info: End of reference (link) `chapter.10', line 40.
+Package hyperref Info: Anchor `page.xi' on input line 214.
+ [11
+
+Package `hyperref' Info: End of reference (link) `chapter.1', line 2.
+Package `hyperref' Info: End of reference (link) `section.1.1', line 3.
+Package `hyperref' Info: End of reference (link) `section.1.2', line 4.
+Package `hyperref' Info: End of reference (link) `section.1.3', line 5.
+Package `hyperref' Info: End of reference (link) `section.1.4', line 6.
+Package `hyperref' Info: End of reference (link) `section.1.5', line 7.
+Package `hyperref' Info: End of reference (link) `chapter.2', line 8.
+Package `hyperref' Info: End of reference (link) `chapter.3', line 9.
 ]
-Package hyperref Info: Anchor `chapter.1' on input line 216.
+Package hyperref Info: Anchor `page.12' on input line 248.
+ [12
+
+]
+Package hyperref Info: Anchor `chapter.1' on input line 248.
 
 Chapter 1.
-pdftex: bookmark at 216: {1} {\numberline{1}Introduction} {chapter.1}{0}{toc}
-(c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0-Introducao/introducao.tex)
-Package hyperref Info: Anchor `page.14' on input line 219.
- [14
-
-
-]
-Package hyperref Info: Anchor `chapter.2' on input line 219.
-
-Chapter 2.
-pdftex: bookmark at 219: {2} {\numberline{2}Theoretical Background} {chapter.2}{0}{toc}
-(c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/cap1.tex
-Package hyperref Info: Anchor `section.2.1' on input line 15.
-
-pdftex: bookmark at 15: {2.1} {\numberline{2.1}Remote sensing and SAR imaging} {section.2.1}{1}{toc}
-Package hyperref Info: Reference (cite) `cite.livro' on input line 23.
-Package hyperref Info: Reference (cite) `cite.livro' on input line 23.
-Package backref Info: Back cite `livro' on input line 23.
-Package hyperref Info: Anchor `page.15' on input line 27.
-[15
-
-Package `hyperref' Info: End of reference (cite) `cite.livro', line 23.
-Package `hyperref' Info: End of reference (cite) `cite.livro', line 23.
-]
-Package hyperref Info: Anchor `figure.caption.7' on input line 28.
-<Cap1/geometry.png, id=498, 617.30624pt x 575.90157pt>
-File: Cap1/geometry.png Graphic file (type png)
-<use Cap1/geometry.png>
-Package pdftex.def Info: Cap1/geometry.png  used on input line 30.
-(pdftex.def)             Requested size: 364.19667pt x 339.77898pt.
-
-pdftex: bookmark at 31: {2.1} {\numberline{2.1}{\ignorespaces Illustration of SAR geometry. $r_0$ is the shortest distance to target, $\theta _a$ stands for the azimuth beam width and $v$ for the satellite speed. \cite {tutorial}\relax }} {figure.caption.7}{0}{lof}
-Package hyperref Info: Reference (cite) `cite.tutorial' on input line 31.
-Package hyperref Info: Reference (cite) `cite.tutorial' on input line 31.
-Package backref Info: Back cite `tutorial' on input line 31.
-Package hyperref Info: Reference (cite) `cite.tutorial' on input line 31.
-Package hyperref Info: Reference (cite) `cite.tutorial' on input line 31.
-Package backref Info: Back cite `tutorial' on input line 31.
-Package hyperref Info: Reference (link) `figure.caption.8' on input line 36.
-Package hyperref Info: Anchor `figure.caption.8' on input line 38.
-<Cap1/ra1_print.png, id=504, 521.95pt x 351.3125pt>
-File: Cap1/ra1_print.png Graphic file (type png)
-<use Cap1/ra1_print.png>
-Package pdftex.def Info: Cap1/ra1_print.png  used on input line 40.
-(pdftex.def)             Requested size: 364.19667pt x 245.13441pt.
-pdftex: bookmark at 41: {2.2} {\numberline{2.2}{\ignorespaces Temporal separation of pulses for target resolution. $\tau $ is the pulse temporal width\relax }} {figure.caption.8}{0}{lof}
-Package hyperref Info: Anchor `page.16' on input line 44.
-[16
-Package `hyperref' Info: End of reference (cite) `cite.tutorial', line 31.
-Package `hyperref' Info: End of reference (cite) `cite.tutorial', line 31.
-Package `hyperref' Info: End of reference (link) `figure.caption.8', line 36.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/geometry.png>]
-Package hyperref Info: Reference (link) `figure.caption.8' on input line 45.
-Package hyperref Info: Anchor `equation.2.1.1' on input line 49.
-Package hyperref Info: Reference (link) `figure.caption.9' on input line 57.
-Package hyperref Info: Anchor `figure.caption.9' on input line 58.
-<Cap1/compres.png, id=511, 996.72375pt x 563.85657pt>
-File: Cap1/compres.png Graphic file (type png)
-<use Cap1/compres.png>
-Package pdftex.def Info: Cap1/compres.png  used on input line 60.
-(pdftex.def)             Requested size: 455.24411pt x 257.53596pt.
-
-pdftex: bookmark at 61: {2.3} {\numberline{2.3}{\ignorespaces Summary of SAR compression in range and azimuth directions \cite {tutorial}\relax }} {figure.caption.9}{0}{lof}
-Package hyperref Info: Reference (cite) `cite.tutorial' on input line 61.
-Package hyperref Info: Reference (cite) `cite.tutorial' on input line 61.
-Package backref Info: Back cite `tutorial' on input line 61.
-Package hyperref Info: Reference (cite) `cite.tutorial' on input line 61.
-Package hyperref Info: Reference (cite) `cite.tutorial' on input line 61.
-Package backref Info: Back cite `tutorial' on input line 61.
-Package hyperref Info: Anchor `page.17' on input line 64.
-[17
-Package `hyperref' Info: End of reference (link) `figure.caption.8', line 45.
-Package `hyperref' Info: End of reference (link) `figure.caption.9', line 57.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/ra1_print.png>]
-Package hyperref Info: Reference (cite) `cite.Small' on input line 66.
-Package hyperref Info: Reference (cite) `cite.Small' on input line 66.
-Package backref Info: Back cite `Small' on input line 66.
-Package hyperref Info: Reference (cite) `cite.Small' on input line 68.
-Package hyperref Info: Reference (cite) `cite.Small' on input line 68.
-Package backref Info: Back cite `Small' on input line 68.
-Package hyperref Info: Reference (cite) `cite.Raney' on input line 68.
-Package hyperref Info: Reference (cite) `cite.Raney' on input line 68.
-Package backref Info: Back cite `Raney' on input line 68.
-Package hyperref Info: Anchor `equation.2.1.2' on input line 75.
-Package hyperref Info: Anchor `page.18' on input line 79.
- [18
-Package `hyperref' Info: End of reference (cite) `cite.tutorial', line 61.
-Package `hyperref' Info: End of reference (cite) `cite.tutorial', line 61.
-Package `hyperref' Info: End of reference (cite) `cite.Small', line 66.
-Package `hyperref' Info: End of reference (cite) `cite.Small', line 66.
-Package `hyperref' Info: End of reference (cite) `cite.Small', line 68.
-Package `hyperref' Info: End of reference (cite) `cite.Small', line 68.
-Package `hyperref' Info: End of reference (cite) `cite.Raney', line 68.
-Package `hyperref' Info: End of reference (cite) `cite.Raney', line 68.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/compres.png>]
-Package hyperref Info: Reference (link) `figure.caption.10' on input line 79.
-Package hyperref Info: Anchor `figure.caption.10' on input line 81.
-<Cap1/retang.png, id=540, 526.96875pt x 371.88937pt>
-File: Cap1/retang.png Graphic file (type png)
-<use Cap1/retang.png>
-Package pdftex.def Info: Cap1/retang.png  used on input line 83.
-(pdftex.def)             Requested size: 364.19667pt x 257.02953pt.
-
-pdftex: bookmark at 84: {2.4} {\numberline{2.4}{\ignorespaces Normalization areas for SAR backscatter \cite {Small}\relax }} {figure.caption.10}{0}{lof}
-Package hyperref Info: Reference (cite) `cite.Small' on input line 84.
-Package hyperref Info: Reference (cite) `cite.Small' on input line 84.
-Package backref Info: Back cite `Small' on input line 84.
-Package hyperref Info: Reference (cite) `cite.Small' on input line 84.
-Package hyperref Info: Reference (cite) `cite.Small' on input line 84.
-Package backref Info: Back cite `Small' on input line 84.
-Package hyperref Info: Anchor `subsection.2.1.1' on input line 89.
-pdftex: bookmark at 89: {2.1.1} {\numberline{2.1.1}SAR Image Geocoding} {subsection.2.1.1}{2}{toc}
-Package hyperref Info: Anchor `section.2.2' on input line 94.
-pdftex: bookmark at 94: {2.2} {\numberline{2.2}SAR Interferometry} {section.2.2}{1}{toc}
-Package hyperref Info: Reference (cite) `cite.Graham' on input line 97.
-Package hyperref Info: Reference (cite) `cite.Graham' on input line 97.
-Package backref Info: Back cite `Graham' on input line 97.
-Package hyperref Info: Reference (cite) `cite.Graham' on input line 98.
-Package hyperref Info: Reference (cite) `cite.Graham' on input line 98.
-Package backref Info: Back cite `Graham' on input line 98.
-Package hyperref Info: Anchor `page.19' on input line 99.
-[19
-Package `hyperref' Info: End of reference (link) `figure.caption.10', line 79.
-Package `hyperref' Info: End of reference (cite) `cite.Small', line 84.
-Package `hyperref' Info: End of reference (cite) `cite.Small', line 84.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/retang.png>]
-Package hyperref Info: Reference (cite) `cite.Rosen' on input line 102.
-Package hyperref Info: Reference (cite) `cite.Rosen' on input line 102.
-Package backref Info: Back cite `Rosen' on input line 102.
-Package hyperref Info: Reference (cite) `cite.Bamler' on input line 102.
-Package hyperref Info: Reference (cite) `cite.Bamler' on input line 102.
-Package backref Info: Back cite `Bamler' on input line 102.
-LaTeX Font Info:    Trying to load font information for TS1+aer on input line 108.
-LaTeX Font Info:    No file TS1aer.fd. on input line 108.
-
-
-LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
-(Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textbullet' on input line 108.
-
-Package hyperref Info: Anchor `subsection.2.2.1' on input line 113.
-pdftex: bookmark at 113: {2.2.1} {\numberline{2.2.1}Height acquisition and interferogram equations} {subsection.2.2.1}{2}{toc}
-Package hyperref Info: Anchor `figure.caption.11' on input line 116.
-<Cap1/int.png, id=558, 798.73407pt x 521.69907pt>
-File: Cap1/int.png Graphic file (type png)
-<use Cap1/int.png>
-Package pdftex.def Info: Cap1/int.png  used on input line 118.
-(pdftex.def)             Requested size: 455.24411pt x 297.34767pt.
-pdftex: bookmark at 119: {2.5} {\numberline{2.5}{\ignorespaces Reference Geometry for Across-Track interferometry. \cite {Paolathesis}\relax }} {figure.caption.11}{0}{lof}
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 119.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 119.
-Package backref Info: Back cite `Paolathesis' on input line 119.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 119.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 119.
-Package backref Info: Back cite `Paolathesis' on input line 119.
-Package hyperref Info: Anchor `page.20' on input line 122.
-[20
-Package `hyperref' Info: End of reference (cite) `cite.Graham', line 97.
-Package `hyperref' Info: End of reference (cite) `cite.Graham', line 97.
-Package `hyperref' Info: End of reference (cite) `cite.Graham', line 98.
-Package `hyperref' Info: End of reference (cite) `cite.Graham', line 98.
-Package `hyperref' Info: End of reference (cite) `cite.Rosen', line 102.
-Package `hyperref' Info: End of reference (cite) `cite.Rosen', line 102.
-Package `hyperref' Info: End of reference (cite) `cite.Bamler', line 102.
-Package `hyperref' Info: End of reference (cite) `cite.Bamler', line 102.
-]
-Package hyperref Info: Anchor `equation.2.2.3' on input line 127.
-Package hyperref Info: Anchor `equation.2.2.4' on input line 132.
-Package hyperref Info: Anchor `equation.2.2.5' on input line 137.
-Package hyperref Info: Anchor `equation.2.2.6' on input line 144.
-Package hyperref Info: Anchor `equation.2.2.7' on input line 148.
-Package hyperref Info: Anchor `page.21' on input line 150.
- [21
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 119.
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 119.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/int.png>]
-Package hyperref Info: Anchor `equation.2.2.8' on input line 154.
-Package hyperref Info: Anchor `equation.2.2.9' on input line 158.
-Package hyperref Info: Anchor `equation.2.2.10' on input line 168.
-Package hyperref Info: Reference (link) `figure.caption.11' on input line 172.
-Package hyperref Info: Anchor `figure.caption.12' on input line 174.
-<Cap1/flat.png, id=580, 889.07156pt x 576.65437pt>
-File: Cap1/flat.png Graphic file (type png)
-<use Cap1/flat.png>
-Package pdftex.def Info: Cap1/flat.png  used on input line 176.
-(pdftex.def)             Requested size: 455.24411pt x 295.2689pt.
-
-pdftex: bookmark at 177: {2.6} {\numberline{2.6}{\ignorespaces Reference Geometry for flat earth component. \cite {Paolathesis}\relax }} {figure.caption.12}{0}{lof}
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 177.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 177.
-Package backref Info: Back cite `Paolathesis' on input line 177.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 177.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 177.
-Package backref Info: Back cite `Paolathesis' on input line 177.
-Package hyperref Info: Anchor `page.22' on input line 180.
-[22
-Package `hyperref' Info: End of reference (link) `figure.caption.11', line 172.
-]
-Package hyperref Info: Anchor `equation.2.2.11' on input line 182.
-Package hyperref Info: Anchor `equation.2.2.12' on input line 186.
-Package hyperref Info: Anchor `equation.2.2.13' on input line 191.
-Package hyperref Info: Anchor `figure.caption.13' on input line 201.
-<Cap1/flat_interf.png, id=593, 892.83563pt x 364.36125pt>
-File: Cap1/flat_interf.png Graphic file (type png)
-<use Cap1/flat_interf.png>
-Package pdftex.def Info: Cap1/flat_interf.png  used on input line 203.
-(pdftex.def)             Requested size: 455.24411pt x 185.78285pt.
-
-pdftex: bookmark at 205: {2.7} {\numberline{2.7}{\ignorespaces (a) Amplitude of image of SAR image acquired by ERS-1/2 at C-Band with a baseline of $133$m. (b)Interferogram before the flat earth component removal. (c)Interferogram after the flat earth component removal. The color on the images represent the value of the interferometric phase of the pixel, such that pixels connected with the same color should have the same topographical height \cite {Paolathesis}\relax }} {figure.caption.13}{0}{lof}
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 205.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 205.
-Package backref Info: Back cite `Paolathesis' on input line 205.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 205.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 205.
-Package backref Info: Back cite `Paolathesis' on input line 205.
-Package hyperref Info: Anchor `page.23' on input line 208.
-[23
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 177.
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 177.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/flat.png>]
-Package hyperref Info: Anchor `equation.2.2.14' on input line 211.
-Package hyperref Info: Anchor `figure.caption.14' on input line 221.
-<Cap1/unwr.png, id=605, 752.0597pt x 491.58656pt>
-File: Cap1/unwr.png Graphic file (type png)
-<use Cap1/unwr.png>
-Package pdftex.def Info: Cap1/unwr.png  used on input line 223.
-(pdftex.def)             Requested size: 455.24411pt x 297.57956pt.
-
-pdftex: bookmark at 227: {2.8} {\numberline{2.8}{\ignorespaces Explanation about phase unwrapping. (a) Topographical phase before the phase unwrapping. (b) Topographical phase after the unwrapping of the phase. The images are obtained from a repeat pass acquisition SIR-C-X SAR over Mount Etna, Italy. \cite {Paolathesis}\relax }} {figure.caption.14}{0}{lof}
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 227.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 227.
-Package backref Info: Back cite `Paolathesis' on input line 227.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 227.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 227.
-Package backref Info: Back cite `Paolathesis' on input line 227.
-Package hyperref Info: Anchor `page.24' on input line 230.
-[24
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 205.
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 205.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/flat_interf.png>]
-Package hyperref Info: Anchor `subsection.2.2.2' on input line 233.
-
-pdftex: bookmark at 233: {2.2.2} {\numberline{2.2.2}The Complex Interferometric Coherence} {subsection.2.2.2}{2}{toc}
-Package hyperref Info: Anchor `equation.2.2.15' on input line 235.
-Package hyperref Info: Anchor `equation.2.2.16' on input line 240.
-Package hyperref Info: Anchor `page.25' on input line 243.
-[25
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 227.
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 227.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/unwr.png>]
-Package hyperref Info: Reference (cite) `cite.Bamler' on input line 247.
-Package hyperref Info: Reference (cite) `cite.Bamler' on input line 247.
-Package backref Info: Back cite `Bamler' on input line 247.
-Package hyperref Info: Reference (link) `figure.caption.15' on input line 247.
-Package hyperref Info: Anchor `figure.caption.15' on input line 249.
-<Cap1/bias.png, id=626, 450.9347pt x 317.68687pt>
-File: Cap1/bias.png Graphic file (type png)
-<use Cap1/bias.png>
-Package pdftex.def Info: Cap1/bias.png  used on input line 251.
-(pdftex.def)             Requested size: 455.24411pt x 320.74pt.
-
-pdftex: bookmark at 252: {2.9} {\numberline{2.9}{\ignorespaces Bias of the MLE coherence estimator \cite {Bamler}.\relax }} {figure.caption.15}{0}{lof}
-Package hyperref Info: Reference (cite) `cite.Bamler' on input line 252.
-Package hyperref Info: Reference (cite) `cite.Bamler' on input line 252.
-Package backref Info: Back cite `Bamler' on input line 252.
-Package hyperref Info: Reference (cite) `cite.Bamler' on input line 252.
-Package hyperref Info: Reference (cite) `cite.Bamler' on input line 252.
-Package backref Info: Back cite `Bamler' on input line 252.
-Package hyperref Info: Anchor `page.26' on input line 257.
-[26
-Package `hyperref' Info: End of reference (cite) `cite.Bamler', line 247.
-Package `hyperref' Info: End of reference (cite) `cite.Bamler', line 247.
-Package `hyperref' Info: End of reference (link) `figure.caption.15', line 247.
-Package `hyperref' Info: End of reference (cite) `cite.Bamler', line 252.
-Package `hyperref' Info: End of reference (cite) `cite.Bamler', line 252.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/bias.png>]
-Package hyperref Info: Anchor `subsection.2.2.3' on input line 260.
-
-pdftex: bookmark at 260: {2.2.3} {\numberline{2.2.3}Co-registration} {subsection.2.2.3}{2}{toc}
-Package hyperref Info: Reference (cite) `cite.andreathesis' on input line 261.
-Package hyperref Info: Reference (cite) `cite.andreathesis' on input line 261.
-Package backref Info: Back cite `andreathesis' on input line 261.
-Package hyperref Info: Anchor `subsection.2.2.4' on input line 263.
-pdftex: bookmark at 263: {2.2.4} {\numberline{2.2.4}Decorrelation in Vegetated Areas} {subsection.2.2.4}{2}{toc}
-Package hyperref Info: Reference (cite) `cite.Martone' on input line 264.
-Package hyperref Info: Reference (cite) `cite.Martone' on input line 264.
-Package backref Info: Back cite `Martone' on input line 264.
-Package hyperref Info: Anchor `equation.2.2.17' on input line 266.
-
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
-
- []
-
-Package hyperref Info: Reference (cite) `cite.Martone2' on input line 277.
-Package hyperref Info: Reference (cite) `cite.Martone2' on input line 277.
-Package backref Info: Back cite `Martone2' on input line 277.
-Package hyperref Info: Reference (cite) `cite.Rizzoli' on input line 277.
-Package hyperref Info: Reference (cite) `cite.Rizzoli' on input line 277.
-Package backref Info: Back cite `Rizzoli' on input line 277.
-Package hyperref Info: Anchor `equation.2.2.18' on input line 282.
-Package hyperref Info: Anchor `page.27' on input line 282.
-[27
-Package `hyperref' Info: End of reference (cite) `cite.andreathesis', line 261.
-Package `hyperref' Info: End of reference (cite) `cite.andreathesis', line 261.
-Package `hyperref' Info: End of reference (cite) `cite.Martone', line 264.
-Package `hyperref' Info: End of reference (cite) `cite.Martone', line 264.
-Package `hyperref' Info: End of reference (cite) `cite.Martone2', line 277.
-Package `hyperref' Info: End of reference (cite) `cite.Martone2', line 277.
-Package `hyperref' Info: End of reference (cite) `cite.Rizzoli', line 277.
-Package `hyperref' Info: End of reference (cite) `cite.Rizzoli', line 277.
-]
-Package hyperref Info: Reference (cite) `cite.Martone3' on input line 285.
-Package hyperref Info: Reference (cite) `cite.Martone3' on input line 285.
-Package backref Info: Back cite `Martone3' on input line 285.
-Package hyperref Info: Reference (cite) `cite.Martone2' on input line 288.
-Package hyperref Info: Reference (cite) `cite.Martone2' on input line 288.
-Package backref Info: Back cite `Martone2' on input line 288.
-Package hyperref Info: Reference (cite) `cite.Martone3' on input line 294.
-Package hyperref Info: Reference (cite) `cite.Martone3' on input line 294.
-Package backref Info: Back cite `Martone3' on input line 294.
-Package hyperref Info: Reference (cite) `cite.Krieger' on input line 294.
-Package hyperref Info: Reference (cite) `cite.Krieger' on input line 294.
-Package backref Info: Back cite `Krieger' on input line 294.
-Package hyperref Info: Reference (cite) `cite.Krieger' on input line 297.
-Package hyperref Info: Reference (cite) `cite.Krieger' on input line 297.
-Package backref Info: Back cite `Krieger' on input line 297.
-Package hyperref Info: Reference (cite) `cite.Paolo' on input line 300.
-Package hyperref Info: Reference (cite) `cite.Paolo' on input line 300.
-Package backref Info: Back cite `Paolo' on input line 300.
-Package hyperref Info: Reference (cite) `cite.Paolo' on input line 300.
-Package hyperref Info: Reference (cite) `cite.Paolo' on input line 300.
-Package backref Info: Back cite `Paolo' on input line 300.
-Package hyperref Info: Anchor `equation.2.2.19' on input line 301.
-Package hyperref Info: Reference (cite) `cite.Paolo' on input line 304.
-Package hyperref Info: Reference (cite) `cite.Paolo' on input line 304.
-Package backref Info: Back cite `Paolo' on input line 304.
-)
-Package hyperref Info: Anchor `page.28' on input line 223.
- [28
-Package `hyperref' Info: End of reference (cite) `cite.Martone3', line 285.
-Package `hyperref' Info: End of reference (cite) `cite.Martone3', line 285.
-Package `hyperref' Info: End of reference (cite) `cite.Martone2', line 288.
-Package `hyperref' Info: End of reference (cite) `cite.Martone2', line 288.
-Package `hyperref' Info: End of reference (cite) `cite.Martone3', line 294.
-Package `hyperref' Info: End of reference (cite) `cite.Martone3', line 294.
-Package `hyperref' Info: End of reference (cite) `cite.Krieger', line 294.
-Package `hyperref' Info: End of reference (cite) `cite.Krieger', line 294.
-Package `hyperref' Info: End of reference (cite) `cite.Krieger', line 297.
-Package `hyperref' Info: End of reference (cite) `cite.Krieger', line 297.
-Package `hyperref' Info: End of reference (cite) `cite.Paolo', line 300.
-Package `hyperref' Info: End of reference (cite) `cite.Paolo', line 300.
-Package `hyperref' Info: End of reference (cite) `cite.Paolo', line 300.
-Package `hyperref' Info: End of reference (cite) `cite.Paolo', line 300.
-Package `hyperref' Info: End of reference (cite) `cite.Paolo', line 304.
-Package `hyperref' Info: End of reference (cite) `cite.Paolo', line 304.
-]
-Package hyperref Info: Anchor `chapter.3' on input line 223.
-
-Chapter 3.
-pdftex: bookmark at 223: {3} {\numberline{3}Classification Maps generated with SAR Images} {chapter.3}{0}{toc}
-(c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/cap2.tex
-Package hyperref Info: Anchor `figure.caption.16' on input line 9.
-<Cap2/glob_cover.png, id=679, 564.1075pt x 722.7pt>
-File: Cap2/glob_cover.png Graphic file (type png)
-<use Cap2/glob_cover.png>
-Package pdftex.def Info: Cap2/glob_cover.png  used on input line 11.
-(pdftex.def)             Requested size: 455.24411pt x 583.23343pt.
-
-pdftex: bookmark at 12: {3.1} {\numberline{3.1}{\ignorespaces GlobCover classification map\relax }} {figure.caption.16}{0}{lof}
-Package hyperref Info: Anchor `page.29' on input line 15.
-[29
-
-]
-Package hyperref Info: Reference (cite) `cite.Krieger' on input line 18.
-Package hyperref Info: Reference (cite) `cite.Krieger' on input line 18.
-Package backref Info: Back cite `Krieger' on input line 18.
-Package hyperref Info: Anchor `page.30' on input line 19.
- [30 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/glob_cover.png>]
-Package hyperref Info: Reference (cite) `cite.first_interferometric' on input line 22.
-Package hyperref Info: Reference (cite) `cite.first_interferometric' on input line 22.
-Package backref Info: Back cite `first_interferometric' on input line 22.
-Package hyperref Info: Reference (link) `figure.caption.17' on input line 22.
-
-Overfull \hbox (3.77368pt too wide) in paragraph at lines 22--23
-[]\T1/aer/m/n/12 The first use of in-ter-fer-o-met-ric data for for-est map-ping is re-ported on ([][]WERT-MULLER;
- []
-
-Package hyperref Info: Anchor `figure.caption.17' on input line 24.
-<Cap2/first_interferometric.png, id=695, 270.00874pt x 211.79124pt>
-File: Cap2/first_interferometric.png Graphic file (type png)
-<use Cap2/first_interferometric.png>
-Package pdftex.def Info: Cap2/first_interferometric.png  used on input line 26.
-(pdftex.def)             Requested size: 318.66948pt x 249.96643pt.
-pdftex: bookmark at 27: {3.2} {\numberline{3.2}{\ignorespaces Mean and Standard deviation of the coherence estimate as number of looks (filter size) for different classes\relax }} {figure.caption.17}{0}{lof}
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 31.
-Package hyperref Info: Reference (cite) `cite.Paolathesis' on input line 31.
-Package backref Info: Back cite `Paolathesis' on input line 31.
-Package hyperref Info: Anchor `page.31' on input line 34.
-[31
-Package `hyperref' Info: End of reference (cite) `cite.Krieger', line 18.
-Package `hyperref' Info: End of reference (cite) `cite.Krieger', line 18.
-Package `hyperref' Info: End of reference (cite) `cite.first_interferometric', line 22.
-Package `hyperref' Info: End of reference (cite) `cite.first_interferometric', line 22.
-Package `hyperref' Info: End of reference (link) `figure.caption.17', line 22.
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 31.
-Package `hyperref' Info: End of reference (cite) `cite.Paolathesis', line 31.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/first_interferometric.png>]
-Package hyperref Info: Reference (cite) `cite.long_time_series' on input line 37.
-Package hyperref Info: Reference (cite) `cite.long_time_series' on input line 37.
-Package backref Info: Back cite `long_time_series' on input line 37.
-)
-Package hyperref Info: Anchor `page.32' on input line 227.
- [32
-Package `hyperref' Info: End of reference (cite) `cite.long_time_series', line 37.
-Package `hyperref' Info: End of reference (cite) `cite.long_time_series', line 37.
-]
-Package hyperref Info: Anchor `chapter.4' on input line 227.
-
-Chapter 4.
-pdftex: bookmark at 227: {4} {\numberline{4}Material} {chapter.4}{0}{toc}
-(c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/chapter2_real.tex
-Package hyperref Info: Anchor `section.4.1' on input line 4.
-
-pdftex: bookmark at 4: {4.1} {\numberline{4.1}Test Area: The Rondonia State} {section.4.1}{1}{toc}
-Package hyperref Info: Reference (link) `figure.caption.18' on input line 11.
-Package hyperref Info: Anchor `figure.caption.18' on input line 13.
-<Chapter2-real/fishbone.png, id=715, 1057.70157pt x 486.31688pt>
-File: Chapter2-real/fishbone.png Graphic file (type png)
-<use Chapter2-real/fishbone.png>
-Package pdftex.def Info: Chapter2-real/fishbone.png  used on input line 15.
-(pdftex.def)             Requested size: 364.19667pt x 167.45299pt.
-pdftex: bookmark at 16: {4.1} {\numberline{4.1}{\ignorespaces Fishbone pattern of deforestation\relax }} {figure.caption.18}{0}{lof}
-Package hyperref Info: Anchor `page.33' on input line 19.
-[33
-
-Package `hyperref' Info: End of reference (link) `figure.caption.18', line 11.
-]
-Package hyperref Info: Anchor `section.4.2' on input line 22.
-
-pdftex: bookmark at 22: {4.2} {\numberline{4.2}TanDEM-X datasets} {section.4.2}{1}{toc}
-Package hyperref Info: Reference (cite) `cite.vintetres' on input line 31.
-Package hyperref Info: Reference (cite) `cite.vintetres' on input line 31.
-Package backref Info: Back cite `vintetres, vintequatro' on input line 31.
-Package hyperref Info: Reference (cite) `cite.vintequatro' on input line 31.
-Package hyperref Info: Reference (cite) `cite.vintequatro' on input line 31.
-Package backref Info: Back cite `vintetres, vintequatro' on input line 31.
-Package hyperref Info: Anchor `figure.caption.19' on input line 33.
-<Chapter2-real/tandem_dataset.jpg, id=724, 467.49657pt x 703.87968pt>
-File: Chapter2-real/tandem_dataset.jpg Graphic file (type jpg)
-<use Chapter2-real/tandem_dataset.jpg>
-Package pdftex.def Info: Chapter2-real/tandem_dataset.jpg  used on input line 35.
-(pdftex.def)             Requested size: 273.14923pt x 411.27927pt.
-pdftex: bookmark at 36: {4.2} {\numberline{4.2}{\ignorespaces TanDEM-X dataset available in Rondonia Area\relax }} {figure.caption.19}{0}{lof}
-Package hyperref Info: Anchor `page.34' on input line 39.
-[34
-Package `hyperref' Info: End of reference (cite) `cite.vintetres', line 31.
-Package `hyperref' Info: End of reference (cite) `cite.vintetres', line 31.
-Package `hyperref' Info: End of reference (cite) `cite.vintequatro', line 31.
-Package `hyperref' Info: End of reference (cite) `cite.vintequatro', line 31.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/fishbone.png>]
-Package hyperref Info: Reference (link) `figure.caption.19' on input line 40.
-Package hyperref Info: Anchor `section.4.3' on input line 42.
-
-pdftex: bookmark at 42: {4.3} {\numberline{4.3}Sentinel-1 datasets} {section.4.3}{1}{toc}
-Package hyperref Info: Anchor `page.35' on input line 46.
-[35
-Package `hyperref' Info: End of reference (link) `figure.caption.19', line 40.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/tandem_dataset.jpg>]
-Package hyperref Info: Reference (cite) `cite.sentinelmission' on input line 50.
-Package hyperref Info: Reference (cite) `cite.sentinelmission' on input line 50.
-Package backref Info: Back cite `sentinelmission' on input line 50.
-
-Overfull \hbox (9.83998pt too wide) in paragraph at lines 50--51
-[]\T1/aer/m/n/12 According to ([][]SNOEIJ \T1/aer/m/it/12 et al.[][][]\T1/aer/m/n/12 , [][]De-cem-ber 2008[][][][]) there are five pri-or-i-ties for the SENTINEL-
- []
-
-Package hyperref Info: Anchor `figure.caption.20' on input line 52.
-<Chapter2-real/sentinel_dataset.png, id=739, 1093.08376pt x 712.16063pt>
-File: Chapter2-real/sentinel_dataset.png Graphic file (type png)
-<use Chapter2-real/sentinel_dataset.png>
-Package pdftex.def Info: Chapter2-real/sentinel_dataset.png  used on input line 54.
-(pdftex.def)             Requested size: 455.24411pt x 296.59521pt.
-pdftex: bookmark at 55: {4.3} {\numberline{4.3}{\ignorespaces SENTINEL-1 dataset available in Rondonia Area\relax }} {figure.caption.20}{0}{lof}
-Package hyperref Info: Reference (link) `figure.caption.20' on input line 59.
-Package hyperref Info: Reference (link) `figure.caption.20' on input line 59.
-)
-Package hyperref Info: Anchor `page.36' on input line 230.
- [36
-Package `hyperref' Info: End of reference (cite) `cite.sentinelmission', line 50.
-Package `hyperref' Info: End of reference (cite) `cite.sentinelmission', line 50.
-Package `hyperref' Info: End of reference (link) `figure.caption.20', line 59.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/sentinel_dataset.png>]
-Package hyperref Info: Anchor `page.37' on input line 231.
- [37
-Package `hyperref' Info: End of reference (link) `figure.caption.20', line 59.
-]
-Package hyperref Info: Anchor `chapter.5' on input line 231.
-
-Chapter 5.
-pdftex: bookmark at 231: {5} {\numberline{5}Textures Methods for Image Analysis} {chapter.5}{0}{toc}
-(c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter3/chapter3.tex
-Package hyperref Info: Anchor `section*.21' on input line 7.
-Package hyperref Info: Anchor `section.5.1' on input line 17.
-
-pdftex: bookmark at 17: {5.1} {\numberline{5.1}Machine Learning and the problems for classification} {section.5.1}{1}{toc}
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--22
-
- []
-
-Package hyperref Info: Anchor `page.38' on input line 22.
-[38
-
-]
-Package hyperref Info: Anchor `Item.1' on input line 25.
-Package hyperref Info: Anchor `Item.2' on input line 26.
-Package hyperref Info: Anchor `Item.3' on input line 27.
-Package hyperref Info: Anchor `Item.4' on input line 28.
-Package hyperref Info: Anchor `Item.5' on input line 29.
-Package hyperref Info: Anchor `Item.6' on input line 34.
-Package hyperref Info: Anchor `Item.7' on input line 35.
-
-Overfull \hbox (0.79826pt too wide) in paragraph at lines 38--40
-\T1/aer/m/n/12 nearest neigh-bors clas-si-fier, multi-layer per-cep-tron, Gaus-sian pro-cess clas-si-fi-ca-tion, Radial-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--40
-
- []
-
-Package hyperref Info: Anchor `page.39' on input line 40.
-[39]
-Package hyperref Info: Anchor `figure.caption.22' on input line 48.
-<Chapter3/regions.pdf, id=769, 1951.29pt x 361.35pt>
-File: Chapter3/regions.pdf Graphic file (type pdf)
-<use Chapter3/regions.pdf>
-Package pdftex.def Info: Chapter3/regions.pdf  used on input line 50.
-(pdftex.def)             Requested size: 455.24411pt x 84.29971pt.
-
-pdftex: bookmark at 51: {5.1} {\numberline{5.1}{\ignorespaces Classification Boundaries for Different Algorithms\relax }} {figure.caption.22}{0}{lof}
-Package hyperref Info: Reference (link) `figure.caption.22' on input line 55.
-Package hyperref Info: Reference (link) `figure.caption.22' on input line 61.
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--62
-
- []
-
-Package hyperref Info: Anchor `page.40' on input line 62.
-[40
-Package `hyperref' Info: End of reference (link) `figure.caption.22', line 55.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter3/regions.pdf>]
-Package hyperref Info: Anchor `section.5.2' on input line 63.
-
-pdftex: bookmark at 63: {5.2} {\numberline{5.2}Textures Methods} {section.5.2}{1}{toc}
-Package hyperref Info: Reference (cite) `cite.Woodcock' on input line 65.
-Package hyperref Info: Reference (cite) `cite.Woodcock' on input line 65.
-Package backref Info: Back cite `Woodcock' on input line 65.
-Package hyperref Info: Anchor `section.5.3' on input line 69.
-pdftex: bookmark at 69: {5.3} {\numberline{5.3}The GLCM Method} {section.5.3}{1}{toc}
-Package hyperref Info: Anchor `page.41' on input line 78.
-[41
-Package `hyperref' Info: End of reference (link) `figure.caption.22', line 61.
-Package `hyperref' Info: End of reference (cite) `cite.Woodcock', line 65.
-Package `hyperref' Info: End of reference (cite) `cite.Woodcock', line 65.
-]
-Package hyperref Info: Anchor `equation.5.3.1' on input line 79.
-Package hyperref Info: Anchor `equation.5.3.2' on input line 85.
-Package hyperref Info: Anchor `equation.5.3.3' on input line 97.
-Package hyperref Info: Anchor `equation.5.3.4' on input line 106.
-Package hyperref Info: Anchor `equation.5.3.5' on input line 115.
-Package hyperref Info: Anchor `equation.5.3.6' on input line 128.
-Package hyperref Info: Anchor `table.caption.23' on input line 134.
-
-pdftex: bookmark at 147: {5.1} {\numberline{5.1}{\ignorespaces Formula for texture calculations for GLCM Method\relax }} {table.caption.23}{0}{lot}
-Package hyperref Info: Anchor `page.42' on input line 149.
-[42]
-Package hyperref Info: Anchor `equation.5.3.7' on input line 153.
-Package hyperref Info: Anchor `equation.5.3.8' on input line 156.
-Package hyperref Info: Reference (cite) `cite.Zucker' on input line 160.
-Package hyperref Info: Reference (cite) `cite.Zucker' on input line 160.
-Package backref Info: Back cite `Zucker' on input line 160.
-Package hyperref Info: Anchor `equation.5.3.9' on input line 162.
-Package hyperref Info: Anchor `section.5.4' on input line 166.
-
-pdftex: bookmark at 166: {5.4} {\numberline{5.4}The Laws Textures} {section.5.4}{1}{toc}
-Package hyperref Info: Anchor `page.43' on input line 170.
-[43
-Package `hyperref' Info: End of reference (cite) `cite.Zucker', line 160.
-Package `hyperref' Info: End of reference (cite) `cite.Zucker', line 160.
-]
-Package hyperref Info: Anchor `equation.5.4.10' on input line 187.
-Package hyperref Info: Anchor `equation.5.4.11' on input line 187.
-Package hyperref Info: Anchor `equation.5.4.12' on input line 187.
-Package hyperref Info: Anchor `equation.5.4.13' on input line 187.
-Package hyperref Info: Anchor `equation.5.4.14' on input line 190.
-Package hyperref Info: Anchor `equation.5.4.15' on input line 209.
-Package hyperref Info: Anchor `page.44' on input line 220.
- [44]
-Package hyperref Info: Anchor `section.5.5' on input line 223.
-
-pdftex: bookmark at 223: {5.5} {\numberline{5.5}The Sum and Difference Histograms Texture} {section.5.5}{1}{toc}
-Package hyperref Info: Anchor `subsection.5.5.1' on input line 225.
-pdftex: bookmark at 225: {5.5.1} {\numberline{5.5.1}The Single Value Decomposition} {subsection.5.5.1}{2}{toc}
-Package hyperref Info: Anchor `equation.5.5.16' on input line 228.
-Package hyperref Info: Anchor `equation.5.5.17' on input line 235.
-Package hyperref Info: Reference (link) `equation.5.3.6' on input line 240.
-Package hyperref Info: Anchor `equation.5.5.18' on input line 241.
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--245
-
- []
-
-Package hyperref Info: Anchor `equation.5.5.19' on input line 247.
-Package hyperref Info: Anchor `page.45' on input line 249.
-[45
-Package `hyperref' Info: End of reference (link) `equation.5.3.6', line 240.
-]
-Package hyperref Info: Reference (cite) `cite.papoulis' on input line 250.
-Package hyperref Info: Reference (cite) `cite.papoulis' on input line 250.
-Package backref Info: Back cite `papoulis' on input line 250.
-Package hyperref Info: Anchor `equation.5.5.20' on input line 251.
-Package hyperref Info: Anchor `equation.5.5.21' on input line 256.
-Package hyperref Info: Anchor `equation.5.5.22' on input line 262.
-Package hyperref Info: Anchor `equation.5.5.23' on input line 270.
-Package hyperref Info: Anchor `equation.5.5.24' on input line 274.
-Package hyperref Info: Anchor `equation.5.5.25' on input line 279.
-Package hyperref Info: Anchor `equation.5.5.26' on input line 287.
-Package hyperref Info: Anchor `equation.5.5.27' on input line 294.
-Package hyperref Info: Anchor `page.46' on input line 300.
- [46
-Package `hyperref' Info: End of reference (cite) `cite.papoulis', line 250.
-Package `hyperref' Info: End of reference (cite) `cite.papoulis', line 250.
-]
-Package hyperref Info: Anchor `subsection.5.5.2' on input line 302.
-
-pdftex: bookmark at 302: {5.5.2} {\numberline{5.5.2}Approximation of Probability Density Functions} {subsection.5.5.2}{2}{toc}
-Package hyperref Info: Anchor `equation.5.5.28' on input line 306.
-Package hyperref Info: Anchor `equation.5.5.29' on input line 311.
-Package hyperref Info: Anchor `equation.5.5.30' on input line 316.
-Package hyperref Info: Anchor `equation.5.5.31' on input line 321.
-Package hyperref Info: Anchor `equation.5.5.32' on input line 327.
-Package hyperref Info: Reference (link) `equation.5.5.31' on input line 334.
-Package hyperref Info: Reference (link) `equation.5.5.29' on input line 334.
-Package hyperref Info: Anchor `page.47' on input line 335.
-[47]
-Package hyperref Info: Anchor `subsection.5.5.3' on input line 336.
-
-pdftex: bookmark at 336: {5.5.3} {\numberline{5.5.3}Textures Features} {subsection.5.5.3}{2}{toc}
-Package hyperref Info: Reference (cite) `cite.Unser' on input line 337.
-Package hyperref Info: Reference (cite) `cite.Unser' on input line 337.
-Package backref Info: Back cite `Unser' on input line 337.
-Package hyperref Info: Anchor `equation.5.5.33' on input line 339.
-Package hyperref Info: Anchor `equation.5.5.34' on input line 347.
-Package hyperref Info: Anchor `equation.5.5.35' on input line 354.
-Package hyperref Info: Anchor `equation.5.5.36' on input line 361.
-Package hyperref Info: Anchor `table.caption.24' on input line 372.
-pdftex: bookmark at 387: {5.2} {\numberline{5.2}{\ignorespaces Formula for texture calculations for Sum and Difference Histograms Method\relax }} {table.caption.24}{0}{lot}
-Package hyperref Info: Anchor `page.48' on input line 390.
-[48
-Package `hyperref' Info: End of reference (link) `equation.5.5.31', line 334.
-Package `hyperref' Info: End of reference (link) `equation.5.5.29', line 334.
-Package `hyperref' Info: End of reference (cite) `cite.Unser', line 337.
-Package `hyperref' Info: End of reference (cite) `cite.Unser', line 337.
-])
-Package hyperref Info: Anchor `page.49' on input line 235.
- [49]
-Package hyperref Info: Anchor `chapter.6' on input line 235.
-
-Chapter 6.
-pdftex: bookmark at 235: {6} {\numberline{6}Analysis of Texture Results} {chapter.6}{0}{toc}
-(c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/chapter4.tex
-Package hyperref Info: Anchor `section*.25' on input line 7.
-Package hyperref Info: Anchor `section.6.1' on input line 10.
-
-pdftex: bookmark at 10: {6.1} {\numberline{6.1}The GLCM Textures} {section.6.1}{1}{toc}
-Package hyperref Info: Anchor `subsection.6.1.1' on input line 13.
-pdftex: bookmark at 13: {6.1.1} {\numberline{6.1.1}The Displacement Vector} {subsection.6.1.1}{2}{toc}
-Package hyperref Info: Reference (cite) `cite.Zucker' on input line 15.
-Package hyperref Info: Reference (cite) `cite.Zucker' on input line 15.
-Package backref Info: Back cite `Zucker' on input line 15.
-Package hyperref Info: Anchor `equation.6.1.1' on input line 17.
-Package hyperref Info: Anchor `figure.caption.26' on input line 36.
-<Chapter4/coSSC_master_beta0.png, id=943, 1550.79375pt x 2350.7825pt>
-File: Chapter4/coSSC_master_beta0.png Graphic file (type png)
-<use Chapter4/coSSC_master_beta0.png>
-Package pdftex.def Info: Chapter4/coSSC_master_beta0.png  used on input line 39.
-(pdftex.def)             Requested size: 145.67644pt x 220.81575pt.
-<Chapter4/coSSC_master_gamma_vol.png, id=944, 1550.79375pt x 2350.7825pt>
-File: Chapter4/coSSC_master_gamma_vol.png Graphic file (type png)
-<use Chapter4/coSSC_master_gamma_vol.png>
-Package pdftex.def Info: Chapter4/coSSC_master_gamma_vol.png  used on input line 43.
-(pdftex.def)             Requested size: 145.67644pt x 220.81575pt.
-pdftex: bookmark at 46: {6.1} {\numberline{6.1}{\ignorespaces Figura\relax }} {figure.caption.26}{0}{lof}
-Package hyperref Info: Anchor `page.50' on input line 49.
-[50
-
-Package `hyperref' Info: End of reference (cite) `cite.Zucker', line 15.
-Package `hyperref' Info: End of reference (cite) `cite.Zucker', line 15.
-]
-Package hyperref Info: Reference (link) `equation.6.1.1' on input line 50.
-Package hyperref Info: Anchor `table.caption.27' on input line 56.
-
-pdftex: bookmark at 72: {6.1} {\numberline{6.1}{\ignorespaces $\chi ^2$ result for coherence image\relax }} {table.caption.27}{0}{lot}
-Package hyperref Info: Anchor `table.caption.28' on input line 76.
-pdftex: bookmark at 91: {6.2} {\numberline{6.2}{\ignorespaces $\chi ^2$ result for coherence in forest areas\relax }} {table.caption.28}{0}{lot}
-Package hyperref Info: Anchor `page.51' on input line 94.
-[51
-Package `hyperref' Info: End of reference (link) `equation.6.1.1', line 50.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/coSSC_master_beta0.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/coSSC_master_gamma_vol.png>]
-Package hyperref Info: Anchor `table.caption.29' on input line 95.
-
-pdftex: bookmark at 110: {6.3} {\numberline{6.3}{\ignorespaces $\chi ^2$ result for coherence in deforested areas\relax }} {table.caption.29}{0}{lot}
-Package hyperref Info: Anchor `table.caption.30' on input line 114.
-pdftex: bookmark at 129: {6.4} {\numberline{6.4}{\ignorespaces $\chi ^2$ result for $\beta ^0$ in forest areas\relax }} {table.caption.30}{0}{lot}
-Package hyperref Info: Anchor `table.caption.31' on input line 133.
-pdftex: bookmark at 148: {6.5} {\numberline{6.5}{\ignorespaces $\chi ^2$ result for $\beta ^0$ in deforested areas\relax }} {table.caption.31}{0}{lot}
-Package hyperref Info: Anchor `page.52' on input line 151.
-[52]
-Package hyperref Info: Anchor `subsection.6.1.2' on input line 155.
-
-pdftex: bookmark at 155: {6.1.2} {\numberline{6.1.2}The GLCM textures results} {subsection.6.1.2}{2}{toc}
-Package hyperref Info: Anchor `page.53' on input line 159.
-[53]
-Package hyperref Info: Anchor `figure.caption.32' on input line 160.
-<Chapter4/glcm_textures/ASMimage.png, id=973, 2576.62625pt x 3905.59125pt>
-File: Chapter4/glcm_textures/ASMimage.png Graphic file (type png)
-<use Chapter4/glcm_textures/ASMimage.png>
-Package pdftex.def Info: Chapter4/glcm_textures/ASMimage.png  used on input line 163.
-(pdftex.def)             Requested size: 182.09486pt x 275.98189pt.
-<Chapter4/glcm_textures/contrastimage.png, id=974, 1717.41624pt x 2603.7275pt>
-File: Chapter4/glcm_textures/contrastimage.png Graphic file (type png)
-<use Chapter4/glcm_textures/contrastimage.png>
-Package pdftex.def Info: Chapter4/glcm_textures/contrastimage.png  used on input line 167.
-(pdftex.def)             Requested size: 182.09486pt x 276.04147pt.
-<Chapter4/glcm_textures/correlationimage.png, id=975, 1717.41624pt x 2603.7275pt>
-File: Chapter4/glcm_textures/correlationimage.png Graphic file (type png)
-<use Chapter4/glcm_textures/correlationimage.png>
-Package pdftex.def Info: Chapter4/glcm_textures/correlationimage.png  used on input line 171.
-(pdftex.def)             Requested size: 182.09486pt x 276.04147pt.
-<Chapter4/glcm_textures/dissimilarityimage.png, id=976, 1717.41624pt x 2603.7275pt>
-File: Chapter4/glcm_textures/dissimilarityimage.png Graphic file (type png)
-<use Chapter4/glcm_textures/dissimilarityimage.png>
-Package pdftex.def Info: Chapter4/glcm_textures/dissimilarityimage.png  used on input line 175.
-(pdftex.def)             Requested size: 182.09486pt x 276.04147pt.
-Package hyperref Info: Anchor `page.54' on input line 179.
- [54 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/ASMimage.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/contrastimage.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/correlationimage.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/dissimilarityimage.png>]
-Package hyperref Info: Anchor `figure.caption.33' on input line 180.
-<Chapter4/glcm_textures/energyimage.png, id=986, 1717.41624pt x 2603.7275pt>
-File: Chapter4/glcm_textures/energyimage.png Graphic file (type png)
-<use Chapter4/glcm_textures/energyimage.png>
-Package pdftex.def Info: Chapter4/glcm_textures/energyimage.png  used on input line 182.
-(pdftex.def)             Requested size: 182.09486pt x 276.04147pt.
-<Chapter4/glcm_textures/entropyimage.png, id=987, 1717.41624pt x 2603.7275pt>
-File: Chapter4/glcm_textures/entropyimage.png Graphic file (type png)
-<use Chapter4/glcm_textures/entropyimage.png>
-Package pdftex.def Info: Chapter4/glcm_textures/entropyimage.png  used on input line 186.
-(pdftex.def)             Requested size: 182.09486pt x 276.04147pt.
-<Chapter4/glcm_textures/homogeneityimage.png, id=988, 1717.41624pt x 2603.7275pt>
-File: Chapter4/glcm_textures/homogeneityimage.png Graphic file (type png)
-<use Chapter4/glcm_textures/homogeneityimage.png>
-Package pdftex.def Info: Chapter4/glcm_textures/homogeneityimage.png  used on input line 190.
-(pdftex.def)             Requested size: 182.09486pt x 276.04147pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--193
-[][] []
- []
-
-Package hyperref Info: Anchor `figure.caption.34' on input line 197.
-<Chapter4/referencemap.png, id=989, 3434.8325pt x 5207.455pt>
-File: Chapter4/referencemap.png Graphic file (type png)
-<use Chapter4/referencemap.png>
-Package pdftex.def Info: Chapter4/referencemap.png  used on input line 200.
-(pdftex.def)             Requested size: 182.09486pt x 276.04147pt.
-pdftex: bookmark at 203: {6.3} {\numberline{6.3}{\ignorespaces Reference Map provided by DLR.\relax }} {figure.caption.34}{0}{lof}
-Package hyperref Info: Anchor `page.55' on input line 205.
-[55 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/energyimage.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/entropyimage.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/homogeneityimage.png>]
-Package hyperref Info: Anchor `figure.caption.35' on input line 207.
-<Chapter4/histogramcoherence.png, id=999, 433.62pt x 289.08pt>
-File: Chapter4/histogramcoherence.png Graphic file (type png)
-<use Chapter4/histogramcoherence.png>
-Package pdftex.def Info: Chapter4/histogramcoherence.png  used on input line 210.
-(pdftex.def)             Requested size: 455.24411pt x 303.51207pt.
-Package hyperref Info: Anchor `page.56' on input line 214.
- [56 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/referencemap.png>]
-Package hyperref Info: Anchor `figure.caption.36' on input line 217.
-<Chapter4/glcm_textures/ASM_hist.png, id=1005, 462.528pt x 346.896pt>
-File: Chapter4/glcm_textures/ASM_hist.png Graphic file (type png)
-<use Chapter4/glcm_textures/ASM_hist.png>
-Package pdftex.def Info: Chapter4/glcm_textures/ASM_hist.png  used on input line 220.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter4/glcm_textures/contrast_hist.png, id=1006, 462.528pt x 346.896pt>
-File: Chapter4/glcm_textures/contrast_hist.png Graphic file (type png)
-<use Chapter4/glcm_textures/contrast_hist.png>
-Package pdftex.def Info: Chapter4/glcm_textures/contrast_hist.png  used on input line 225.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter4/glcm_textures/correlation_hist.png, id=1007, 462.528pt x 346.896pt>
-File: Chapter4/glcm_textures/correlation_hist.png Graphic file (type png)
-<use Chapter4/glcm_textures/correlation_hist.png>
-Package pdftex.def Info: Chapter4/glcm_textures/correlation_hist.png  used on input line 230.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter4/glcm_textures/dissimilarity_hist.png, id=1008, 462.528pt x 346.896pt>
-File: Chapter4/glcm_textures/dissimilarity_hist.png Graphic file (type png)
-<use Chapter4/glcm_textures/dissimilarity_hist.png>
-Package pdftex.def Info: Chapter4/glcm_textures/dissimilarity_hist.png  used on input line 235.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter4/glcm_textures/energy_hist.png, id=1009, 462.528pt x 346.896pt>
-File: Chapter4/glcm_textures/energy_hist.png Graphic file (type png)
-<use Chapter4/glcm_textures/energy_hist.png>
-Package pdftex.def Info: Chapter4/glcm_textures/energy_hist.png  used on input line 240.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter4/glcm_textures/entropy_hist.png, id=1010, 462.528pt x 346.896pt>
-File: Chapter4/glcm_textures/entropy_hist.png Graphic file (type png)
-<use Chapter4/glcm_textures/entropy_hist.png>
-Package pdftex.def Info: Chapter4/glcm_textures/entropy_hist.png  used on input line 245.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter4/glcm_textures/homogeneity_hist.png, id=1011, 462.528pt x 346.896pt>
-File: Chapter4/glcm_textures/homogeneity_hist.png Graphic file (type png)
-<use Chapter4/glcm_textures/homogeneity_hist.png>
-Package pdftex.def Info: Chapter4/glcm_textures/homogeneity_hist.png  used on input line 250.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-Package hyperref Info: Anchor `page.57' on input line 254.
- [57 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/histogramcoherence.png>]
-Package hyperref Info: Anchor `page.58' on input line 256.
- [58 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/ASM_hist.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/contrast_hist.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/correlation_hist.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/dissimilarity_hist.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/energy_hist.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/entropy_hist.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/homogeneity_hist.png>]
-Package hyperref Info: Anchor `section.6.2' on input line 258.
-
-pdftex: bookmark at 258: {6.2} {\numberline{6.2}The Laws Textures results} {section.6.2}{1}{toc}
-Package hyperref Info: Anchor `figure.caption.37' on input line 262.
-<Chapter4/laws_textures/e5e5_e5e5image.png, id=1030, 859.21pt x 1301.86375pt>
-File: Chapter4/laws_textures/e5e5_e5e5image.png Graphic file (type png)
-<use Chapter4/laws_textures/e5e5_e5e5image.png>
-Package pdftex.def Info: Chapter4/laws_textures/e5e5_e5e5image.png  used on input line 265.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-<Chapter4/laws_textures/e5r5_r5e5image.png, id=1031, 859.21pt x 1301.86375pt>
-File: Chapter4/laws_textures/e5r5_r5e5image.png Graphic file (type png)
-<use Chapter4/laws_textures/e5r5_r5e5image.png>
-Package pdftex.def Info: Chapter4/laws_textures/e5r5_r5e5image.png  used on input line 270.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-<Chapter4/laws_textures/e5s5_s5e5image.png, id=1032, 859.21pt x 1301.86375pt>
-File: Chapter4/laws_textures/e5s5_s5e5image.png Graphic file (type png)
-<use Chapter4/laws_textures/e5s5_s5e5image.png>
-Package pdftex.def Info: Chapter4/laws_textures/e5s5_s5e5image.png  used on input line 275.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-<Chapter4/laws_textures/l5e5_e5l5image.png, id=1033, 859.21pt x 1301.86375pt>
-File: Chapter4/laws_textures/l5e5_e5l5image.png Graphic file (type png)
-<use Chapter4/laws_textures/l5e5_e5l5image.png>
-Package pdftex.def Info: Chapter4/laws_textures/l5e5_e5l5image.png  used on input line 280.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-Package hyperref Info: Anchor `page.59' on input line 284.
-[59]
-Package hyperref Info: Anchor `page.60' on input line 284.
- [60 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5e5_e5e5image.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5r5_r5e5image.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5s5_s5e5image.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5e5_e5l5image.png>]
-Package hyperref Info: Anchor `figure.caption.38' on input line 285.
-<Chapter4/laws_textures/l5r5_r5l5image.png, id=1047, 859.21pt x 1301.86375pt>
-File: Chapter4/laws_textures/l5r5_r5l5image.png Graphic file (type png)
-<use Chapter4/laws_textures/l5r5_r5l5image.png>
-Package pdftex.def Info: Chapter4/laws_textures/l5r5_r5l5image.png  used on input line 288.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-<Chapter4/laws_textures/l5s5_s5l5image.png, id=1048, 859.21pt x 1301.86375pt>
-File: Chapter4/laws_textures/l5s5_s5l5image.png Graphic file (type png)
-<use Chapter4/laws_textures/l5s5_s5l5image.png>
-Package pdftex.def Info: Chapter4/laws_textures/l5s5_s5l5image.png  used on input line 293.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-<Chapter4/laws_textures/r5r5_r5r5image.png, id=1049, 859.21pt x 1301.86375pt>
-File: Chapter4/laws_textures/r5r5_r5r5image.png Graphic file (type png)
-<use Chapter4/laws_textures/r5r5_r5r5image.png>
-Package pdftex.def Info: Chapter4/laws_textures/r5r5_r5r5image.png  used on input line 298.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-<Chapter4/laws_textures/s5r5_r5s5image.png, id=1050, 859.21pt x 1301.86375pt>
-File: Chapter4/laws_textures/s5r5_r5s5image.png Graphic file (type png)
-<use Chapter4/laws_textures/s5r5_r5s5image.png>
-Package pdftex.def Info: Chapter4/laws_textures/s5r5_r5s5image.png  used on input line 303.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-Package hyperref Info: Anchor `page.61' on input line 307.
- [61 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5r5_r5l5image.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5s5_s5l5image.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/r5r5_r5r5image.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5r5_r5s5image.png>]
-Package hyperref Info: Anchor `figure.caption.39' on input line 308.
-<Chapter4/laws_textures/s5s5_s5s5image.png, id=1061, 859.21pt x 1301.86375pt>
-File: Chapter4/laws_textures/s5s5_s5s5image.png Graphic file (type png)
-<use Chapter4/laws_textures/s5s5_s5s5image.png>
-Package pdftex.def Info: Chapter4/laws_textures/s5s5_s5s5image.png  used on input line 311.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-Package hyperref Info: Anchor `figure.caption.40' on input line 317.
-<Chapter4/laws_textures/e5e5_e5e5.png, id=1062, 433.62pt x 289.08pt>
-File: Chapter4/laws_textures/e5e5_e5e5.png Graphic file (type png)
-<use Chapter4/laws_textures/e5e5_e5e5.png>
-Package pdftex.def Info: Chapter4/laws_textures/e5e5_e5e5.png  used on input line 320.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-<Chapter4/laws_textures/e5r5_r5e5.png, id=1063, 433.62pt x 289.08pt>
-File: Chapter4/laws_textures/e5r5_r5e5.png Graphic file (type png)
-<use Chapter4/laws_textures/e5r5_r5e5.png>
-Package pdftex.def Info: Chapter4/laws_textures/e5r5_r5e5.png  used on input line 325.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-<Chapter4/laws_textures/e5s5_s5e5.png, id=1064, 433.62pt x 289.08pt>
-File: Chapter4/laws_textures/e5s5_s5e5.png Graphic file (type png)
-<use Chapter4/laws_textures/e5s5_s5e5.png>
-Package pdftex.def Info: Chapter4/laws_textures/e5s5_s5e5.png  used on input line 330.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-<Chapter4/laws_textures/l5e5_e5l5.png, id=1065, 433.62pt x 289.08pt>
-File: Chapter4/laws_textures/l5e5_e5l5.png Graphic file (type png)
-<use Chapter4/laws_textures/l5e5_e5l5.png>
-Package pdftex.def Info: Chapter4/laws_textures/l5e5_e5l5.png  used on input line 335.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-<Chapter4/laws_textures/l5r5_r5l5.png, id=1066, 433.62pt x 289.08pt>
-File: Chapter4/laws_textures/l5r5_r5l5.png Graphic file (type png)
-<use Chapter4/laws_textures/l5r5_r5l5.png>
-Package pdftex.def Info: Chapter4/laws_textures/l5r5_r5l5.png  used on input line 340.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-<Chapter4/laws_textures/l5s5_s5l5.png, id=1067, 433.62pt x 289.08pt>
-File: Chapter4/laws_textures/l5s5_s5l5.png Graphic file (type png)
-<use Chapter4/laws_textures/l5s5_s5l5.png>
-Package pdftex.def Info: Chapter4/laws_textures/l5s5_s5l5.png  used on input line 345.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-<Chapter4/laws_textures/r5r5_r5r5.png, id=1068, 433.62pt x 289.08pt>
-File: Chapter4/laws_textures/r5r5_r5r5.png Graphic file (type png)
-<use Chapter4/laws_textures/r5r5_r5r5.png>
-Package pdftex.def Info: Chapter4/laws_textures/r5r5_r5r5.png  used on input line 350.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-<Chapter4/laws_textures/s5r5_r5s5.png, id=1069, 433.62pt x 289.08pt>
-File: Chapter4/laws_textures/s5r5_r5s5.png Graphic file (type png)
-<use Chapter4/laws_textures/s5r5_r5s5.png>
-Package pdftex.def Info: Chapter4/laws_textures/s5r5_r5s5.png  used on input line 355.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-Package hyperref Info: Anchor `page.62' on input line 359.
- [62 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5s5_s5s5image.png>]
-Package hyperref Info: Anchor `page.63' on input line 360.
- [63 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5e5_e5e5.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5r5_r5e5.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5s5_s5e5.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5e5_e5l5.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5r5_r5l5.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5s5_s5l5.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/r5r5_r5r5.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5r5_r5s5.png>]
-Package hyperref Info: Anchor `figure.caption.41' on input line 361.
-<Chapter4/laws_textures/s5s5_s5s5.png, id=1089, 433.62pt x 289.08pt>
-File: Chapter4/laws_textures/s5s5_s5s5.png Graphic file (type png)
-<use Chapter4/laws_textures/s5s5_s5s5.png>
-Package pdftex.def Info: Chapter4/laws_textures/s5s5_s5s5.png  used on input line 364.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-Package hyperref Info: Anchor `section.6.3' on input line 374.
-
-pdftex: bookmark at 374: {6.3} {\numberline{6.3}Sum And Difference Histograms Textures} {section.6.3}{1}{toc}
-Package hyperref Info: Anchor `figure.caption.42' on input line 378.
-<Chapter4/sum_and_diff_textures/cluster_prominenceimage.png, id=1090, 859.21pt x 1301.86375pt>
-File: Chapter4/sum_and_diff_textures/cluster_prominenceimage.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/cluster_prominenceimage.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/cluster_prominenceimage.png  used on input line 381.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-<Chapter4/sum_and_diff_textures/cluster_shadeimage.png, id=1091, 859.21pt x 1301.86375pt>
-File: Chapter4/sum_and_diff_textures/cluster_shadeimage.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/cluster_shadeimage.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/cluster_shadeimage.png  used on input line 386.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-<Chapter4/sum_and_diff_textures/contrastimage.png, id=1092, 859.21pt x 1301.86375pt>
-File: Chapter4/sum_and_diff_textures/contrastimage.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/contrastimage.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/contrastimage.png  used on input line 391.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-<Chapter4/sum_and_diff_textures/correlationimage.png, id=1093, 859.21pt x 1301.86375pt>
-File: Chapter4/sum_and_diff_textures/correlationimage.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/correlationimage.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/correlationimage.png  used on input line 396.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-Package hyperref Info: Anchor `page.64' on input line 400.
-[64 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5s5_s5s5.png>]
-Package hyperref Info: Anchor `page.65' on input line 400.
- [65 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_prominenceimage.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_shadeimage.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/contrastimage.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/correlationimage.png>]
-Package hyperref Info: Anchor `figure.caption.43' on input line 401.
-<Chapter4/sum_and_diff_textures/energyimage.png, id=1109, 859.21pt x 1301.86375pt>
-File: Chapter4/sum_and_diff_textures/energyimage.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/energyimage.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/energyimage.png  used on input line 404.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-<Chapter4/sum_and_diff_textures/entropyimage.png, id=1110, 859.21pt x 1301.86375pt>
-File: Chapter4/sum_and_diff_textures/entropyimage.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/entropyimage.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/entropyimage.png  used on input line 409.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-<Chapter4/sum_and_diff_textures/homogeneityimage.png, id=1111, 859.21pt x 1301.86375pt>
-File: Chapter4/sum_and_diff_textures/homogeneityimage.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/homogeneityimage.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/homogeneityimage.png  used on input line 414.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-<Chapter4/sum_and_diff_textures/meanimage.png, id=1112, 859.21pt x 1301.86375pt>
-File: Chapter4/sum_and_diff_textures/meanimage.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/meanimage.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/meanimage.png  used on input line 419.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-Package hyperref Info: Anchor `page.66' on input line 423.
- [66 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/energyimage.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/entropyimage.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/homogeneityimage.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/meanimage.png>]
-Package hyperref Info: Anchor `figure.caption.44' on input line 424.
-<Chapter4/sum_and_diff_textures/varianceimage.png, id=1122, 859.21pt x 1301.86375pt>
-File: Chapter4/sum_and_diff_textures/varianceimage.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/varianceimage.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/varianceimage.png  used on input line 427.
-(pdftex.def)             Requested size: 182.09486pt x 275.90242pt.
-Package hyperref Info: Anchor `figure.caption.45' on input line 433.
-<Chapter4/sum_and_diff_textures/cluster_prominence_hist.png, id=1123, 433.62pt x 289.08pt>
-File: Chapter4/sum_and_diff_textures/cluster_prominence_hist.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/cluster_prominence_hist.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/cluster_prominence_hist.png  used on input line 436.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-<Chapter4/sum_and_diff_textures/cluster_shade_hist.png, id=1124, 433.62pt x 289.08pt>
-File: Chapter4/sum_and_diff_textures/cluster_shade_hist.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/cluster_shade_hist.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/cluster_shade_hist.png  used on input line 441.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-<Chapter4/sum_and_diff_textures/contrast_hist.png, id=1125, 433.62pt x 289.08pt>
-File: Chapter4/sum_and_diff_textures/contrast_hist.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/contrast_hist.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/contrast_hist.png  used on input line 446.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-<Chapter4/sum_and_diff_textures/correlation_hist.png, id=1126, 433.62pt x 289.08pt>
-File: Chapter4/sum_and_diff_textures/correlation_hist.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/correlation_hist.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/correlation_hist.png  used on input line 451.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-<Chapter4/sum_and_diff_textures/energy_hist.png, id=1127, 433.62pt x 289.08pt>
-File: Chapter4/sum_and_diff_textures/energy_hist.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/energy_hist.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/energy_hist.png  used on input line 456.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-<Chapter4/sum_and_diff_textures/entropy_hist.png, id=1128, 433.62pt x 289.08pt>
-File: Chapter4/sum_and_diff_textures/entropy_hist.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/entropy_hist.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/entropy_hist.png  used on input line 461.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-Package hyperref Info: Anchor `page.67' on input line 465.
- [67 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/varianceimage.png>]
-Package hyperref Info: Anchor `figure.caption.46' on input line 466.
-<Chapter4/sum_and_diff_textures/homogeneity_hist.png, id=1137, 433.62pt x 289.08pt>
-File: Chapter4/sum_and_diff_textures/homogeneity_hist.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/homogeneity_hist.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/homogeneity_hist.png  used on input line 470.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-<Chapter4/sum_and_diff_textures/mean_hist.png, id=1138, 433.62pt x 289.08pt>
-File: Chapter4/sum_and_diff_textures/mean_hist.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/mean_hist.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/mean_hist.png  used on input line 476.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-<Chapter4/sum_and_diff_textures/variance_hist.png, id=1139, 433.62pt x 289.08pt>
-File: Chapter4/sum_and_diff_textures/variance_hist.png Graphic file (type png)
-<use Chapter4/sum_and_diff_textures/variance_hist.png>
-Package pdftex.def Info: Chapter4/sum_and_diff_textures/variance_hist.png  used on input line 482.
-(pdftex.def)             Requested size: 182.09486pt x 121.39511pt.
-Package hyperref Info: Anchor `page.68' on input line 487.
- [68 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_prominence_hist.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_shade_hist.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/contrast_hist.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/correlation_hist.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/energy_hist.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/entropy_hist.png>])
-Package hyperref Info: Anchor `page.69' on input line 239.
- [69 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/homogeneity_hist.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/mean_hist.png> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/variance_hist.png>]
-Package hyperref Info: Anchor `chapter.7' on input line 239.
-
-Chapter 7.
-pdftex: bookmark at 239: {7} {\numberline{7}Classification Results} {chapter.7}{0}{toc}
-(c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/chapter5.tex
-Package hyperref Info: Anchor `section*.47' on input line 7.
-Package hyperref Info: Anchor `section.7.1' on input line 12.
-
-pdftex: bookmark at 12: {7.1} {\numberline{7.1}TANDEM-X Data Analysis} {section.7.1}{1}{toc}
-Package hyperref Info: Anchor `figure.caption.48' on input line 17.
-
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/coSSC_master_gamma_vol.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Chapter5/coSSC_master_gamma_vol.pdf, id=1159, 558.25764pt x 846.19537pt>
-File: Chapter5/coSSC_master_gamma_vol.pdf Graphic file (type pdf)
-<use Chapter5/coSSC_master_gamma_vol.pdf>
-Package pdftex.def Info: Chapter5/coSSC_master_gamma_vol.pdf  used on input line 20.
-(pdftex.def)             Requested size: 182.09486pt x 276.01736pt.
-<Chapter5/TANDEM-X/classification_resultsimage.pdf, id=1160, 1236.53975pt x 1874.68385pt>
-File: Chapter5/TANDEM-X/classification_resultsimage.pdf Graphic file (type pdf)
-<use Chapter5/TANDEM-X/classification_resultsimage.pdf>
-Package pdftex.def Info: Chapter5/TANDEM-X/classification_resultsimage.pdf  used on input line 24.
-(pdftex.def)             Requested size: 182.09486pt x 276.07008pt.
-pdftex: bookmark at 27: {7.1} {\numberline{7.1}{\ignorespaces Volumetric Correlation and Classification\relax }} {figure.caption.48}{0}{lof}
-Package hyperref Info: Anchor `page.70' on input line 30.
-[70
-
-]
-Package hyperref Info: Reference (link) `figure.caption.48' on input line 32.
-Package hyperref Info: Anchor `table.caption.49' on input line 35.
-
-pdftex: bookmark at 72: {7.1} {\numberline{7.1}{\ignorespaces Error results with different textures combinations\relax }} {table.caption.49}{0}{lot}
-Package hyperref Info: Anchor `page.71' on input line 75.
-[71
-Package `hyperref' Info: End of reference (link) `figure.caption.48', line 32.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/coSSC_master_gamma_vol.pdf> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/classification_resultsimage.pdf>]
-Package hyperref Info: Reference (link) `table.caption.49' on input line 76.
-Package hyperref Info: Anchor `page.72' on input line 77.
- [72
-Package `hyperref' Info: End of reference (link) `table.caption.49', line 76.
-]
-Package hyperref Info: Anchor `section.7.2' on input line 81.
-
-pdftex: bookmark at 81: {7.2} {\numberline{7.2}Sentinel1 Data Analysis} {section.7.2}{1}{toc}
-Package hyperref Info: Anchor `figure.caption.50' on input line 89.
-<Chapter5/SENTINEL1/geo_cohimage.pdf, id=1184, 1283.51517pt x 1039.24258pt>
-File: Chapter5/SENTINEL1/geo_cohimage.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/geo_cohimage.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/geo_cohimage.pdf  used on input line 91.
-(pdftex.def)             Requested size: 341.43307pt x 276.44456pt.
-pdftex: bookmark at 92: {7.2} {\numberline{7.2}{\ignorespaces $\gamma $ acquisition\relax }} {figure.caption.50}{0}{lof}
-Package hyperref Info: Anchor `figure.caption.51' on input line 95.
-<Chapter5/SENTINEL1/geo_temp_sigma0dbimage.pdf, id=1185, 1283.51517pt x 1039.24258pt>
-File: Chapter5/SENTINEL1/geo_temp_sigma0dbimage.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/geo_temp_sigma0dbimage.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/geo_temp_sigma0dbimage.pdf  used on input line 97.
-(pdftex.def)             Requested size: 341.43307pt x 276.44456pt.
-pdftex: bookmark at 98: {7.3} {\numberline{7.3}{\ignorespaces $\sigma ^0$ acquisition\relax }} {figure.caption.51}{0}{lof}
-Package hyperref Info: Anchor `page.73' on input line 100.
-[73]
-Package hyperref Info: Anchor `page.74' on input line 102.
- [74 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/geo_cohimage.pdf> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/geo_temp_sigma0dbimage.pdf
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/geo_temp_sigma0dbimage.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Package hyperref Info: Anchor `figure.caption.52' on input line 105.
-<Chapter5/SENTINEL1/Coherence/cluster_prominence_histogram.pdf, id=1202, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Coherence/cluster_prominence_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Coherence/cluster_prominence_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Coherence/cluster_prominence_histogram.pdf  used on input line 108.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter5/SENTINEL1/Coherence/cluster_shade_histogram.pdf, id=1203, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Coherence/cluster_shade_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Coherence/cluster_shade_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Coherence/cluster_shade_histogram.pdf  used on input line 113.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter5/SENTINEL1/Coherence/contrast_histogram.pdf, id=1204, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Coherence/contrast_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Coherence/contrast_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Coherence/contrast_histogram.pdf  used on input line 118.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter5/SENTINEL1/Coherence/correlation_histogram.pdf, id=1205, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Coherence/correlation_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Coherence/correlation_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Coherence/correlation_histogram.pdf  used on input line 123.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter5/SENTINEL1/Coherence/energy_histogram.pdf, id=1206, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Coherence/energy_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Coherence/energy_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Coherence/energy_histogram.pdf  used on input line 128.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter5/SENTINEL1/Coherence/entropy_histogram.pdf, id=1207, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Coherence/entropy_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Coherence/entropy_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Coherence/entropy_histogram.pdf  used on input line 133.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-Package hyperref Info: Anchor `figure.caption.53' on input line 138.
-<Chapter5/SENTINEL1/Coherence/homogeneity_histogram.pdf, id=1208, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Coherence/homogeneity_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Coherence/homogeneity_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Coherence/homogeneity_histogram.pdf  used on input line 141.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter5/SENTINEL1/Coherence/mean_histogram.pdf, id=1209, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Coherence/mean_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Coherence/mean_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Coherence/mean_histogram.pdf  used on input line 147.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter5/SENTINEL1/Coherence/variance_histogram.pdf, id=1210, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Coherence/variance_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Coherence/variance_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Coherence/variance_histogram.pdf  used on input line 153.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-
-pdftex: bookmark at 156: {7.4} {\numberline{7.4}{\ignorespaces Histograms of Coherence Textures\relax }} {figure.caption.53}{0}{lof}
-Package hyperref Info: Anchor `page.75' on input line 159.
-[75 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/cluster_prominence_histogram.pdf> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/cluster_shade_histogram.pdf
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/cluster_shade_histogram.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/contrast_histogram.pdf
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/contrast_histogram.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/correlation_histogram.pdf
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/correlation_histogram.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/energy_histogram.pdf
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/energy_histogram.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/entropy_histogram.pdf
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/entropy_histogram.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Package hyperref Info: Anchor `page.76' on input line 159.
- [76 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/homogeneity_histogram.pdf> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/mean_histogram.pdf
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/mean_histogram.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/variance_histogram.pdf
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/variance_histogram.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Package hyperref Info: Anchor `figure.caption.54' on input line 162.
-<Chapter5/SENTINEL1/Sigma0/cluster_prominence_histogram.pdf, id=1511, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Sigma0/cluster_prominence_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Sigma0/cluster_prominence_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Sigma0/cluster_prominence_histogram.pdf  used on input line 165.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter5/SENTINEL1/Sigma0/cluster_shade_histogram.pdf, id=1512, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Sigma0/cluster_shade_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Sigma0/cluster_shade_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Sigma0/cluster_shade_histogram.pdf  used on input line 170.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter5/SENTINEL1/Sigma0/contrast_histogram.pdf, id=1513, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Sigma0/contrast_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Sigma0/contrast_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Sigma0/contrast_histogram.pdf  used on input line 175.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter5/SENTINEL1/Sigma0/correlation_histogram.pdf, id=1514, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Sigma0/correlation_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Sigma0/correlation_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Sigma0/correlation_histogram.pdf  used on input line 180.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter5/SENTINEL1/Sigma0/energy_histogram.pdf, id=1515, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Sigma0/energy_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Sigma0/energy_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Sigma0/energy_histogram.pdf  used on input line 185.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter5/SENTINEL1/Sigma0/entropy_histogram.pdf, id=1516, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Sigma0/entropy_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Sigma0/entropy_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Sigma0/entropy_histogram.pdf  used on input line 190.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-Package hyperref Info: Anchor `figure.caption.55' on input line 196.
-<Chapter5/SENTINEL1/Sigma0/homogeneity_histogram.pdf, id=1517, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Sigma0/homogeneity_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Sigma0/homogeneity_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Sigma0/homogeneity_histogram.pdf  used on input line 199.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter5/SENTINEL1/Sigma0/mean_histogram.pdf, id=1518, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Sigma0/mean_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Sigma0/mean_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Sigma0/mean_histogram.pdf  used on input line 205.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-<Chapter5/SENTINEL1/Sigma0/variance_histogram.pdf, id=1519, 462.52798pt x 346.89601pt>
-File: Chapter5/SENTINEL1/Sigma0/variance_histogram.pdf Graphic file (type pdf)
-<use Chapter5/SENTINEL1/Sigma0/variance_histogram.pdf>
-Package pdftex.def Info: Chapter5/SENTINEL1/Sigma0/variance_histogram.pdf  used on input line 212.
-(pdftex.def)             Requested size: 182.09486pt x 136.56984pt.
-
-pdftex: bookmark at 215: {7.5} {\numberline{7.5}{\ignorespaces Histograms of $\sigma ^0$ Textures\relax }} {figure.caption.55}{0}{lof}
-Package hyperref Info: Anchor `page.77' on input line 218.
-[77 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/cluster_prominence_histogram.pdf> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/cluster_shade_histogram.pdf
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/cluster_shade_histogram.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/contrast_histogram.pdf
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/contrast_histogram.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/correlation_histogram.pdf
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/correlation_histogram.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/energy_histogram.pdf
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/energy_histogram.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/entropy_histogram.pdf
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/entropy_histogram.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Package hyperref Info: Anchor `figure.caption.56' on input line 220.
-<Chapter5/TANDEM-X/reference_mapimage.pdf, id=1718, 359.36916pt x 302.0862pt>
-File: Chapter5/TANDEM-X/reference_mapimage.pdf Graphic file (type pdf)
-<use Chapter5/TANDEM-X/reference_mapimage.pdf>
-Package pdftex.def Info: Chapter5/TANDEM-X/reference_mapimage.pdf  used on input line 222.
-(pdftex.def)             Requested size: 455.24411pt x 382.70486pt.
-
-pdftex: bookmark at 223: {7.6} {\numberline{7.6}{\ignorespaces Reference Map provided by DLR\relax }} {figure.caption.56}{0}{lof}
-Package hyperref Info: Anchor `page.78' on input line 226.
-[78 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/homogeneity_histogram.pdf> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/mean_histogram.pdf
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/mean_histogram.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/variance_histogram.pdf
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/variance_histogram.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Package hyperref Info: Anchor `figure.caption.57' on input line 228.
-<Chapter5/TANDEM-X/result_no_texturesimage.pdf, id=1819, 384.98012pt x 302.0862pt>
-File: Chapter5/TANDEM-X/result_no_texturesimage.pdf Graphic file (type pdf)
-<use Chapter5/TANDEM-X/result_no_texturesimage.pdf>
-Package pdftex.def Info: Chapter5/TANDEM-X/result_no_texturesimage.pdf  used on input line 230.
-(pdftex.def)             Requested size: 455.24411pt x 357.2284pt.
-
-pdftex: bookmark at 231: {7.7} {\numberline{7.7}{\ignorespaces Classification Results without textures\relax }} {figure.caption.57}{0}{lof}
-Package hyperref Info: Anchor `page.79' on input line 234.
-[79 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/reference_mapimage.pdf>]
-Package hyperref Info: Anchor `figure.caption.58' on input line 236.
-<Chapter5/TANDEM-X/result_texturesimage.pdf, id=1829, 384.98012pt x 302.0862pt>
-File: Chapter5/TANDEM-X/result_texturesimage.pdf Graphic file (type pdf)
-<use Chapter5/TANDEM-X/result_texturesimage.pdf>
-Package pdftex.def Info: Chapter5/TANDEM-X/result_texturesimage.pdf  used on input line 238.
-(pdftex.def)             Requested size: 455.24411pt x 357.2284pt.
-
-pdftex: bookmark at 239: {7.8} {\numberline{7.8}{\ignorespaces Classification Results with textures\relax }} {figure.caption.58}{0}{lof}
-Package hyperref Info: Anchor `page.80' on input line 242.
-[80 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/result_no_texturesimage.pdf>]
-Package hyperref Info: Anchor `figure.caption.59' on input line 246.
-<Chapter5/real_image_google_earth.pdf, id=1838, 1151.21095pt x 785.29286pt>
-File: Chapter5/real_image_google_earth.pdf Graphic file (type pdf)
-<use Chapter5/real_image_google_earth.pdf>
-Package pdftex.def Info: Chapter5/real_image_google_earth.pdf  used on input line 248.
-(pdftex.def)             Requested size: 455.24411pt x 310.54077pt.
-
-pdftex: bookmark at 249: {7.9} {\numberline{7.9}{\ignorespaces Google Earth image of analysed area\relax }} {figure.caption.59}{0}{lof}
-Package hyperref Info: Anchor `page.81' on input line 252.
-[81 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/result_texturesimage.pdf>]
-Package hyperref Info: Anchor `section.7.3' on input line 253.
-
-pdftex: bookmark at 253: {7.3} {\numberline{7.3}Performance of Random forest and parameters tuning} {section.7.3}{1}{toc}
-Package hyperref Info: Anchor `figure.caption.60' on input line 263.
-<Chapter5/Number_of_estimators.png, id=1847, 481.8pt x 361.35pt>
-File: Chapter5/Number_of_estimators.png Graphic file (type png)
-<use Chapter5/Number_of_estimators.png>
-Package pdftex.def Info: Chapter5/Number_of_estimators.png  used on input line 265.
-(pdftex.def)             Requested size: 455.24411pt x 341.44447pt.
-pdftex: bookmark at 266: {7.10} {\numberline{7.10}{\ignorespaces Accuracy versus number of estimators for different tree depths\relax }} {figure.caption.60}{0}{lof}
-Package hyperref Info: Anchor `page.82' on input line 268.
-[82 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/real_image_google_earth.pdf>]
-Package hyperref Info: Anchor `figure.caption.61' on input line 270.
-<Chapter5/number_of_leaves.png, id=1854, 462.528pt x 346.896pt>
-File: Chapter5/number_of_leaves.png Graphic file (type png)
-<use Chapter5/number_of_leaves.png>
-Package pdftex.def Info: Chapter5/number_of_leaves.png  used on input line 272.
-(pdftex.def)             Requested size: 455.24411pt x 341.44843pt.
-
-pdftex: bookmark at 273: {7.11} {\numberline{7.11}{\ignorespaces Accuracy versus minimum number of samples for leaf parameter\relax }} {figure.caption.61}{0}{lof}
-)
-Package hyperref Info: Anchor `page.83' on input line 242.
- [83 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/Number_of_estimators.png>]
-Package hyperref Info: Anchor `page.84' on input line 243.
- [84 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/number_of_leaves.png>]
-Package hyperref Info: Anchor `chapter.8' on input line 243.
-
-Chapter 8.
-pdftex: bookmark at 243: {8} {\numberline{8}Application of Textural methods to Change Detection Algorithms} {chapter.8}{0}{toc}
+pdftex: bookmark at 248: {1} {\numberline{1}The CARABAS System} {chapter.1}{0}{toc}
 (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter6/chapter6.tex
-Package hyperref Info: Anchor `section.8.1' on input line 1.
+Package hyperref Info: Anchor `section.1.1' on input line 1.
 
-pdftex: bookmark at 1: {8.1} {\numberline{8.1}Summary} {section.8.1}{1}{toc}
-Package hyperref Info: Anchor `section.8.2' on input line 11.
-pdftex: bookmark at 11: {8.2} {\numberline{8.2}Wavelength Resolution SAR Systems} {section.8.2}{1}{toc}
-Package hyperref Info: Anchor `equation.8.2.1' on input line 16.
-Package hyperref Info: Anchor `page.85' on input line 29.
-[85
+pdftex: bookmark at 1: {1.1} {\numberline{1.1}Summary} {section.1.1}{1}{toc}
+Package hyperref Info: Anchor `section.1.2' on input line 11.
+pdftex: bookmark at 11: {1.2} {\numberline{1.2}Wavelength Resolution SAR Systems} {section.1.2}{1}{toc}
+Package hyperref Info: Anchor `equation.1.2.1' on input line 16.
+Package hyperref Info: Anchor `page.13' on input line 30.
+[13
 
 ]
-Package hyperref Info: Anchor `section.8.3' on input line 30.
+Package hyperref Info: Anchor `section.1.3' on input line 30.
 
-pdftex: bookmark at 30: {8.3} {\numberline{8.3}The Carabas-II Dataset} {section.8.3}{1}{toc}
-) (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.bbl (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.brf)
+pdftex: bookmark at 30: {1.3} {\numberline{1.3}The Carabas-II System} {section.1.3}{1}{toc}
+Package hyperref Info: Anchor `table.caption.7' on input line 40.
+pdftex: bookmark at 59: {1.1} {\numberline{1.1}{\ignorespaces CARABAS-II SAR system parameters. Source: (76 ref)\relax }} {table.caption.7}{0}{lot}
+Package hyperref Info: Anchor `section.1.4' on input line 63.
+pdftex: bookmark at 63: {1.4} {\numberline{1.4}The CARABAS-II Dataset} {section.1.4}{1}{toc}
+
+Overfull \hbox (1.51764pt too wide) in paragraph at lines 65--68
+[]\T1/aer/m/n/12 By try-ing to pro-mote re-search on change de-tec-tion al-go-rithms for wavelength-resolution
+ []
+
+Package hyperref Info: Anchor `page.14' on input line 78.
+[14]
+Package hyperref Info: Anchor `table.caption.8' on input line 85.
+
+pdftex: bookmark at 94: {1.2} {\numberline{1.2}{\ignorespaces Target dimensions\relax }} {table.caption.8}{0}{lot}
+Package hyperref Info: Anchor `figure.caption.9' on input line 104.
+<chapter6/carabas_vehicles_fisico.jpg, id=250, 495.65175pt x 127.07475pt>
+File: chapter6/carabas_vehicles_fisico.jpg Graphic file (type jpg)
+<use chapter6/carabas_vehicles_fisico.jpg>
+Package pdftex.def Info: chapter6/carabas_vehicles_fisico.jpg  used on input line 106.
+(pdftex.def)             Requested size: 495.65053pt x 127.07443pt.
+
+Overfull \hbox (40.40642pt too wide) in paragraph at lines 106--108
+ [][] 
+ []
+
+pdftex: bookmark at 108: {1.1} {\numberline{1.1}{\ignorespaces Military vehicles used as target. Left:TGB11. Middle:TGB30. Right:TGB40. This picture also depicts the vegetation characteristics of the test area\relax }} {figure.caption.9}{0}{lof}
+
+Underfull \hbox (badness 1132) in paragraph at lines 108--108
+[]\T1/aer/m/n/12 FIGURE 1.1 ^^U |Mil-i-tary ve-hi-cles used as tar-get. Left:TGB11. Mid-dle:TGB30.
+ []
+
+Package hyperref Info: Reference (link) `figure.caption.10' on input line 117.
+Package hyperref Info: Anchor `page.15' on input line 118.
+[15 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/chapter6/carabas_vehicles_fisico.jpg>]
+Package hyperref Info: Anchor `figure.caption.10' on input line 119.
+<chapter6/carabas_vehicles.jpg, id=257, 453.49425pt x 187.902pt>
+File: chapter6/carabas_vehicles.jpg Graphic file (type jpg)
+<use chapter6/carabas_vehicles.jpg>
+Package pdftex.def Info: chapter6/carabas_vehicles.jpg  used on input line 121.
+(pdftex.def)             Requested size: 453.49313pt x 187.90154pt.
+
+pdftex: bookmark at 123: {1.2} {\numberline{1.2}{\ignorespaces Examples of CARABAS-II images where (a) is mission 2, (b) is mission 3, (c) is mission 4 and (d) is mission 5\relax }} {figure.caption.10}{0}{lof}
+Package hyperref Info: Reference (link) `table.caption.11' on input line 127.
+Package hyperref Info: Anchor `table.caption.11' on input line 129.
+pdftex: bookmark at 159: {1.3} {\numberline{1.3}{\ignorespaces Measurements parameters for each image\relax }} {table.caption.11}{0}{lot}
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package hyperref Info: Anchor `section.1.5' on input line 163.
+pdftex: bookmark at 163: {1.5} {\numberline{1.5}Traditional Change Detecion in Wavelength-Resolution SAR Images} {section.1.5}{1}{toc}
+Package hyperref Info: Anchor `page.16' on input line 182.
+[16
+Package `hyperref' Info: End of reference (link) `figure.caption.10', line 117.
+Package `hyperref' Info: End of reference (link) `table.caption.11', line 127.
+ <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/chapter6/carabas_vehicles.jpg>]) (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.bbl (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.brf)
 \tf@brf=\write9
 \openout9 = `tese.brf'.
 
+Package hyperref Info: Anchor `page.17' on input line 3.
+ [17]
+Package hyperref Info: Anchor `chapter*.12' on input line 3.
+Package hyperref Info: Anchor `chapter.2' on input line 3.
 
-
-Package fancyhdr Warning: \headheight is too small (15.93347pt): 
-(fancyhdr)                Make it at least 27.11194pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11194pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-11.17847pt}.
-
-Package hyperref Info: Anchor `page.86' on input line 3.
-[86]
-Package hyperref Info: Anchor `chapter*.62' on input line 3.
-Package hyperref Info: Anchor `chapter.9' on input line 3.
-
-pdftex: bookmark at 3: {9} {Bibliography} {chapter.9}{0}{toc}
-Package hyperref Info: Anchor `cite.Bamler' on input line 12.
-Package hyperref Info: Reference (link) `page.ix' on input line 12.
-Package hyperref Info: Reference (link) `page.20' on input line 12.
-Package hyperref Info: Reference (link) `page.26' on input line 12.
-Package hyperref Info: Anchor `cite.long_time_series' on input line 19.
-Package hyperref Info: Reference (link) `page.32' on input line 19.
-Package hyperref Info: Anchor `cite.livro' on input line 25.
-Package hyperref Info: Reference (link) `page.15' on input line 25.
-Package hyperref Info: Anchor `cite.Graham' on input line 30.
-Package hyperref Info: Reference (link) `page.20' on input line 30.
-Package hyperref Info: Anchor `cite.vintequatro' on input line 36.
-Package hyperref Info: Reference (link) `page.34' on input line 36.
-Package hyperref Info: Anchor `cite.Krieger' on input line 43.
-Package hyperref Info: Reference (link) `page.28' on input line 43.
-Package hyperref Info: Reference (link) `page.31' on input line 43.
-Package hyperref Info: Anchor `cite.Martone3' on input line 50.
-Package hyperref Info: Reference (link) `page.28' on input line 50.
-Package hyperref Info: Anchor `cite.Martone2' on input line 57.
-Package hyperref Info: Reference (link) `page.27' on input line 57.
-Package hyperref Info: Reference (link) `page.28' on input line 57.
-Package hyperref Info: Anchor `cite.Martone' on input line 63.
-Package hyperref Info: Reference (link) `page.27' on input line 63.
-Package hyperref Info: Anchor `cite.vintetres' on input line 72.
-Package hyperref Info: Reference (link) `page.34' on input line 72.
-Package hyperref Info: Anchor `cite.tutorial' on input line 78.
-Package hyperref Info: Reference (link) `page.ix' on input line 78.
-Package hyperref Info: Reference (link) `page.16' on input line 78.
-Package hyperref Info: Reference (link) `page.18' on input line 78.
-Package hyperref Info: Anchor `cite.papoulis' on input line 83.
-Package hyperref Info: Reference (link) `page.46' on input line 83.
-Package hyperref Info: Anchor `page.87' on input line 83.
-[87
-
-Package `hyperref' Info: End of reference (link) `page.ix', line 12.
-Package `hyperref' Info: End of reference (link) `page.20', line 12.
-Package `hyperref' Info: End of reference (link) `page.26', line 12.
-Package `hyperref' Info: End of reference (link) `page.32', line 19.
-Package `hyperref' Info: End of reference (link) `page.15', line 25.
-Package `hyperref' Info: End of reference (link) `page.20', line 30.
-Package `hyperref' Info: End of reference (link) `page.34', line 36.
-Package `hyperref' Info: End of reference (link) `page.28', line 43.
-Package `hyperref' Info: End of reference (link) `page.31', line 43.
-Package `hyperref' Info: End of reference (link) `page.28', line 50.
-Package `hyperref' Info: End of reference (link) `page.27', line 57.
-Package `hyperref' Info: End of reference (link) `page.28', line 57.
-Package `hyperref' Info: End of reference (link) `page.27', line 63.
-Package `hyperref' Info: End of reference (link) `page.34', line 72.
-Package `hyperref' Info: End of reference (link) `page.ix', line 78.
-Package `hyperref' Info: End of reference (link) `page.16', line 78.
-Package `hyperref' Info: End of reference (link) `page.18', line 78.
-]
-Package hyperref Info: Anchor `cite.andreathesis' on input line 90.
-Package hyperref Info: Reference (link) `page.27' on input line 90.
-Package hyperref Info: Anchor `cite.Raney' on input line 95.
-Package hyperref Info: Reference (link) `page.18' on input line 95.
-Package hyperref Info: Anchor `cite.Paolathesis' on input line 101.
-Package hyperref Info: Reference (link) `page.ix' on input line 101.
-Package hyperref Info: Reference (link) `page.21' on input line 101.
-Package hyperref Info: Reference (link) `page.23' on input line 101.
-Package hyperref Info: Reference (link) `page.24' on input line 101.
-Package hyperref Info: Reference (link) `page.25' on input line 101.
-Package hyperref Info: Reference (link) `page.31' on input line 101.
-Package hyperref Info: Anchor `cite.Rizzoli' on input line 108.
-Package hyperref Info: Reference (link) `page.27' on input line 108.
-Package hyperref Info: Anchor `cite.Rosen' on input line 114.
-Package hyperref Info: Reference (link) `page.20' on input line 114.
-Package hyperref Info: Anchor `cite.Paolo' on input line 121.
-Package hyperref Info: Reference (link) `page.28' on input line 121.
-Package hyperref Info: Anchor `cite.Small' on input line 127.
-Package hyperref Info: Reference (link) `page.ix' on input line 127.
-Package hyperref Info: Reference (link) `page.18' on input line 127.
-Package hyperref Info: Reference (link) `page.19' on input line 127.
-Package hyperref Info: Anchor `cite.sentinelmission' on input line 133.
-Package hyperref Info: Reference (link) `page.36' on input line 133.
-Package hyperref Info: Anchor `cite.Unser' on input line 139.
-Package hyperref Info: Reference (link) `page.48' on input line 139.
-Package hyperref Info: Anchor `cite.first_interferometric' on input line 145.
-Package hyperref Info: Reference (link) `page.31' on input line 145.
-Package hyperref Info: Anchor `cite.Woodcock' on input line 150.
-Package hyperref Info: Reference (link) `page.41' on input line 150.
-Package hyperref Info: Anchor `cite.Zucker' on input line 157.
-Package hyperref Info: Reference (link) `page.43' on input line 157.
-Package hyperref Info: Reference (link) `page.50' on input line 157.
+pdftex: bookmark at 3: {2} {Bibliography} {chapter.2}{0}{toc}
 )
-Package hyperref Info: Anchor `page.88' on input line 271.
- [88
-Package `hyperref' Info: End of reference (link) `page.46', line 83.
-Package `hyperref' Info: End of reference (link) `page.27', line 90.
-Package `hyperref' Info: End of reference (link) `page.18', line 95.
-Package `hyperref' Info: End of reference (link) `page.ix', line 101.
-Package `hyperref' Info: End of reference (link) `page.21', line 101.
-Package `hyperref' Info: End of reference (link) `page.23', line 101.
-Package `hyperref' Info: End of reference (link) `page.24', line 101.
-Package `hyperref' Info: End of reference (link) `page.25', line 101.
-Package `hyperref' Info: End of reference (link) `page.31', line 101.
-Package `hyperref' Info: End of reference (link) `page.27', line 108.
-Package `hyperref' Info: End of reference (link) `page.20', line 114.
-Package `hyperref' Info: End of reference (link) `page.28', line 121.
-Package `hyperref' Info: End of reference (link) `page.ix', line 127.
-Package `hyperref' Info: End of reference (link) `page.18', line 127.
-Package `hyperref' Info: End of reference (link) `page.19', line 127.
-Package `hyperref' Info: End of reference (link) `page.36', line 133.
-Package `hyperref' Info: End of reference (link) `page.48', line 139.
-Package `hyperref' Info: End of reference (link) `page.31', line 145.
-Package `hyperref' Info: End of reference (link) `page.41', line 150.
-Package `hyperref' Info: End of reference (link) `page.43', line 157.
-Package `hyperref' Info: End of reference (link) `page.50', line 157.
-]
-Package hyperref Info: Anchor `chapter.10' on input line 271.
+Package hyperref Info: Anchor `page.18' on input line 276.
+ [18
 
-pdftex: bookmark at 272: {10} {Glossary} {chapter.10}{0}{toc}
+]
+Package hyperref Info: Anchor `chapter.3' on input line 276.
+
+pdftex: bookmark at 277: {3} {Glossary} {chapter.3}{0}{toc}
 No file tese.gls
 \bottommargin=\skip80
 \rightmarginn=\skip81
-Package hyperref Info: Anchor `bla.0' on input line 296.
+Package hyperref Info: Anchor `bla.0' on input line 301.
 (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0/abstract.tex) (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0/abstract.tex) (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0/abstract.tex)
-Overfull \hbox (74.53033pt too wide) in paragraph at lines 296--296
+Overfull \hbox (74.53033pt too wide) in paragraph at lines 301--301
 [][] 
  []
 
 
 AED: lastpage setting LastPage
-Package hyperref Info: Anchor `page.89' on input line 298.
-[89
+Package hyperref Info: Anchor `page.19' on input line 303.
+[19
 
 
 
@@ -2788,23 +1218,23 @@ Package hyperref Info: Anchor `page.89' on input line 298.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `tese.out' has not changed.
-(rerunfilecheck)             Checksum: 1AE61B3C357F19F5C1F088B9F0277A4F;9786.
+(rerunfilecheck)             Checksum: C1AF60ADE56D4DFF3BADCB95C6764AE3;2879.
 Package rerunfilecheck Info: File `tese.brf' has not changed.
-(rerunfilecheck)             Checksum: 8898DB5733B58620F4C9AB434F4946B3;2458.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29805 strings out of 478994
- 546533 string characters out of 5862208
- 1046591 words of memory out of 5000000
- 46214 multiletter control sequences out of 15000+600000
- 457736 words of font info for 125 fonts, out of 8000000 for 9000
+ 28688 strings out of 478994
+ 514513 string characters out of 5862208
+ 1031591 words of memory out of 5000000
+ 45452 multiletter control sequences out of 15000+600000
+ 448015 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,17n,116p,1547b,652s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.pdf" (89 pages, 42991535 bytes).
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
+Output written on "c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.pdf" (19 pages, 608530 bytes).
 PDF statistics:
- 2062 PDF objects out of 2073 (max. 8388607)
- 1181 compressed objects within 12 object streams
- 291 named destinations out of 1000 (max. 500000)
- 938 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 337 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 215 words of extra memory for PDF output out of 10000 (max. 10000000)
 

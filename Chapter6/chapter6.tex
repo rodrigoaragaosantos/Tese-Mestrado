@@ -27,4 +27,160 @@ therefore the image will not be greatly affected by speckle noise.
 Due to all that, according to (63ref), low resolution SAR systems are better suited to Foliage Penetrating (FOPEN) applications.
 Also according to (63ref), VHF-band is the optimal radar system for FOPEN applications for vehicle-sized target detection.
 
-\section{The Carabas-II Dataset}
+\section{The Carabas-II System}
+
+The CARABAS-II is the second generation SAR system designed by the Swedish Defense Research Agency (FOI) for FOPEN applications.
+The CARABAS-II has participated in numerous military campaigns and has been used for reasearch purpose since the nineties.
+The radar is a VLF UHB SAR system that transmits HH-polarized radio waves in the frequency range of 
+20-90 MHz, therefore having resolution in the range of 3.3-15 m.
+
+In the table below the system parameters for the CARABAS-II system are presented for the
+flight campaigns that were used in this work. 
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        System Parameters & Values \\ \hline
+        Nominal flight altitude & 3 - 9 km \\ \hline
+        Nominal flight speed & 127 m/s \\ \hline
+        Frequency band & 20-86 MHz \\ \hline
+        Aperture angle & 90 degrees \\ \hline
+        Transmitted power & 500 W \\ \hline
+        Pulse modulation & Non-linear frequency modulation \\ \hline
+        Radio Frequency Interference (RFI) sniff & On \\ \hline
+        Frequency sub-bands & 35 (36 with RFI-sniff \\ \hline
+        Frequency step & 1.875 Mhz \\ \hline
+        Center frequencies & 21.25-85Mhz \\ \hline
+        Pulse repetition & frequency 5000Hz \\ \hline
+        Pulse length & 15$\mu$s \\ \hline
+        Maximum range & 26.4 km \\ \hline
+    \end{tabular}
+    \caption{CARABAS-II SAR system parameters. Source: (76 ref)}
+    \label{tab:carabas_system}
+\end{table}
+
+\section{The CARABAS-II Dataset}
+
+By trying to promote research on change detection algorithms for wavelength-resolution
+images, FOI created a dataset of images acquired by CARABAS-II and made it publicly available. 
+This dataset is the one used to test and assess the quality of the proposed CDA.
+
+The dataset consists of 24 SAR images selected from over 150 images obtained during different flight campaigns.
+Each image covers the same ground area of 6 $km^2$ (3 km vertically and 2 km horizontally)
+and is given in the form of a 3000 X 2000 matrix, where each pixel size is 1km x 1km.
+According to (ref 77,62,78) the images are already calibrated, pre-processed and geocoded.
+
+The location of the image dataset is inside the military base station Missile Test Area North
+Vidsel in northern Sweden in 2002. The test site is a region near the village of Nausta (ref 75).
+The vegetation of the area is dominated by Scots Pine tree (ref 76), which consists of small and medium size trees.
+According to (ref75) the area also contains fields, roads and lakes.
+
+With the objective of testing CDA quality, it was deployed 25 testing targets over the testing with different configuration 
+and arrangements. The testing targets consists of ten TGB11 model military vehicles, eight TGB30 model 
+military vehicles, and seven TGGB40 model military vehicles. The dimensions of each vehicle are presented in the table (numero).
+From the table (numero) it can be seen that the dimensions of the vehicles are similar to the wavelength of the CARABAS-II system,
+therefore all advantages of targets with similar dimension to the wavelength previously mentioned hold true for the dataset.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Military Vehicle & Lenght & Width & Height & Quantity \\ \hline
+        TGB11 & 4.4 m & 1.9 m & 2.2 m & 10 \\ \hline
+        TGB30 & 6.8m & 2.5m & 3.0 m & 8 \\ \hline
+        TGB40 & 7.8m & 2.5m & 3.0m & 7 \\ \hline
+    \end{tabular}
+    \caption{Target dimensions}
+    \label{tab:vehicle_dimensions}
+\end{table}
+
+
+The dataset of 24 images were acquired using four different flight passes. Each 
+flight pass has an incidence angle of 58 degrees, used the StripSAR mode and was acquired with the radar looking left (ref 75,76).
+The vehicles were positioned in two diferent forests, Forest 2 being in the northwest of the field, and forest 1 being in the
+southeast of the test area. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics{chapter6/carabas_vehicles_fisico.jpg}
+    \caption{Military vehicles used as target. Left:TGB11. Middle:TGB30. Right:TGB40. 
+    This picture also depicts the vegetation characteristics of the test area}
+    \label{fig:veiculos}
+\end{figure}
+
+The vehicles in mission 2 are positioned in forest 2 and have a heading angle of 225 degrees pointing southwest direction;
+vehicles in mission 3 are positioned in forest 2 and have a heading angle of 315 degrees pointing northwest direction;
+vehicles in mission 4 are located in forest 1 and have the same heading angle of mission 2;
+vehicles in mission 5 are located in forest 1 and have a heading angle of 270 degrees pointing west direction.
+Vehicles in mission 2 and 3 are separated approximately by 50m, as such for vehicles in mission 4 and 5.
+Figure \ref{fig:carabas_vehicles} presents images of each mission with the vehicles area highlighted in red.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics{chapter6/carabas_vehicles.jpg}
+    \caption{Examples of CARABAS-II images where (a) is mission 2, (b) is mission 3, (c) is mission 4 and (d)
+    is mission 5}
+    \label{fig:carabas_vehicles}
+\end{figure}
+
+In table \ref{tab:flight_mission} it is presented the summary with the information of each image in the dataset
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Image Number & Mission & Pass & Flight Heading (degrees) & Target Heading \\ \hline
+        1 & 2 & 1 & 225 & 225  \\ \hline
+        2 & 2 & 2 & 135 & 225  \\ \hline
+        3 & 2 & 3 & 225 & 225  \\ \hline
+        4 & 2 & 4 & 135 & 225 \\ \hline
+        5 & 2 & 5 & 230 & 225 \\ \hline
+        6 & 2 & 6 & 230 & 225 \\ \hline
+        7 & 3 & 1 & 225 & 315 \\ \hline
+        8 & 3 & 2 & 135 & 315 \\ \hline
+        9 & 3 & 3 & 225 & 315 \\ \hline
+        10 & 3 & 4 & 135 & 315 \\ \hline
+        11 & 3 & 4 & 135 & 315 \\ \hline
+        12& 3 & 6 & 230 & 315  \\ \hline
+        13 & 4 & 1 & 225 & 225  \\ \hline
+        14 & 4 & 2 & 135 & 225  \\ \hline
+        15 & 4 & 3 & 225 & 225  \\ \hline
+        16 & 4 & 4 & 135 & 225  \\ \hline
+        17 & 4 & 5 & 230 & 225  \\ \hline
+        18 & 4 & 6 & 230& 225 \\ \hline
+        19 & 5 & 1 & 225 & 270  \\ \hline
+        20 & 5 & 2 & 135 & 270  \\ \hline
+        21 & 5 & 3 & 225 & 270  \\ \hline
+        22 & 5 & 4 & 135 & 270  \\ \hline
+        23 & 5 & 5 & 230 & 270  \\ \hline
+        24 & 5 & 6 & 230 & 270  \\ \hline
+    \end{tabular}
+    \caption{Measurements parameters for each image}
+    \label{tab:flight_mission}
+\end{table}
+
+\section{Traditional Change Detecion in Wavelength-Resolution SAR Images}
+
+The field of FOPEN target detection using wavelength-resolution SAR images (both in VHF and UHF bands) has been 
+around of decades (ref 25,48,79,80). Among those studies, the CARABAS-II system dataset was used in many different FOPEN studies 
+(ref). 
+
+As previously mentioned, the objective of the study is to create a change detection method that will compare 
+different images of the same target field (in this case, the forests in Sweden) and try to identify the targets that 
+have changed position in the image (in this case, the military vehicles TGB11, TGB30 and TGB40 ) and give the exact location of the vehicle positions.
+
+
+There are several change detection methods that were already used in the CARABAS-II dataset.
+The first method that yielded accuracy high enough for real world applications was based in Bayes linear classification (ref81).
+After that, a myriad of new methods were proposed, such as: Likelihood-ratio test (LRT) (ref 61), combination of LRT and Space-Time 
+adaptative processing (STAP) (ref 76) among others. Traditionally CDAs were also mainly based on traditional statistical decision theory, e.g., 
+traditional hypothesis testing criterion methods, such as maximum a posteriori 
+criterion (ref), likelihood ratio test(ref), generalized likelihood ratio test (ref), 
+or Bayesian theory approaches (ref). Several of those CDAs have achieved high accuracy 
+in terms of true positives, but most show unsatisfactory performance in terms of false positives percentage (ref).
+
+
+
+
+

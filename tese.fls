@@ -1573,10 +1573,6 @@ INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0/abstract.tex
 INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.lof
 INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.lof
 INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.lof
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/ae/aeti12.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/vf/public/ae/aeti12.vf
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsl12.tfm
 OUTPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.lof
 INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.lof
 INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.lof
@@ -1598,6 +1594,7 @@ INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.toc
 INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.toc
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/ae/aeb10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/ae/aecsc10.tfm
+OUTPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.toc
 INPUT c:/texlive/2021/texmf-dist/fonts/vf/public/ae/aecsc10.vf
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
@@ -1607,560 +1604,27 @@ INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmb10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
-OUTPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.toc
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0-Introducao/introducao.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0-Introducao/introducao.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0-Introducao/introducao.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0-Introducao/introducao.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0-Introducao/introducao.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0-Introducao/introducao.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0-Introducao/introducao.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0-Introducao/introducao.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0-Introducao/introducao.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0-Introducao/introducao.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0-Introducao/introducao.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/cap1.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/cap1.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/cap1.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/cap1.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/cap1.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/cap1.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/cap1.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/cap1.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/cap1.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/cap1.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/cap1.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/geometry.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/geometry.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/geometry.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/geometry.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/geometry.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/ra1_print.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/ra1_print.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/ra1_print.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/ra1_print.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/ra1_print.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/compres.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/compres.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/compres.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/compres.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/compres.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/retang.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/retang.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/retang.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/retang.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/retang.png
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/int.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/int.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/int.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/int.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/int.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/flat.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/flat.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/flat.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/flat.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/flat.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/flat_interf.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/flat_interf.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/flat_interf.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/flat_interf.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/flat_interf.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/unwr.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/unwr.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/unwr.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/unwr.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/unwr.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/bias.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/bias.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/bias.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/bias.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap1/bias.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/cap2.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/cap2.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/cap2.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/cap2.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/cap2.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/cap2.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/cap2.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/cap2.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/cap2.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/cap2.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/cap2.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/glob_cover.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/glob_cover.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/glob_cover.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/glob_cover.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/glob_cover.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/first_interferometric.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/first_interferometric.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/first_interferometric.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/first_interferometric.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap2/first_interferometric.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/chapter2_real.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/chapter2_real.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/chapter2_real.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/chapter2_real.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/fishbone.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/fishbone.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/fishbone.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/fishbone.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/fishbone.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/tandem_dataset.jpg
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/tandem_dataset.jpg
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/tandem_dataset.jpg
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/tandem_dataset.jpg
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/tandem_dataset.jpg
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/sentinel_dataset.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/sentinel_dataset.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/sentinel_dataset.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/sentinel_dataset.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter2-real/sentinel_dataset.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter3/chapter3.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter3/chapter3.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter3/chapter3.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter3/chapter3.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter3/regions.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter3/regions.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter3/regions.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter3/regions.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter3/regions.pdf
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/ae/aer8.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/ae/aeti8.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/ae/aer6.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/ae/aeti7.tfm
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/chapter4.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/chapter4.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/chapter4.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/chapter4.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/coSSC_master_beta0.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/coSSC_master_beta0.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/coSSC_master_beta0.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/coSSC_master_beta0.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/coSSC_master_beta0.png
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/ae/aer10.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/vf/public/ae/aer17.vf
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/coSSC_master_gamma_vol.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/coSSC_master_gamma_vol.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/coSSC_master_gamma_vol.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/coSSC_master_gamma_vol.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/coSSC_master_gamma_vol.png
-INPUT c:/texlive/2021/texmf-dist/fonts/vf/public/ae/aer10.vf
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmu10.tfm
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/ASMimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/ASMimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/ASMimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/ASMimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/ASMimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/contrastimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/contrastimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/contrastimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/contrastimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/contrastimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/correlationimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/correlationimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/correlationimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/correlationimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/correlationimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/dissimilarityimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/dissimilarityimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/dissimilarityimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/dissimilarityimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/dissimilarityimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/energyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/energyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/energyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/energyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/energyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/entropyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/entropyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/entropyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/entropyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/entropyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/homogeneityimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/homogeneityimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/homogeneityimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/homogeneityimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/homogeneityimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/referencemap.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/referencemap.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/referencemap.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/referencemap.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/referencemap.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/histogramcoherence.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/histogramcoherence.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/histogramcoherence.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/histogramcoherence.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/histogramcoherence.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/ASM_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/ASM_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/ASM_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/ASM_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/ASM_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/contrast_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/contrast_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/contrast_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/contrast_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/contrast_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/correlation_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/correlation_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/correlation_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/correlation_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/correlation_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/dissimilarity_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/dissimilarity_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/dissimilarity_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/dissimilarity_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/dissimilarity_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/energy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/energy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/energy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/energy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/energy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/entropy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/entropy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/entropy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/entropy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/entropy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/homogeneity_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/homogeneity_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/homogeneity_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/homogeneity_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/glcm_textures/homogeneity_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5e5_e5e5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5e5_e5e5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5e5_e5e5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5e5_e5e5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5e5_e5e5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5r5_r5e5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5r5_r5e5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5r5_r5e5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5r5_r5e5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5r5_r5e5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5s5_s5e5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5s5_s5e5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5s5_s5e5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5s5_s5e5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5s5_s5e5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5e5_e5l5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5e5_e5l5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5e5_e5l5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5e5_e5l5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5e5_e5l5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5r5_r5l5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5r5_r5l5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5r5_r5l5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5r5_r5l5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5r5_r5l5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5s5_s5l5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5s5_s5l5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5s5_s5l5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5s5_s5l5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5s5_s5l5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/r5r5_r5r5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/r5r5_r5r5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/r5r5_r5r5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/r5r5_r5r5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/r5r5_r5r5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5r5_r5s5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5r5_r5s5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5r5_r5s5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5r5_r5s5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5r5_r5s5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5s5_s5s5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5s5_s5s5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5s5_s5s5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5s5_s5s5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5s5_s5s5image.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5e5_e5e5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5e5_e5e5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5e5_e5e5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5e5_e5e5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5e5_e5e5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5r5_r5e5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5r5_r5e5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5r5_r5e5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5r5_r5e5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5r5_r5e5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5s5_s5e5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5s5_s5e5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5s5_s5e5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5s5_s5e5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/e5s5_s5e5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5e5_e5l5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5e5_e5l5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5e5_e5l5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5e5_e5l5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5e5_e5l5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5r5_r5l5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5r5_r5l5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5r5_r5l5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5r5_r5l5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5r5_r5l5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5s5_s5l5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5s5_s5l5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5s5_s5l5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5s5_s5l5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/l5s5_s5l5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/r5r5_r5r5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/r5r5_r5r5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/r5r5_r5r5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/r5r5_r5r5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/r5r5_r5r5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5r5_r5s5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5r5_r5s5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5r5_r5s5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5r5_r5s5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5r5_r5s5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5s5_s5s5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5s5_s5s5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5s5_s5s5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5s5_s5s5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/laws_textures/s5s5_s5s5.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_prominenceimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_prominenceimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_prominenceimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_prominenceimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_prominenceimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_shadeimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_shadeimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_shadeimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_shadeimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_shadeimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/contrastimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/contrastimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/contrastimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/contrastimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/contrastimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/correlationimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/correlationimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/correlationimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/correlationimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/correlationimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/energyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/energyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/energyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/energyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/energyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/entropyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/entropyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/entropyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/entropyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/entropyimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/homogeneityimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/homogeneityimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/homogeneityimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/homogeneityimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/homogeneityimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/meanimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/meanimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/meanimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/meanimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/meanimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/varianceimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/varianceimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/varianceimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/varianceimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/varianceimage.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_prominence_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_prominence_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_prominence_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_prominence_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_prominence_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_shade_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_shade_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_shade_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_shade_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/cluster_shade_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/contrast_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/contrast_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/contrast_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/contrast_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/contrast_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/correlation_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/correlation_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/correlation_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/correlation_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/correlation_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/energy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/energy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/energy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/energy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/energy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/entropy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/entropy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/entropy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/entropy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/entropy_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/homogeneity_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/homogeneity_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/homogeneity_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/homogeneity_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/homogeneity_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/mean_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/mean_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/mean_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/mean_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/mean_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/variance_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/variance_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/variance_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/variance_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter4/sum_and_diff_textures/variance_hist.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/chapter5.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/chapter5.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/chapter5.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/chapter5.tex
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/coSSC_master_gamma_vol.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/coSSC_master_gamma_vol.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/coSSC_master_gamma_vol.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/coSSC_master_gamma_vol.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/coSSC_master_gamma_vol.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/classification_resultsimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/classification_resultsimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/classification_resultsimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/classification_resultsimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/classification_resultsimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/geo_cohimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/geo_cohimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/geo_cohimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/geo_cohimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/geo_cohimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/geo_temp_sigma0dbimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/geo_temp_sigma0dbimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/geo_temp_sigma0dbimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/geo_temp_sigma0dbimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/geo_temp_sigma0dbimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/cluster_prominence_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/cluster_prominence_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/cluster_prominence_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/cluster_prominence_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/cluster_prominence_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/cluster_shade_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/cluster_shade_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/cluster_shade_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/cluster_shade_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/cluster_shade_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/contrast_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/contrast_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/contrast_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/contrast_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/contrast_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/correlation_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/correlation_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/correlation_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/correlation_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/correlation_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/energy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/energy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/energy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/energy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/energy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/entropy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/entropy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/entropy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/entropy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/entropy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/homogeneity_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/homogeneity_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/homogeneity_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/homogeneity_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/homogeneity_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/mean_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/mean_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/mean_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/mean_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/mean_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/variance_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/variance_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/variance_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/variance_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Coherence/variance_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/cluster_prominence_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/cluster_prominence_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/cluster_prominence_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/cluster_prominence_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/cluster_prominence_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/cluster_shade_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/cluster_shade_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/cluster_shade_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/cluster_shade_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/cluster_shade_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/contrast_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/contrast_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/contrast_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/contrast_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/contrast_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/correlation_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/correlation_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/correlation_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/correlation_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/correlation_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/energy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/energy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/energy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/energy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/energy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/entropy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/entropy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/entropy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/entropy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/entropy_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/homogeneity_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/homogeneity_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/homogeneity_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/homogeneity_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/homogeneity_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/mean_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/mean_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/mean_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/mean_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/mean_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/variance_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/variance_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/variance_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/variance_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/SENTINEL1/Sigma0/variance_histogram.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/reference_mapimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/reference_mapimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/reference_mapimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/reference_mapimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/reference_mapimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/result_no_texturesimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/result_no_texturesimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/result_no_texturesimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/result_no_texturesimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/result_no_texturesimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/result_texturesimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/result_texturesimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/result_texturesimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/result_texturesimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/TANDEM-X/result_texturesimage.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/real_image_google_earth.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/real_image_google_earth.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/real_image_google_earth.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/real_image_google_earth.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/real_image_google_earth.pdf
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/Number_of_estimators.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/Number_of_estimators.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/Number_of_estimators.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/Number_of_estimators.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/Number_of_estimators.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/number_of_leaves.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/number_of_leaves.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/number_of_leaves.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/number_of_leaves.png
-INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter5/number_of_leaves.png
 INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter6/chapter6.tex
 INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter6/chapter6.tex
 INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter6/chapter6.tex
 INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter6/chapter6.tex
+INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/chapter6/carabas_vehicles_fisico.jpg
+INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/chapter6/carabas_vehicles_fisico.jpg
+INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/chapter6/carabas_vehicles_fisico.jpg
+INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/chapter6/carabas_vehicles_fisico.jpg
+INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/chapter6/carabas_vehicles_fisico.jpg
+INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/chapter6/carabas_vehicles.jpg
+INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/chapter6/carabas_vehicles.jpg
+INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/chapter6/carabas_vehicles.jpg
+INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/chapter6/carabas_vehicles.jpg
+INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/chapter6/carabas_vehicles.jpg
 INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.bbl
 INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.bbl
 INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.bbl
@@ -2180,6 +1644,7 @@ INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/ae/aer8.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm0800.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/ae/aeb10.tfm
 INPUT c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0/abstract.tex
@@ -2236,21 +1701,13 @@ INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
