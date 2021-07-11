@@ -1,12 +1,18 @@
 \section{Summary}
-In this chapter we will use the textural developed in previous chapters 
-to create a change detection algorithm (CDA). The CDA will be assessed
-using the CARABAS-II image dataset, which is a set of images acquired by a Very High Frequency (VHF) Ultra Wideband (UWB) SAR system.
-The CDA is based on the UNET convolutional neural network (CNN) architecture and will use the 
-textura information as additional inputs for image classification.
-It will be demonstrated that the 
-use of textural information can improve the overall performance of the algorithm
-in terms of probability of detection and false alarm rate. 
+This chapter will present the change detection problem for targets concealed by a forest. It will 
+also present the SAR system that was used to perform the data acquisition and the dataset that was created by this system.
+The dataset consists of SAR images collected that the Swedish low VHF-band SAR system CARABAS-II. 
+The images were made publicly available by the Swedish Airforce Research center with the purpose of fostering research on the 
+subject field of target detection under tree foliage. 
+
+% In this chapter we will use the textural developed in previous chapters 
+% to create a change detection algorithm (CDA). The CDA will be assessed
+% using the CARABAS-II image dataset, which is a set of images acquired by a Very High Frequency (VHF) Ultra Wideband (UWB) SAR system.
+% The CDA is based on the UNET convolutional neural network (CNN) architecture and will use the 
+% textura information as additional inputs for image classification.
+% It will be demonstrated that the 
+% use of textural information can improve the overall performance of the algorithm
+% in terms of probability of detection and false alarm rate. 
 
 \section{Wavelength Resolution SAR Systems}
 Wavelength resolution SAR images are radar systems with resolution in the order of 
@@ -19,20 +25,65 @@ calculated by:
 
 where $\lambda_c$ is the wavelength corresponding to the radar central frequency, $\theta_H$
 is the aperture angle (in radians), $c$ is the speed of light and $B$ is the system bandwidth.
+
+It is obvious that the backscatter characteristcs of the SAR depends on the frequency band of the system.
+For wavelength-resolution SAR systems there is a significant difference between the backscatter of targets with size the order
+of the wavelength - which present the resonance scattering phenomena (ref63) - and targets small compared to the wavelength - which present
+the the Rayleigh scattering phenomena (ref63). 
+
 According to (17ref), Wavelength SAR systems are not sensitive to small scatterers inside the resolution cell,
 thus the scattering process is mainly due to scatterers with dimensions in the order of the system wavelength.
 Since the resolution of the cell is similar to the resolution of the scatterer, there can be only one single scatterer inside each cell, 
-therefore the image will not be greatly affected by speckle noise.
+therefore the image will not be greatly affected by speckle noise (speckle noise is a major cause of problems in non wavelength-resolution SAR still). For example, according to (ref64)
+in frequencies below 100 MHz, in forest areas, the backscatter is dominated by backscattering from tree foliage.
+
+Moreover, scatterers that are large tend to be static objects, hence a stack of images of the same area will present a high degree of 
+similarity between multi-pass acquisitions. Therefore regular noise redution techniques do not have to be applied when dealing with those set of images (ref 61).
+
+It is also worth mentioning that according to (ref 66), signal attenuation in low-frequency wavelength-resolution SAR systems 
+is not a major concern. Studies (ref63) have also shown that signal attenuation can be as little as 3dB in low-frequency SAR acquisitions in forest areas.
+
 
 Due to all that, according to (63ref), low resolution SAR systems are better suited to Foliage Penetrating (FOPEN) applications.
 Also according to (63ref), VHF-band is the optimal radar system for FOPEN applications for vehicle-sized target detection.
 
-\section{The Carabas-II System}
+\section{The CARABAS-II Challenge Problem}
+There are many situations were there is a need for monitoring vehicles concealed by foliage over a large area.
+For example, for military applications, it might be necessary to monitor the positioning of enemy vehicles trespassing
+a restricted area. For environmental purposes it might be needed to pinpoint the position of vehicles that are being used
+for illegal deforestation over protected forests. If SARs are to be used for such purposes, it is ideal that low frequency systems
+are chosen since those provide a wide survaillance area and good foliage penetration capabilities. 
+At low frequency (VHF-band) the main backscatter from the target area is due to large scatterers, e.g. tree canopy, houses,
+vehicles, and other man-made objects, which will appear as very bright objects in the image.
+
+The challenge related to change detection is associated with the trade-off between having high accuracy detection and high false alarm rate.
+Normally what happens is by trying to increase the overall accuracy of detection algorithms will incur in having a high number of false alarms, 
+therefore when designing an algorithm for detection it is necessary to have both good detection capabilities and a low enough false alarm rate
+to be used by the client. In foliage penetration applications, the main source of clutter comes from large tree trunks, and the more sparse the
+forest is the less will be the number of false targets. It is also true that the larger the tree then the higher will be the number of false alarms (ref paper).
+
+The objects that will be used to assess the quality of the change detection method will be a set of 25 military vehicles distributed among a testing area.
+Since those objects are large (compared to the bandwidth of the signal), and stationary, then their radar signature will be very stable between acquisitions.
+This will be used as an advantage by taking acquisitions with different flight passes to supress clutter noise from tree canopy.
+
+According to (ref 1/2 challenge) VHF-band has good performance for detecting targets under trees, but there are very few VHF SAR systems in the world.
+To overcome this problem researchers from the FOI released a VHF-band SAR image dataset to the public to foster the developement of 
+change detection methods for wavelengh-resolution SAR systems in VHF band, which is the dataset that will be used in this work.
+
+
+\section{The CARABAS-II System}
 
 The CARABAS-II is the second generation SAR system designed by the Swedish Defense Research Agency (FOI) for FOPEN applications.
 The CARABAS-II has participated in numerous military campaigns and has been used for reasearch purpose since the nineties.
 The radar is a VLF UHB SAR system that transmits HH-polarized radio waves in the frequency range of 
-20-90 MHz, therefore having resolution in the range of 3.3-15 m.
+20-90 MHz, therefore having resolution in the range of 3.3-15 m. The radar antenna is mounted on a Sabreliner aircraft as seen in figure \ref{fig:Sabreliner}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics{chapter6/sabreliner.jpg}
+    \caption{The CARABAS-II VHF SAR mounted in front of a Sabreliner airplane}
+    \label{fig:sabreliner}
+\end{figure}
 
 In the table below the system parameters for the CARABAS-II system are presented for the
 flight campaigns that were used in this work. 
@@ -126,7 +177,7 @@ Figure \ref{fig:carabas_vehicles} presents images of each mission with the vehic
 
 In table \ref{tab:flight_mission} it is presented the summary with the information of each image in the dataset
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \begin{tabular}{|c|c|c|c|c|}
         \hline

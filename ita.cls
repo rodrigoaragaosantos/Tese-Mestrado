@@ -579,7 +579,7 @@
 % CIP ... Verso da Folha de Rosto
 %==============================================================================
 \newcommand{\@makecippage}{%
-\includepdf[width=\paperwidth]{folharod (1).pdf}
+% \includepdf[width=\paperwidth]{folharod (1).pdf}
 % 	\newpage%
 %   \pdfbookmark[0]{\namecip}{cip}
 % 	\thispagestyle{empty}
@@ -672,7 +672,7 @@
 
    \noindent
    
-   \includepdf[width=\paperwidth]{folha (1).pdf}
+  %  \includepdf[width=\paperwidth]{folha (1).pdf}
 
 % 	 \ifthenelse{\equal{\itaoptionlevel}{tg}}
 % 	     {

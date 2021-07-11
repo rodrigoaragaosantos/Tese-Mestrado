@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.3)  11 JUL 2021 15:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.3)  11 JUL 2021 19:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -789,7 +789,7 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 
 
 Writing glossary file tese.glo 
-LaTeX Font Info:    Trying to load font information for T1+aer on input line 160.
+LaTeX Font Info:    Trying to load font information for T1+aer on input line 161.
 (c:/texlive/2021/texmf-dist/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 ) (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -799,27 +799,27 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 ) (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.aux)
 \openout1 = `tese.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 160.
+(lastpage)             ! on input line 161.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -843,7 +843,7 @@ Package caption Info: End \AtBeginDocument code.
 \makeMPintoPDFobject=\count359
 \everyMPtoPDFconversion=\toks55
 )
-Package hyperref Info: Link coloring ON on input line 160.
+Package hyperref Info: Link coloring ON on input line 161.
  (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -853,14 +853,14 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count360
 )
-LaTeX Info: Redefining \ref on input line 160.
-LaTeX Info: Redefining \pageref on input line 160.
-LaTeX Info: Redefining \nameref on input line 160.
+LaTeX Info: Redefining \ref on input line 161.
+LaTeX Info: Redefining \pageref on input line 161.
+LaTeX Info: Redefining \nameref on input line 161.
  (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.out) (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.out)
 \@outlinefile=\write5
 \openout5 = `tese.out'.
 
-Package hyperref Info: Anchor `Doc-Start' on input line 160.
+Package hyperref Info: Anchor `Doc-Start' on input line 161.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -904,153 +904,67 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Anchor `titulo.0' on input line 161.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 161.
+Package hyperref Info: Anchor `titulo.0' on input line 162.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 162.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 161.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 162.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<folharod (1).pdf, id=83, 597.50829pt x 845.0471pt>
-File: folharod (1).pdf Graphic file (type pdf)
-<use folharod (1).pdf>
-Package pdftex.def Info: folharod (1).pdf  used on input line 161.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: folharod (1).pdf Graphic file (type pdf)
-<use folharod (1).pdf>
-Package pdftex.def Info: folharod (1).pdf  used on input line 161.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<folharod (1).pdf, id=86, page=1, 597.50829pt x 845.0471pt>
-File: folharod (1).pdf Graphic file (type pdf)
-<use folharod (1).pdf, page 1>
-Package pdftex.def Info: folharod (1).pdf , page1 used on input line 161.
-(pdftex.def)             Requested size: 597.50787pt x 845.04504pt.
-File: folharod (1).pdf Graphic file (type pdf)
-<use folharod (1).pdf, page 1>
-Package pdftex.def Info: folharod (1).pdf , page1 used on input line 161.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-Package hyperref Info: Anchor `page.i' on input line 161.
+Package hyperref Info: Anchor `page.i' on input line 162.
  [1
 
 
 
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-File: folharod (1).pdf Graphic file (type pdf)
-<use folharod (1).pdf, page 1>
-Package pdftex.def Info: folharod (1).pdf , page1 used on input line 161.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: folharod (1).pdf Graphic file (type pdf)
-<use folharod (1).pdf, page 1>
-Package pdftex.def Info: folharod (1).pdf , page1 used on input line 161.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-Package hyperref Info: Anchor `page.ii' on input line 161.
-File: folharod (1).pdf Graphic file (type pdf)
-<use folharod (1).pdf, page 1>
-Package pdftex.def Info: folharod (1).pdf , page1 used on input line 161.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [2 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/folharod (1).pdf>]
-Package hyperref Info: Anchor `aprovacao.0' on input line 161.
-
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/folha (1).pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<folha (1).pdf, id=137, 597.50829pt x 845.0471pt>
-File: folha (1).pdf Graphic file (type pdf)
-<use folha (1).pdf>
-Package pdftex.def Info: folha (1).pdf  used on input line 161.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/folha (1).pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-File: folha (1).pdf Graphic file (type pdf)
-<use folha (1).pdf>
-Package pdftex.def Info: folha (1).pdf  used on input line 161.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/folha (1).pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex.exe (file c:/Users/digo_/Backup/Mestrado/Tese Mestrado/folha (1).pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<folha (1).pdf, id=140, page=1, 597.50829pt x 845.0471pt>
-File: folha (1).pdf Graphic file (type pdf)
-<use folha (1).pdf, page 1>
-Package pdftex.def Info: folha (1).pdf , page1 used on input line 161.
-(pdftex.def)             Requested size: 597.50787pt x 845.04504pt.
-File: folha (1).pdf Graphic file (type pdf)
-<use folha (1).pdf, page 1>
-Package pdftex.def Info: folha (1).pdf , page1 used on input line 161.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: folha (1).pdf Graphic file (type pdf)
-<use folha (1).pdf, page 1>
-Package pdftex.def Info: folha (1).pdf , page1 used on input line 161.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: folha (1).pdf Graphic file (type pdf)
-<use folha (1).pdf, page 1>
-Package pdftex.def Info: folha (1).pdf , page1 used on input line 161.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-Package hyperref Info: Anchor `page.iii' on input line 161.
-File: folha (1).pdf Graphic file (type pdf)
-<use folha (1).pdf, page 1>
-Package pdftex.def Info: folha (1).pdf , page1 used on input line 161.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-[3 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/folha (1).pdf>]
-Package hyperref Info: Anchor `dedication.0' on input line 164.
-Package hyperref Info: Anchor `page.iv' on input line 166.
+Package hyperref Info: Anchor `aprovacao.0' on input line 162.
+Package hyperref Info: Anchor `dedication.0' on input line 165.
+Package hyperref Info: Anchor `page.iv' on input line 167.
  [4]
-Package hyperref Info: Anchor `chapter*.1' on input line 170.
-Package hyperref Info: Anchor `acknowledgment.0' on input line 170.
+Package hyperref Info: Anchor `chapter*.1' on input line 171.
+Package hyperref Info: Anchor `acknowledgment.0' on input line 171.
  (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0/agradecimentos.tex)
-Package hyperref Info: Anchor `page.v' on input line 171.
+Package hyperref Info: Anchor `page.v' on input line 172.
  [5
 
 ]
-Package hyperref Info: Anchor `epigrafe.0' on input line 175.
-LaTeX Font Info:    Trying to load font information for T1+aess on input line 179.
+Package hyperref Info: Anchor `epigrafe.0' on input line 176.
+LaTeX Font Info:    Trying to load font information for T1+aess on input line 180.
  (c:/texlive/2021/texmf-dist/tex/latex/ae/t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <12> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 179.
-Package hyperref Info: Anchor `page.vi' on input line 186.
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 180.
+Package hyperref Info: Anchor `page.vi' on input line 187.
  [6]
-Package hyperref Info: Anchor `chapter*.2' on input line 186.
-Package hyperref Info: Anchor `resumo.0' on input line 186.
+Package hyperref Info: Anchor `chapter*.2' on input line 187.
+Package hyperref Info: Anchor `resumo.0' on input line 187.
  (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0/resumo.tex)
-Package hyperref Info: Anchor `page.vii' on input line 192.
+Package hyperref Info: Anchor `page.vii' on input line 193.
  [7
 
 ]
-Package hyperref Info: Anchor `chapter*.3' on input line 192.
-Package hyperref Info: Anchor `abstract.0' on input line 192.
+Package hyperref Info: Anchor `chapter*.3' on input line 193.
+Package hyperref Info: Anchor `abstract.0' on input line 193.
  (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0/abstract.tex)
-Package hyperref Info: Anchor `page.viii' on input line 198.
+Package hyperref Info: Anchor `page.viii' on input line 199.
  [8
 
 ]
-Package hyperref Info: Anchor `chapter*.4' on input line 198.
-Package hyperref Info: Anchor `listafiguras.0' on input line 198.
- (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.lof
-Package hyperref Info: Reference (link) `figure.caption.9' on input line 3.
-
-Overfull \hbox (44.82117pt too wide) in paragraph at lines 3--3
- [][] [][][]\T1/aer/m/n/12 Military ve-hi-cles used as tar-get. Left:TGB11. Mid-dle:TGB30. Right:TGB40. 
- []
-
-Package hyperref Info: Reference (link) `figure.caption.10' on input line 4.
-)
+Package hyperref Info: Anchor `chapter*.4' on input line 199.
+Package hyperref Info: Anchor `listafiguras.0' on input line 199.
+ (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.lof)
 \tf@lof=\write6
 \openout6 = `tese.lof'.
 
-Package hyperref Info: Anchor `page.ix' on input line 204.
+Package hyperref Info: Anchor `page.ix' on input line 205.
  [9
 
-Package `hyperref' Info: End of reference (link) `figure.caption.9', line 3.
-Package `hyperref' Info: End of reference (link) `figure.caption.10', line 4.
 ]
-Package hyperref Info: Anchor `chapter*.5' on input line 204.
-Package hyperref Info: Anchor `listaabreviaturas.0' on input line 204.
+Package hyperref Info: Anchor `chapter*.5' on input line 205.
+Package hyperref Info: Anchor `listaabreviaturas.0' on input line 205.
  (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.lof)
 \tf@lof=\write7
 \openout7 = `tese.lof'.
@@ -1058,12 +972,12 @@ Package hyperref Info: Anchor `listaabreviaturas.0' on input line 204.
  (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0/listaabreviaturas.tex
 Package hyperref Info: Anchor `table.0.1' on input line 10.
 )
-Package hyperref Info: Anchor `page.x' on input line 212.
+Package hyperref Info: Anchor `page.x' on input line 213.
  [10
 
 ]
-Package hyperref Info: Anchor `chapter*.6' on input line 212.
-Package hyperref Info: Anchor `contents.0' on input line 212.
+Package hyperref Info: Anchor `chapter*.6' on input line 213.
+Package hyperref Info: Anchor `contents.0' on input line 213.
  (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.toc
 Underfull \hbox (badness 10000) in paragraph at lines 2--2
  []  
@@ -1072,169 +986,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--2
 Package hyperref Info: Reference (link) `chapter.1' on input line 2.
 Package hyperref Info: Reference (link) `section.1.1' on input line 3.
 Package hyperref Info: Reference (link) `section.1.2' on input line 4.
-Package hyperref Info: Reference (link) `section.1.3' on input line 5.
-Package hyperref Info: Reference (link) `section.1.4' on input line 6.
-Package hyperref Info: Reference (link) `section.1.5' on input line 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--8
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
  []  
  []
 
-Package hyperref Info: Reference (link) `chapter.2' on input line 8.
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--9
- []  
- []
-
-Package hyperref Info: Reference (link) `chapter.3' on input line 9.
+Package hyperref Info: Reference (link) `chapter.2' on input line 5.
 )
 \tf@toc=\write8
 \openout8 = `tese.toc'.
 
-Package hyperref Info: Anchor `page.xi' on input line 214.
+Package hyperref Info: Anchor `page.xi' on input line 215.
  [11
 
 Package `hyperref' Info: End of reference (link) `chapter.1', line 2.
 Package `hyperref' Info: End of reference (link) `section.1.1', line 3.
 Package `hyperref' Info: End of reference (link) `section.1.2', line 4.
-Package `hyperref' Info: End of reference (link) `section.1.3', line 5.
-Package `hyperref' Info: End of reference (link) `section.1.4', line 6.
-Package `hyperref' Info: End of reference (link) `section.1.5', line 7.
-Package `hyperref' Info: End of reference (link) `chapter.2', line 8.
-Package `hyperref' Info: End of reference (link) `chapter.3', line 9.
+Package `hyperref' Info: End of reference (link) `chapter.2', line 5.
 ]
-Package hyperref Info: Anchor `page.12' on input line 248.
- [12
-
-]
-Package hyperref Info: Anchor `chapter.1' on input line 248.
+Package hyperref Info: Anchor `chapter.1' on input line 253.
 
 Chapter 1.
-pdftex: bookmark at 248: {1} {\numberline{1}The CARABAS System} {chapter.1}{0}{toc}
-(c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter6/chapter6.tex
+pdftex: bookmark at 253: {1} {\numberline{1}Textural Applications for Change Detection in the CARABAS-II Dataset} {chapter.1}{0}{toc}
+(c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Chapter7/chapter7.tex
 Package hyperref Info: Anchor `section.1.1' on input line 1.
 
 pdftex: bookmark at 1: {1.1} {\numberline{1.1}Summary} {section.1.1}{1}{toc}
 Package hyperref Info: Anchor `section.1.2' on input line 11.
-pdftex: bookmark at 11: {1.2} {\numberline{1.2}Wavelength Resolution SAR Systems} {section.1.2}{1}{toc}
-Package hyperref Info: Anchor `equation.1.2.1' on input line 16.
-Package hyperref Info: Anchor `page.13' on input line 30.
-[13
-
-]
-Package hyperref Info: Anchor `section.1.3' on input line 30.
-
-pdftex: bookmark at 30: {1.3} {\numberline{1.3}The Carabas-II System} {section.1.3}{1}{toc}
-Package hyperref Info: Anchor `table.caption.7' on input line 40.
-pdftex: bookmark at 59: {1.1} {\numberline{1.1}{\ignorespaces CARABAS-II SAR system parameters. Source: (76 ref)\relax }} {table.caption.7}{0}{lot}
-Package hyperref Info: Anchor `section.1.4' on input line 63.
-pdftex: bookmark at 63: {1.4} {\numberline{1.4}The CARABAS-II Dataset} {section.1.4}{1}{toc}
-
-Overfull \hbox (1.51764pt too wide) in paragraph at lines 65--68
-[]\T1/aer/m/n/12 By try-ing to pro-mote re-search on change de-tec-tion al-go-rithms for wavelength-resolution
- []
-
-Package hyperref Info: Anchor `page.14' on input line 78.
-[14]
-Package hyperref Info: Anchor `table.caption.8' on input line 85.
-
-pdftex: bookmark at 94: {1.2} {\numberline{1.2}{\ignorespaces Target dimensions\relax }} {table.caption.8}{0}{lot}
-Package hyperref Info: Anchor `figure.caption.9' on input line 104.
-<chapter6/carabas_vehicles_fisico.jpg, id=250, 495.65175pt x 127.07475pt>
-File: chapter6/carabas_vehicles_fisico.jpg Graphic file (type jpg)
-<use chapter6/carabas_vehicles_fisico.jpg>
-Package pdftex.def Info: chapter6/carabas_vehicles_fisico.jpg  used on input line 106.
-(pdftex.def)             Requested size: 495.65053pt x 127.07443pt.
-
-Overfull \hbox (40.40642pt too wide) in paragraph at lines 106--108
- [][] 
- []
-
-pdftex: bookmark at 108: {1.1} {\numberline{1.1}{\ignorespaces Military vehicles used as target. Left:TGB11. Middle:TGB30. Right:TGB40. This picture also depicts the vegetation characteristics of the test area\relax }} {figure.caption.9}{0}{lof}
-
-Underfull \hbox (badness 1132) in paragraph at lines 108--108
-[]\T1/aer/m/n/12 FIGURE 1.1 ^^U |Mil-i-tary ve-hi-cles used as tar-get. Left:TGB11. Mid-dle:TGB30.
- []
-
-Package hyperref Info: Reference (link) `figure.caption.10' on input line 117.
-Package hyperref Info: Anchor `page.15' on input line 118.
-[15 <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/chapter6/carabas_vehicles_fisico.jpg>]
-Package hyperref Info: Anchor `figure.caption.10' on input line 119.
-<chapter6/carabas_vehicles.jpg, id=257, 453.49425pt x 187.902pt>
-File: chapter6/carabas_vehicles.jpg Graphic file (type jpg)
-<use chapter6/carabas_vehicles.jpg>
-Package pdftex.def Info: chapter6/carabas_vehicles.jpg  used on input line 121.
-(pdftex.def)             Requested size: 453.49313pt x 187.90154pt.
-
-pdftex: bookmark at 123: {1.2} {\numberline{1.2}{\ignorespaces Examples of CARABAS-II images where (a) is mission 2, (b) is mission 3, (c) is mission 4 and (d) is mission 5\relax }} {figure.caption.10}{0}{lof}
-Package hyperref Info: Reference (link) `table.caption.11' on input line 127.
-Package hyperref Info: Anchor `table.caption.11' on input line 129.
-pdftex: bookmark at 159: {1.3} {\numberline{1.3}{\ignorespaces Measurements parameters for each image\relax }} {table.caption.11}{0}{lot}
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-Package hyperref Info: Anchor `section.1.5' on input line 163.
-pdftex: bookmark at 163: {1.5} {\numberline{1.5}Traditional Change Detecion in Wavelength-Resolution SAR Images} {section.1.5}{1}{toc}
-Package hyperref Info: Anchor `page.16' on input line 182.
-[16
-Package `hyperref' Info: End of reference (link) `figure.caption.10', line 117.
-Package `hyperref' Info: End of reference (link) `table.caption.11', line 127.
- <c:/Users/digo_/Backup/Mestrado/Tese Mestrado/chapter6/carabas_vehicles.jpg>]) (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.bbl (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.brf)
+pdftex: bookmark at 11: {1.2} {\numberline{1.2}Introduction} {section.1.2}{1}{toc}
+) (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.bbl (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.brf)
 \tf@brf=\write9
 \openout9 = `tese.brf'.
 
-Package hyperref Info: Anchor `page.17' on input line 3.
- [17]
-Package hyperref Info: Anchor `chapter*.12' on input line 3.
+Package hyperref Info: Anchor `page.12' on input line 3.
+ [12
+
+
+]
+Package hyperref Info: Anchor `chapter*.7' on input line 3.
 Package hyperref Info: Anchor `chapter.2' on input line 3.
 
 pdftex: bookmark at 3: {2} {Bibliography} {chapter.2}{0}{toc}
 )
-Package hyperref Info: Anchor `page.18' on input line 276.
- [18
+Package hyperref Info: Anchor `page.13' on input line 280.
+ [13
 
 ]
-Package hyperref Info: Anchor `chapter.3' on input line 276.
+Package hyperref Info: Anchor `chapter.3' on input line 280.
 
-pdftex: bookmark at 277: {3} {Glossary} {chapter.3}{0}{toc}
+pdftex: bookmark at 281: {3} {Glossary} {chapter.3}{0}{toc}
 No file tese.gls
-\bottommargin=\skip80
-\rightmarginn=\skip81
-Package hyperref Info: Anchor `bla.0' on input line 301.
-(c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0/abstract.tex) (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0/abstract.tex) (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/Cap0/abstract.tex)
-Overfull \hbox (74.53033pt too wide) in paragraph at lines 301--301
-[][] 
- []
-
 
 AED: lastpage setting LastPage
-Package hyperref Info: Anchor `page.19' on input line 303.
-[19
-
-
-
-] (c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
+(c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.aux)
 Package rerunfilecheck Info: File `tese.out' has not changed.
-(rerunfilecheck)             Checksum: C1AF60ADE56D4DFF3BADCB95C6764AE3;2879.
+(rerunfilecheck)             Checksum: 6A5C50470F7D9C1557E63D763CA53950;1958.
 Package rerunfilecheck Info: File `tese.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28688 strings out of 478994
- 514513 string characters out of 5862208
- 1031591 words of memory out of 5000000
- 45452 multiletter control sequences out of 15000+600000
- 448015 words of font info for 115 fonts, out of 8000000 for 9000
+ 28574 strings out of 478994
+ 512360 string characters out of 5862208
+ 1015536 words of memory out of 5000000
+ 45388 multiletter control sequences out of 15000+600000
+ 440677 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,17n,116p,1547b,652s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on "c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.pdf" (19 pages, 608530 bytes).
+ 113i,5n,116p,1547b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb>
+Output written on "c:/Users/digo_/Backup/Mestrado/Tese Mestrado/tese.pdf" (11 pages, 73659 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
- 270 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
- 215 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 155 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

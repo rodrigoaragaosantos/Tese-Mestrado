@@ -67,6 +67,7 @@
 %\usepackage[utf8]{inputenc}
 \usepackage{caption}
 \usepackage{subcaption}
+
 \usetikzlibrary{arrows,automata}
 \tikzset{
   LabelStyle/.style = {
@@ -120,19 +121,19 @@
 
 % Orientador
 \advisorgender{masc}                    % masc ou fem
-\advisor{}{}{Prof.~Dr.~Marcelo da Silva Pinho}
+\advisor{Prof$^\textnormal{a}$.~Dr$^\textnormal{a}$.}{Marcelo Pinho}{}
 
 % Coorientador (Caso não haja coorientador, colocar ambas as variáveis \coadvisorgender e \coadvisor comentadas, com um % na frente)
-%\coadvisorgender{fem}	% masc ou fem
-%\coadvisor{Prof$^\textnormal{a}$.~Dr$^\textnormal{a}$.}{Doralice Serra}{OVNI}
+\coadvisorgender{masc}	% masc ou fem
+\coadvisor{Prof$^\textnormal{a}$.~Dr$^\textnormal{a}$.}{Renato Machado}{}
 
 % Pró-reitor da Pós-graduação
 \bossgender{masc}	% masc ou fem
-\boss{Prof.~Dr.}{Flávio Mendes Neto}
+\boss{Prof.~Dr.}{Marcelo Gomes da Silva Bruno}
 
 %Coordenador do curso no caso de TG
-\bosscoursegender{masc} % masc ou fem
-\bosscourse{Prof.~Dr.}{Marcelo Gomes da Silva Bruno}
+% \bosscoursegender{masc} % masc ou fem
+% \bosscourse{Prof.~Dr.}{Marcelo Gomes da Silva Bruno}
 
 % Palavras-Chaves informadas pela Biblioteca -> utilizada na CIP
 \kwcip{Radares de abertura sintética}
@@ -148,10 +149,10 @@
 \examiner{Prof. Dr.}{Felix Dieter Antreich}{}{ITA}
 
 % Data da defesa (mês em maiúsculo, se trabalho em inglês, e minúsculo se trabalho em português) 
-\date{18}{Novembro}{2020}
+\date{18}{Novembro}{2021}
 
 % Número CDU - (somente para TG)
-\cdu{621.396.96}
+% \cdu{621.396.96}
 
 % Glossario
 \makeglossary
@@ -212,9 +213,12 @@ A todos que tornaram um pouco mais fácil a jornada até aqui
 \tableofcontents
 
 \mainmatter
+
 % Os capitulos comecam aqui
 % \chapter{Introduction}
 % \input{Cap0-Introducao/introducao}
+
+% \input{Parts/part1.tex}
 
 % \chapter{Theoretical Background}
 % \label{cap:intro}
@@ -240,15 +244,15 @@ A todos que tornaram um pouco mais fácil a jornada até aqui
 % \label{cap:classification_results}
 % \input{Chapter5/chapter5.tex}
 
-\vspace*{\fill}% * is needed here
-\noindent
-\makebox[\textwidth]{\Huge PART II}
-\vfill
+% \input{Parts/part2.tex}
 
-\chapter{The CARABAS System}
-\label{cap:carabas_chapter}
-\input{Chapter6/chapter6.tex}
+% \chapter{The CARABAS System and challenge problem}
+% \label{cap:carabas_chapter}
+% \input{Chapter6/chapter6.tex}
 
+\chapter{Textural Applications for Change Detection in the CARABAS-II Dataset}
+\label{cap:cda_chapter}
+\input{Chapter7/chapter7.tex}
 
 % \chapter{Methodology}
 % \input{metodologia}
@@ -277,28 +281,28 @@ A todos que tornaram um pouco mais fácil a jornada até aqui
 \printglossary
 
 
-% Folha de Registro do Documento
-% Valores dos campos do formulario
-\FRDitadata{15 de dezembro de 2020}
-\FRDitadocnro{DCTA/ITA/TC-047/2020} %(o número de registro você solicita a biblioteca)
-\FRDitaorgaointerno{Instituto Tecnológico de Aeronáutica -- ITA}
-%Exemplo no caso de pós-graduação: Instituto Tecnol{\'o}gico de Aeron{\'a}utica -- ITA
-\FRDitapalavrasautor{
-Radares de abertura sintética; SAR; Land Cover Classification; Engenharia eletrônica; Machine Learning
-}
-\FRDitapalavrasresult{Radares de abertura sintética; Processamento de imagens; Aprendizagem (inteligência artificial);
-Redes neurais; Algoritmos; Engenharia eletrônica.}
-%Exemplo no caso de graduação (TG):
-\FRDitapalavraapresentacao{ITA, São José dos Campos. Curso de Graduação em Engenharia Eletrônica. Orientador: Prof. Dr.
-Marcelo da Silva Pinho. Publicado em 2020.}
-%Exemplo no caso de pós-graduação (msc, dsc):
-%\FRDitapalavraapresentacao{ITA, São José dos Campos. Curso de Graduação. Programa de Graduação em Engenharia Eletrônica. Área de Microondas e Optoeletrônica. Orientador: Prof.~José Edimar Barbosa Oliveira. Defesa em 25/06/2018. Publicada em 25/06/2018.}
-\FRDitaresumo{\input{Cap0/abstract}}
-%  Primeiro Parametro: Nacional ou Internacional -- N/I
-%  Segundo parametro: Ostensivo, Reservado, Confidencial ou Secreto -- O/R/C/S
-\FRDitaOpcoes{N}{O}
-% Cria o formulario
-\itaFRD
+% % Folha de Registro do Documento
+% % Valores dos campos do formulario
+% \FRDitadata{15 de dezembro de 2020}
+% \FRDitadocnro{DCTA/ITA/TC-047/2020} %(o número de registro você solicita a biblioteca)
+% \FRDitaorgaointerno{Instituto Tecnológico de Aeronáutica -- ITA}
+% %Exemplo no caso de pós-graduação: Instituto Tecnol{\'o}gico de Aeron{\'a}utica -- ITA
+% \FRDitapalavrasautor{
+% Radares de abertura sintética; SAR; Land Cover Classification; Engenharia eletrônica; Machine Learning
+% }
+% \FRDitapalavrasresult{Radares de abertura sintética; Processamento de imagens; Aprendizagem (inteligência artificial);
+% Redes neurais; Algoritmos; Engenharia eletrônica.}
+% %Exemplo no caso de graduação (TG):
+% \FRDitapalavraapresentacao{ITA, São José dos Campos. Curso de Graduação em Engenharia Eletrônica. Orientador: Prof. Dr.
+% Marcelo da Silva Pinho. Publicado em 2020.}
+% %Exemplo no caso de pós-graduação (msc, dsc):
+% %\FRDitapalavraapresentacao{ITA, São José dos Campos. Curso de Graduação. Programa de Graduação em Engenharia Eletrônica. Área de Microondas e Optoeletrônica. Orientador: Prof.~José Edimar Barbosa Oliveira. Defesa em 25/06/2018. Publicada em 25/06/2018.}
+% \FRDitaresumo{\input{Cap0/abstract}}
+% %  Primeiro Parametro: Nacional ou Internacional -- N/I
+% %  Segundo parametro: Ostensivo, Reservado, Confidencial ou Secreto -- O/R/C/S
+% \FRDitaOpcoes{N}{O}
+% % Cria o formulario
+% \itaFRD
 
 \end{document}
 % Fim do Documento. O massacre acabou!!! :-)
