@@ -2,4 +2,7 @@
 \contentsline {chapter}{\numberline {1}Textural Applications for Change Detection in the CARABAS-II Dataset}{12}{chapter.1}
 \contentsline {section}{\numberline {1.1}Summary}{12}{section.1.1}
 \contentsline {section}{\numberline {1.2}Introduction}{12}{section.1.2}
-\contentsline {chapter}{Bibliography}{13}{chapter.2}
+\contentsline {section}{\numberline {1.3}Relevant Textures for the Change Detection Algorithm}{14}{section.1.3}
+\contentsline {section}{\numberline {1.4}UNET Based Algorithm for Target Change Detection}{16}{section.1.4}
+\contentsline {section}{\numberline {1.5}Results}{16}{section.1.5}
+\contentsline {chapter}{Bibliography}{19}{chapter.2}
