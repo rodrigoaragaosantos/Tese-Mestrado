@@ -1,0 +1,48 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Introduction}{12}{chapter.1}
+\contentsline {chapter}{\numberline {2}Theoretical Background}{14}{chapter.2}
+\contentsline {section}{\numberline {2.1}Remote sensing and SAR imaging}{14}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}SAR Image Geocoding}{18}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}SAR Interferometry}{18}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Height acquisition and interferogram equations}{19}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}The Complex Interferometric Coherence}{24}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Co-registration}{26}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Decorrelation in Vegetated Areas}{26}{subsection.2.2.4}
+\contentsline {chapter}{\numberline {3}Classification Maps generated with SAR Images}{28}{chapter.3}
+\contentsline {chapter}{\numberline {4}Material}{32}{chapter.4}
+\contentsline {section}{\numberline {4.1}Test Area: The Rondonia State}{32}{section.4.1}
+\contentsline {section}{\numberline {4.2}TanDEM-X datasets}{33}{section.4.2}
+\contentsline {section}{\numberline {4.3}Sentinel-1 datasets}{34}{section.4.3}
+\contentsline {chapter}{\numberline {5}Textures Methods for Image Analysis}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}Machine Learning and the problems for classification}{38}{section.5.1}
+\contentsline {section}{\numberline {5.2}Textures Methods}{40}{section.5.2}
+\contentsline {section}{\numberline {5.3}The GLCM Method}{40}{section.5.3}
+\contentsline {section}{\numberline {5.4}The Laws Textures}{43}{section.5.4}
+\contentsline {section}{\numberline {5.5}The Sum and Difference Histograms Texture}{44}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}The Single Value Decomposition}{44}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Approximation of Probability Density Functions}{46}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Textures Features}{47}{subsection.5.5.3}
+\contentsline {chapter}{\numberline {6}Analysis of Texture Results}{49}{chapter.6}
+\contentsline {section}{\numberline {6.1}The GLCM Textures}{49}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}The Displacement Vector}{49}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}The GLCM textures results}{52}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}The Laws Textures results}{58}{section.6.2}
+\contentsline {section}{\numberline {6.3}Sum And Difference Histograms Textures}{63}{section.6.3}
+\contentsline {chapter}{\numberline {7}Classification Results}{69}{chapter.7}
+\contentsline {section}{\numberline {7.1}TANDEM-X Data Analysis}{69}{section.7.1}
+\contentsline {section}{\numberline {7.2}Sentinel1 Data Analysis}{72}{section.7.2}
+\contentsline {section}{\numberline {7.3}Performance of Random forest and parameters tuning}{81}{section.7.3}
+\contentsline {chapter}{\numberline {8}The CARABAS System and challenge problem}{85}{chapter.8}
+\contentsline {section}{\numberline {8.1}Summary}{85}{section.8.1}
+\contentsline {section}{\numberline {8.2}Wavelength Resolution SAR Systems}{85}{section.8.2}
+\contentsline {section}{\numberline {8.3}The CARABAS-II Challenge Problem}{86}{section.8.3}
+\contentsline {section}{\numberline {8.4}The CARABAS-II System}{87}{section.8.4}
+\contentsline {section}{\numberline {8.5}The CARABAS-II Dataset}{88}{section.8.5}
+\contentsline {section}{\numberline {8.6}Traditional Change Detecion in Wavelength-Resolution SAR Images}{91}{section.8.6}
+\contentsline {chapter}{\numberline {9}Textures Applications for Change Detection Algorithms}{92}{chapter.9}
+\contentsline {section}{\numberline {9.1}Summary}{92}{section.9.1}
+\contentsline {section}{\numberline {9.2}Introduction}{92}{section.9.2}
+\contentsline {section}{\numberline {9.3}Relevant Textures for the Change Detection Algorithm}{94}{section.9.3}
+\contentsline {section}{\numberline {9.4}UNET Based Algorithm for Target Change Detection}{98}{section.9.4}
+\contentsline {section}{\numberline {9.5}Results}{101}{section.9.5}
+\contentsline {section}{\numberline {9.6}Conclusion}{102}{section.9.6}

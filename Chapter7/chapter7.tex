@@ -13,7 +13,7 @@ As previously mentioned, SAR has several applications, such as, topology, oceono
 The SAR can operate in two modes: single-pass acquisition and multi-pass acquisition. In the first it is captured only one picture of the 
 monitored area, while in the latter there can be multiple acquisitions of the same area. 
 When dealing with multi-temporal acquisitions, we can either assess the information contained in the entire time frame or focus in detecting changes between the acquisitions. 
-When the latter is the focus, change detection algorithms (CDA) are traditionally used to identify the relevant changes (ref carabas, ricardo).
+When the latter is the focus, change detection algorithms (CDA) are traditionally used to identify the relevant changes \cite{Carabas, Ricardo}.
 
 Generally, CDA's priority is the percentage of true positives with a lower regard for percentage of false positives. 
 Those can however be relevant in many applications such as detecting hidden objects over a large area, 
@@ -24,27 +24,27 @@ the amount of false positives.
 The traditional method for creating CDAs was to base the decisor on standard statistical theory, e.g, traditional hypothesis testing criterion methods,
 such as 
 generalized likelihood ratio test ref{GLRT1,GLRT2,GLRT3}, 
-maximum a posteriori criterion ref{Book May},
+maximum a posteriori criterion \ref{Book_Kay},
 Bayesian theory approaches ref{Bayes1, Bayes2},
 or likelihood ratio test ref{LRT1,LRT2,LRT3}. Even though these methods, most of the time, perform adequately in terms of probability of detection, but
-most of them show poor performance in terms of false alarm rate (ref{Carabas, Ricardo,LucasRamos,Chris}). Those methods also have a few drawbacks, such as: depending on
+most of them show poor performance in terms of false alarm rate \ref{Carabas, Ricardo, LucasRamos, Chris}. Those methods also have a few drawbacks, such as: depending on
 additional preprocessing of the images throughout morphological operations (erosion and dilation filters have to normally be used) and depend on calibration of the algorithm
 for the statistical analysis to work.
 
-By trying to overcome the limitations of traditional statistical based CDAs, machine learning algorithms became popular in the last few years (ref Vinholi, Campos) since they
+By trying to overcome the limitations of traditional statistical based CDAs, machine learning algorithms became popular in the last few years \cite{Vinholi, Campos} since they
 have the capability to perform better than statistical based CDAs and don't have the usual drawbacks that those methods present. There are two kinds of machine learning algorithms: supervised and unsupervised
 algorithms. Supervised algorithms are the ones that have a  classification reference to help guide the learning step, while unsupervised algorithms are the ones that do not have this classification reference - 
 on this work we focused only in supervised algorithms. As it was mentioned, it is important to know what is the parameter of interest to quantify the quality of the algorithm, e.g., we can assess performance
-based on number of true positives, true negatives, false positives and false negatives (ref PefMe) - for this part of the work, the parameters of interest are number of true positives and number of false negatives.
+based on number of true positives, true negatives, false positives and false negatives \cite{PefMe} - for this part of the work, the parameters of interest are number of true positives and number of false negatives.
 
-Among supervised machine learning algorithms there are multiple algorithms that can be chosen to solve the problem, such as: Neural Networks, Naive Bayes, Linear Regression, Kernel Ridge Regression, Support Vector Machine, Decision Trees, Random Forest (ref PefMe).
+Among supervised machine learning algorithms there are multiple algorithms that can be chosen to solve the problem, such as: Neural Networks, Naive Bayes, Linear Regression, Kernel Ridge Regression, Support Vector Machine, Decision Trees, Random Forest \cite{PefMe}.
 For this work it was chosen to use a neural network based algorithm for the CDA. There are multiple types of neural networks, e.g., perceptron, Feed Forward Neural Network, Multilayer Perceptron, Recurrent Neural Network, Long Short-Term Memory Neural Network, convolutional
-neural network, among others (ref PefMe). It was chosen to use a convolutional neural network, specifically a UNET convolutional neural network (Ref unet), for solving the target detection problem, since convolutional neural network have shown
-excellent results for computer vision problems. In (ref Kevin) it was used a similar approach to detect change in SAR images, although in (ref Kevin) the SAR images were acquired in a much higher frequency. 
+neural network, among others \cite{PefMe}. It was chosen to use a convolutional neural network, specifically a UNET convolutional neural network \cite{Unet}, for solving the target detection problem, since convolutional neural network have shown
+excellent results for computer vision problems. In \cite{Kevin} it was used a similar approach to detect change in SAR images, although in \cite{Kevin} the SAR images were acquired in a much higher frequency. 
   
 The UNET CNN will not only have the SAR acquisitions as input for the target detection, but will also have textural information that will be extracted according to the methods explained in 
 chapter 3. 
-In (ref rodrigo) it was already shown that additional textural information can provide valuable information to improve classification results. It is important to mention that since CNN use convolutions, which are linear filters, to achieve better classification results,
+In \cite{Rodrigo} it was already shown that additional textural information can provide valuable information to improve classification results. It is important to mention that since CNN use convolutions, which are linear filters, to achieve better classification results,
 it would be redundant to use linear textural information as inputs to the UNET CNN.  When comparing the proposed technique with other algorithms on the same dataset, we show that the results show similar detection performance but presenting a significant false alarm rate improvement.
 
 \begin{figure}[ht]
@@ -56,13 +56,13 @@ it would be redundant to use linear textural information as inputs to the UNET C
 \end{figure}
 
 \section{Relevant Textures for the Change Detection Algorithm}
-As it was done in (ref rodrigo) we will use the method of Sum and Difference Histograms to compute the textures (ref sarker), since they have been demonstrated to compute 
+As it was done in \cite{ rodrigo) we will use the method of Sum and Difference Histograms to compute the textures (ref sarker}, since they have been demonstrated to compute 
 useful textures to be used as additional information for machine learning algorithms and it is a texture computation method that can run in linear time. We will again give a brief overview of the method.
 
 For a given SAR image, we consider the random variable $u_{[x, y]}$ to be the absolute value of the backscatter value received by the antenna. The first step of the algorithm is to 
 quantize the random variable $u$ to have $N_g$ discrete integer possible values (on this work $N_g$ was chosen to be 20). The second step is to obtain an estimate of the joint probability density function of the random v $[u_{[x,y]}, u_{[x+\delta x, y+\delta y]}]$ (where $\delta = (\delta x, \delta y)$ is the displacement vector 
 chosen to compute the texture direction and distance),
-which is a $N_g \times N_g$ matrix. According to (ref Unser), it is possible to create an estimate of this Joint PDF in linear time by creating a random gaussian vector that has uncorrelated, therefore independent, random variables, and then computing the textures 
+which is a $N_g \times N_g$ matrix. According to \cite{ Unser}, it is possible to create an estimate of this Joint PDF in linear time by creating a random gaussian vector that has uncorrelated, therefore independent, random variables, and then computing the textures 
 directly from the two linear independent variables. The new vector is $[s_{[x,y]}, d_{[x, y]}]$ and is obtained as follows:
 
 \begin{equation}
@@ -155,7 +155,7 @@ For this work it was chosen to use the Entropy and Variance images textures as a
 
 \section{UNET Based Algorithm for Target Change Detection}
 The UNET is a convolutional neural network that was developed in the Computer Science department of the University of Freiburg for the purpose of performing image segmentation for
-biomedical pictures (ref UNET). It became popular because it was able to perform precise segmentations with little time (segmentation of a 512x512 image takes less than a second using a modern GPU).
+biomedical pictures \cite{Unet}. It became popular because it was able to perform precise segmentations with little time (segmentation of a 512x512 image takes less than a second using a modern GPU).
 Convolutional Neural networks normally work by performing a series of convolutions and pooling filters that decrease the size of the image, while the UNET works by also 
 supplementing this usual operation pipeline with a series of successive layers in which the pooling operations are replaced by upsampling operators, therefore increasing the resolution of the output.
 The final goal is that a usual successive convolutional layer learn to create an output based on this information. 
@@ -181,7 +181,7 @@ to be able to perform semantic image segmentation.
 \newline
 \textit{B. Inference Phase}
 \newline
-This phase is based on the Change Detection algorithm proposed by (ref Jong). This algorithm was based on modifying the original UNET two accept two images for the purpose of change detection.
+This phase is based on the Change Detection algorithm proposed by \cite{Kevin}. This algorithm was based on modifying the original UNET two accept two images for the purpose of change detection.
 The original algorithm has 5 feature maps created by the convolutions that were generated and saved for the first image. After that, when the second image is used as input, a Difference Image (DI) is
 created at each of the 5 levels using the feature maps of the first and second image.
 The DI is created by taking the absolute value of the difference between the feature maps, and setting the difference to be zero if the difference value does not surpass a threshold value (which was found empirically), and setting it to 
@@ -274,18 +274,17 @@ In Fig \ref{fig:diagrama} the proposed algorithm is represented visually.
 \section{Results}
 
 As previously mentioned, the dataset of 24 images was divided into two parts: 12 images used for training the UNET and 12 images used for validation of the UNET training.
-After that 24 images pairs were selected to assess the quality of the change detection algorithm. The 24 pairs follow the standard selection that are used to validate CDAs in the CARABAS dataset, as done in (ref carabas, ricardo, lucasramos).
+After that 24 images pairs were selected to assess the quality of the change detection algorithm. The 24 pairs follow the standard selection that are used to validate CDAs in the CARABAS dataset, as done in \cite{ carabas, ricardo, lucasramos}.
 
 The results are presented in Table \ref{tab:my_table}, where each image M\_P was labelled in terms of Mission number (M) and flight pass (P). The compared images have different mission numbers, but the same flight pass heading.
 In Table \ref{tab:my_table} it is presented the results for the CDA algorithm using only the original image -in order to assess the quality of the CDA-  and it is also presented the result using the textural information combined with the original image -
 in order to assess the quality improvement due to the additional textural information.
 
 The quality of the algorithm can be measured in terms of probability of detection and False Alarm Rate (FAR). The proposed algorithm achieved a Probability of detection of 97\% and a False Alarm Rate of 0.034${/} km^2$, while the original algorithm proposed in the CARABAS
-challenge paper achieved a probability of detection of 97\% and a FAR of  $0.67{/} km^2$. Other recent algorithms, such as the one presented in (ref ricardo) achieved a probability of detection of 97\% and a FAR of $0.28{/} km^2$ and (ref Vinholi) achieved a 
+challenge paper achieved a probability of detection of 97\% and a FAR of  $0.67{/} km^2$. Other recent algorithms, such as the one presented in \cite{ricardo} achieved a probability of detection of 97\% and a FAR of $0.28{/} km^2$ and \cite{Vinholi} achieved a 
 probability of detection of 99\% and a FAR of $0.0833{/} km^2$. 
 
 \section{Conclusion}
 The Change Detection Algorithm proposed yielded a probability of detection similar to the usual state-of-the-art algorithms existent - it had a probability of detection of 97\% - 
 but showed great improvements in terms of False Alarm Rate, reducing the probability of false alarm more than ten times, when compared to usual statistical change detection algorithms, and 
 and reducing the probability of false alarm almost three times when compared to usual Convolutional Neural Network based machine learning algorithms.
-

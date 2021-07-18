@@ -5,18 +5,10 @@ The dataset consists of SAR images collected that the Swedish low VHF-band SAR s
 The images were made publicly available by the Swedish Airforce Research center with the purpose of fostering research on the 
 subject field of target detection under tree foliage. 
 
-% In this chapter we will use the textural developed in previous chapters 
-% to create a change detection algorithm (CDA). The CDA will be assessed
-% using the CARABAS-II image dataset, which is a set of images acquired by a Very High Frequency (VHF) Ultra Wideband (UWB) SAR system.
-% The CDA is based on the UNET convolutional neural network (CNN) architecture and will use the 
-% textura information as additional inputs for image classification.
-% It will be demonstrated that the 
-% use of textural information can improve the overall performance of the algorithm
-% in terms of probability of detection and false alarm rate. 
 
 \section{Wavelength Resolution SAR Systems}
 Wavelength resolution SAR images are radar systems with resolution in the order of 
-the radar system Wavelength. According to (ref), the resolution of a cell of a SAR image can be
+the radar system Wavelength. According to \cite{62}, the resolution of a cell of a SAR image can be
 calculated by:
 
 \begin{equation}
@@ -28,20 +20,20 @@ is the aperture angle (in radians), $c$ is the speed of light and $B$ is the sys
 
 It is obvious that the backscatter characteristcs of the SAR depends on the frequency band of the system.
 For wavelength-resolution SAR systems there is a significant difference between the backscatter of targets with size the order
-of the wavelength - which present the resonance scattering phenomena (ref63) - and targets small compared to the wavelength - which present
-the the Rayleigh scattering phenomena (ref63). 
+of the wavelength - which present the resonance scattering phenomena \cite{63} - and targets small compared to the wavelength - which present
+the the Rayleigh scattering phenomena \cite{63}. 
 
 According to (17ref), Wavelength SAR systems are not sensitive to small scatterers inside the resolution cell,
 thus the scattering process is mainly due to scatterers with dimensions in the order of the system wavelength.
 Since the resolution of the cell is similar to the resolution of the scatterer, there can be only one single scatterer inside each cell, 
-therefore the image will not be greatly affected by speckle noise (speckle noise is a major cause of problems in non wavelength-resolution SAR still). For example, according to (ref64)
+therefore the image will not be greatly affected by speckle noise (speckle noise is a major cause of problems in non wavelength-resolution SAR still). For example, according to \cite{64}
 in frequencies below 100 MHz, in forest areas, the backscatter is dominated by backscattering from tree foliage.
 
 Moreover, scatterers that are large tend to be static objects, hence a stack of images of the same area will present a high degree of 
-similarity between multi-pass acquisitions. Therefore regular noise redution techniques do not have to be applied when dealing with those set of images (ref 61).
+similarity between multi-pass acquisitions. Therefore regular noise redution techniques do not have to be applied when dealing with those set of images \cite{ 61}.
 
-It is also worth mentioning that according to (ref 66), signal attenuation in low-frequency wavelength-resolution SAR systems 
-is not a major concern. Studies (ref63) have also shown that signal attenuation can be as little as 3dB in low-frequency SAR acquisitions in forest areas.
+It is also worth mentioning that according to \cite{ 66}, signal attenuation in low-frequency wavelength-resolution SAR systems 
+is not a major concern. Studies \cite{63} have also shown that signal attenuation can be as little as 3dB in low-frequency SAR acquisitions in forest areas.
 
 
 Due to all that, according to (63ref), low resolution SAR systems are better suited to Foliage Penetrating (FOPEN) applications.
@@ -60,7 +52,7 @@ The challenge related to change detection is associated with the trade-off betwe
 Normally what happens is by trying to increase the overall accuracy of detection algorithms will incur in having a high number of false alarms, 
 therefore when designing an algorithm for detection it is necessary to have both good detection capabilities and a low enough false alarm rate
 to be used by the client. In foliage penetration applications, the main source of clutter comes from large tree trunks, and the more sparse the
-forest is the less will be the number of false targets. It is also true that the larger the tree then the higher will be the number of false alarms (ref paper).
+forest is the less will be the number of false targets. It is also true that the larger the tree then the higher will be the number of false alarms \cite{Book_ML}.
 
 The objects that will be used to assess the quality of the change detection method will be a set of 25 military vehicles distributed among a testing area.
 Since those objects are large (compared to the bandwidth of the signal), and stationary, then their radar signature will be very stable between acquisitions.
@@ -120,12 +112,12 @@ This dataset is the one used to test and assess the quality of the proposed CDA.
 The dataset consists of 24 SAR images selected from over 150 images obtained during different flight campaigns.
 Each image covers the same ground area of 6 $km^2$ (3 km vertically and 2 km horizontally)
 and is given in the form of a 3000 X 2000 matrix, where each pixel size is 1km x 1km.
-According to (ref 77,62,78) the images are already calibrated, pre-processed and geocoded.
+According to \cite{ 77,62,78} the images are already calibrated, pre-processed and geocoded.
 
 The location of the image dataset is inside the military base station Missile Test Area North
-Vidsel in northern Sweden in 2002. The test site is a region near the village of Nausta (ref 75).
-The vegetation of the area is dominated by Scots Pine tree (ref 76), which consists of small and medium size trees.
-According to (ref75) the area also contains fields, roads and lakes.
+Vidsel in northern Sweden in 2002. The test site is a region near the village of Nausta \cite{ 75}.
+The vegetation of the area is dominated by Scots Pine tree \cite{ 76}, which consists of small and medium size trees.
+According to \cite{75} the area also contains fields, roads and lakes.
 
 With the objective of testing CDA quality, it was deployed 25 testing targets over the testing with different configuration 
 and arrangements. The testing targets consists of ten TGB11 model military vehicles, eight TGB30 model 
@@ -148,7 +140,7 @@ therefore all advantages of targets with similar dimension to the wavelength pre
 
 
 The dataset of 24 images were acquired using four different flight passes. Each 
-flight pass has an incidence angle of 58 degrees, used the StripSAR mode and was acquired with the radar looking left (ref 75,76).
+flight pass has an incidence angle of 58 degrees, used the StripSAR mode and was acquired with the radar looking left \cite{ 75,76}.
 The vehicles were positioned in two diferent forests, Forest 2 being in the northwest of the field, and forest 1 being in the
 southeast of the test area. 
 
@@ -214,8 +206,8 @@ In table \ref{tab:flight_mission} it is presented the summary with the informati
 \section{Traditional Change Detecion in Wavelength-Resolution SAR Images}
 
 The field of FOPEN target detection using wavelength-resolution SAR images (both in VHF and UHF bands) has been 
-around of decades (ref 25,48,79,80). Among those studies, the CARABAS-II system dataset was used in many different FOPEN studies 
-(ref). 
+around of decades \cite{ 25,48,79,80}. Among those studies, the CARABAS-II system dataset was used in many different FOPEN studies 
+\cite{}. 
 
 As previously mentioned, the objective of the study is to create a change detection method that will compare 
 different images of the same target field (in this case, the forests in Sweden) and try to identify the targets that 
@@ -223,13 +215,13 @@ have changed position in the image (in this case, the military vehicles TGB11, T
 
 
 There are several change detection methods that were already used in the CARABAS-II dataset.
-The first method that yielded accuracy high enough for real world applications was based in Bayes linear classification (ref81).
-After that, a myriad of new methods were proposed, such as: Likelihood-ratio test (LRT) (ref 61), combination of LRT and Space-Time 
-adaptative processing (STAP) (ref 76) among others. Traditionally CDAs were also mainly based on traditional statistical decision theory, e.g., 
+The first method that yielded accuracy high enough for real world applications was based in Bayes linear classification \cite{81}.
+After that, a myriad of new methods were proposed, such as: Likelihood-ratio test (LRT) \cite{ 61}, combination of LRT and Space-Time 
+adaptative processing (STAP) \cite{ 76} among others. Traditionally CDAs were also mainly based on traditional statistical decision theory, e.g., 
 traditional hypothesis testing criterion methods, such as maximum a posteriori 
-criterion (ref), likelihood ratio test(ref), generalized likelihood ratio test (ref), 
-or Bayesian theory approaches (ref). Several of those CDAs have achieved high accuracy 
-in terms of true positives, but most show unsatisfactory performance in terms of false positives percentage (ref).
+criterion \cite{Book_Kay}, likelihood ratio test \cite{LRT1,LRT2,LRT3}, generalized likelihood ratio test \cite{GLRT1,GLRT2,GLRT3}, 
+or Bayesian theory approaches \cite{Bayes1, Bayes2}. Several of those CDAs have achieved high accuracy 
+in terms of true positives, but most show unsatisfactory performance in terms of false positives percentage \cite{Carabas, Ricardo,LucasRamos,Chris}.
 
 
 
