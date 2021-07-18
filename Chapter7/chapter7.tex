@@ -142,14 +142,14 @@ After obtaining the probability density functions $P(s_{[x,y]})$ and $P(d_{[x,y]
 There are multiple textures that can be chosen as additional inputs for the UNET CNN. One have to keep in mind, that, for every texture that it is used as additional information, 
 the time computation for the training and validation of the UNET will be also increased, so it is vital to keep in mind the trade-off between computation time and improvement of classification results.
 
-For this work it was chosen to use the Entropy and Variance images textures as additional information. The original picture and the texture pictures can be seen in Fig. \ref{fig:exemplo_carabas}, Fig. \ref{fig:entropy_example} and Fig. \ref{fig:variance_example}.
+For this work it was chosen to use the Entropy and Variance images textures as additional information. The original picture and the texture pictures can be seen in \figref{fig:exemplo_carabas}, \figref{fig:entropy_example} and \figref{fig:variance_example}.
 
 
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.45\linewidth]{Chapter7/variance_exemplo.png}
-    \caption{Variance image. The red circle shows the position of the vehicles}
+    \caption{Variance image. The red circle shows the position of the vehicles.}
     \label{fig:variance_example}
 \end{figure}
 
@@ -163,12 +163,12 @@ The final goal is that a usual successive convolutional layer learn to create an
 It is important to remind that an important aspect of the UNET is that there is a large number of feature channels responsible for the upsampling step, which ensures that the UNET propagates information
 to the higher resolution layers. After the expansive path is performed, it is combined with the usual pooling operations, creating a contractive path, which makes the UNET shows a u-shaped architecture. 
 It is important also to mention that in the borders of the image, the UNET will extrapolate by mirroring the information to predict the pixels in the area. 
-Fig \ref{fig:unet_architecture} depicts the architecture of the UNET and it's u-shape.
+\figref{fig:unet_architecture} depicts the architecture of the UNET and it's u-shape.
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.7\linewidth]{Chapter7/unet_architecture.png}
-    \caption{UNET architecture}
+    \caption{UNET architecture.}
     \label{fig:unet_architecture}
 \end{figure}
 
@@ -186,12 +186,12 @@ The original algorithm has 5 feature maps created by the convolutions that were 
 created at each of the 5 levels using the feature maps of the first and second image.
 The DI is created by taking the absolute value of the difference between the feature maps, and setting the difference to be zero if the difference value does not surpass a threshold value (which was found empirically), and setting it to 
 the value of the second image if it surpasses the threshold value. Intuitivelly this step works by setting it to zero all pixels that did not change sufficient (according to a threshold value). After that, the DI is semantically segmentated, rendering a visual 
-interpretation of the collective changes that happened. A visual representation of this algorithm is show in Fig \ref{fig:kevin_algorithm}
+interpretation of the collective changes that happened. A visual representation of this algorithm is show in \figref{fig:kevin_algorithm}.
 
 \begin{figure}[ht]
     \centering
     \includegraphics{Chapter7/kevin_algorithm.jpg}
-    \caption{Inference Phase for the corresponding DI}
+    \caption{Inference Phase for the corresponding DI.}
     \label{fig:kevin_algorithm}
 \end{figure}
 
@@ -222,7 +222,7 @@ we decrease the probability of false detection, but at the same time it will als
 
 After the final image is created by the CDA, a threshold filter selection was performed to eliminate noise classification from the image - we considered only sets of pixels which had 100 or more connected components.
 
-In Fig \ref{fig:diagrama} the proposed algorithm is represented visually.
+In \figref{fig:diagrama} the proposed algorithm is represented visually.
 
 
 

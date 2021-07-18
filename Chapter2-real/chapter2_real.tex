@@ -8,12 +8,12 @@ The test area chosen for this thesis is the Amazon Rainforest, focusing specific
 The goal of this thesis is to improve algorithms to identify deforestation areas using SAR images. Because of that the natural choice of area to study was the Rondonia state, since it is the state with the most deforestation in the Amazon Rainforest. The Rondonia state already lost over 31\% of its forests and most of the remaining areas are degraded. For comparison, Acre, the state which borders Rondonia on the west, has 91\% of its original forest cover and a greater part of it is still intact. 
 \par
 Even though there are a lot of efforts being made to control the illegal deforestation, the results are not yet satisfactory and recent data even shows that the pace of deforestation have increased in the years of 2018 and 2019.\par
-The deforestation in the Rondonia state can be easily seen with optical satellite data acquired with Google Earth. Deforestation follows a fairly predictable pattern, as seen in figure \ref{fig:fishbone}. The pattern of deforestation is known as fishbone pattern due to its similarity with a fish skeleton. This pattern arises from the fact that deforesting is normally done by penetrating the forest and then deforesting along the edges of the road firstly created.
+The deforestation in the Rondonia state can be easily seen with optical satellite data acquired with Google Earth. Deforestation follows a fairly predictable pattern, as seen in \figref{fig:fishbone}. The pattern of deforestation is known as fishbone pattern due to its similarity with a fish skeleton. This pattern arises from the fact that deforesting is normally done by penetrating the forest and then deforesting along the edges of the road firstly created.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Chapter2-real/fishbone.png}
-    \caption{Fishbone pattern of deforestation}
+    \caption{Fishbone pattern of deforestation.}
     \label{fig:fishbone}
 \end{figure}{}
 
@@ -37,7 +37,7 @@ as new techniques with bistatic SAR \cite{vintetres, vintequatro}. The work pres
     \label{fig:tandem_dataset}
 \end{figure}{}
 TanDEM-X has the advantage that it can provide very high resolution data (each pixel has dimensions of  1.5m X 1.5m). Since the data is very resolution, and therefore very big in terms of memory size, it was chosen to work with small areas in the Rondonia state.
-The dataset available is on the east of the Rondonia State. It was collected images from two areas in east Rondonia as can be seen in the figure \ref{fig:tandem_dataset}. Each rectangle represents one SAR image acquired with the TanDEM-X.
+The dataset available is on the east of the Rondonia State. It was collected images from two areas in east Rondonia as can be seen in \figref{fig:tandem_dataset}. Each rectangle represents one SAR image acquired with the TanDEM-X.
 
 \section{Sentinel-1 datasets}
 \par
@@ -52,8 +52,8 @@ According to \cite{sentinelmission} there are five priorities for the SENTINEL-1
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{Chapter2-real/sentinel_dataset.png}
-    \caption{SENTINEL-1 dataset available in Rondonia Area}
+    \caption{SENTINEL-1 dataset available in Rondonia Area.}
     \label{fig:sentinel_dataset}
 \end{figure}{}
 
-SENTINEL-1 provides area coverage much greater than the TanDEM-X satellite with coverage up to 400km, but the resolution of the image is lower compared to the TanDEM-X mission. While the pixel resolution for SENTINEL-1 mission is 3.7mX14m, the TanDEM-X can provide pixels with resolution of 1.5mX1.5m. Since SENTINEL-1 provides area coverage much greater than TanDEM-X, it was chosen as main option for area monitoring in the Rondonia state as a whole. With SENTINEL-1 it was possible to cover almost the entire Rondonia state although the entire coverage was not done because there are some gaps between acquisitions as seen on image \ref{fig:sentinel_dataset}. Even though the resolution for the SENTINEL-1 is much lower than the resolution of the TanDEM-X, it will be investigated on this thesis if this resolution is enough to detect new areas of deforestation. The SENTINEL-1 dataset for the Rondonia state can be seen on the image \ref{fig:sentinel_dataset}, where each rectangle is one acquistion made by SENTINEL-1.
+SENTINEL-1 provides area coverage much greater than the TanDEM-X satellite with coverage up to 400km, but the resolution of the image is lower compared to the TanDEM-X mission. While the pixel resolution for SENTINEL-1 mission is 3.7mX14m, the TanDEM-X can provide pixels with resolution of 1.5mX1.5m. Since SENTINEL-1 provides area coverage much greater than TanDEM-X, it was chosen as main option for area monitoring in the Rondonia state as a whole. With SENTINEL-1 it was possible to cover almost the entire Rondonia state although the entire coverage was not done because there are some gaps between acquisitions as seen on \figref{fig:sentinel_dataset}. Even though the resolution for the SENTINEL-1 is much lower than the resolution of the TanDEM-X, it will be investigated on this thesis if this resolution is enough to detect new areas of deforestation. The SENTINEL-1 dataset for the Rondonia state can be seen on \figref{fig:sentinel_dataset}, where each rectangle is one acquistion made by SENTINEL-1.

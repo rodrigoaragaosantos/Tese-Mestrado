@@ -30,7 +30,7 @@ From the table \ref{tabelamse} it is clear that the model 4 has superior perform
 
 After the parameters of interest were extracted from the training data, it was computed the normalized histograms for each class. The principle is that if the probability density functions for the classes have little overlap then it should be easy to infer which pixel belongs to each class, while if the probability density functions have a big overlap then it should be hard to infer to which class each pixel corresponds to. 
 
-On the image \ref{fig:normalized_histograms} it is possible to visualize the histograms for each parameter for each class and the graph of the temporal decorrelation for the fitted parameters.
+On \figref{fig:normalized_histograms}, it is possible to visualize the histograms for each parameter for each class and the graph of the temporal decorrelation for the fitted parameters.
 
 \begin{figure}[H]
     \centering
@@ -61,7 +61,7 @@ For the three different cases the case 3 showed the best performance for classif
     \label{fig:classification_germany}
 \end{figure}
 
-For the comparison of the different classification models it was chosen three different patches on the image and it was performed the classification for these patches using the three different cases(patches shown in Figure \ref{fig:classification_germany}. It was also performed an overall classification where 2 million pixels were randomly selected from the area and classified. The results were obtained by comparing the model classification results with the Corine Land Cover Map.
+For the comparison of the different classification models it was chosen three different patches on the image and it was performed the classification for these patches using the three different cases(patches shown in \figref{fig:classification_germany}. It was also performed an overall classification where 2 million pixels were randomly selected from the area and classified. The results were obtained by comparing the model classification results with the Corine Land Cover Map.
 
 The results for these comparisons can be seen on the table \ref{tab:class_accuracy_rondonia}
 
@@ -90,7 +90,7 @@ For the Amazon Rainforest dataset it is available 12 stacks (defined on section 
 
 For the training of the Random Forest 5 million pixels were randomly extracted from the training dataset for each class (except for the Artificial Surface since there is a low amount of pixels for the training, for this case standard data augmentation methods were used). 
 
-On the image \ref{fig:results_rondonia} it can be seen the results of the classification in comparison with the PRODES reference map. It is worth mentioning that the PRODES reference map also includes the cuts that were made between 2017 and 2019.
+On \figref{fig:results_rondonia}, it can be seen the results of the classification in comparison with the PRODES reference map. It is worth mentioning that the PRODES reference map also includes the cuts that were made between 2017 and 2019.
 
 \begin{figure}[H]
     \centering
