@@ -706,9 +706,9 @@ FUNCTION {apply.title.command}
 FUNCTION {format.title}
 {author empty$ editor empty$ and organization empty$ and
   {title format.title.as.author}
-  {title  duplicate$ empty$ {pop$ ""} {"t" change.case$} if$}
+  {title  duplicate$ empty$ {pop$ ""} {} if$}
  if$
- subtitle  empty$ 'skip$ {subtitle ": " swap$ * "t" change.case$ *} if$
+ subtitle  empty$ 'skip$ {subtitle ": " swap$ *  *} if$
  apply.title.command
  compare.title
 }
@@ -762,9 +762,9 @@ FUNCTION {format.date}
 FUNCTION {format.btitle}
 {author empty$ editor empty$ and organization empty$ and
     {title format.title.as.author "title" bibinfo.check duplicate$ empty$ 'skip$ {} if$
-    subtitle  empty$ 'skip$ {subtitle ": " swap$ * "t" change.case$ *} if$}
+    subtitle  empty$ 'skip$ {subtitle ": " swap$ *  *} if$}
     {title "title" bibinfo.check emphasize duplicate$ empty$ 'skip$ {} if$
-    subtitle  empty$ 'skip$ {subtitle ": " swap$ * "t" change.case$ *} if$}
+    subtitle  empty$ 'skip$ {subtitle ": " swap$ *  *} if$}
 if$
 apply.title.command
 compare.title
@@ -1032,10 +1032,10 @@ FUNCTION {format.chapter.pages}
 FUNCTION {format.booktitle}
 {author empty$ editor empty$ and organization empty$ and
     {booktitle format.title.as.author "booktitle" bibinfo.check duplicate$ empty$ 'skip$ {} if$
-    booksubtitle  empty$ 'skip$ {booksubtitle ": " swap$ * "t" change.case$ *
+    booksubtitle  empty$ 'skip$ {booksubtitle ": " swap$ *  *
     apply.title.command} if$}
     {booktitle "booktitle" bibinfo.check emphasize duplicate$ empty$ 'skip$ {} if$
-    booksubtitle  empty$ 'skip$ {booksubtitle ": " swap$ * "t" change.case$ *
+    booksubtitle  empty$ 'skip$ {booksubtitle ": " swap$ *  *
     apply.title.command} if$}
 if$
 }
