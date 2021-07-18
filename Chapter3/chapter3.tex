@@ -52,13 +52,13 @@ For example, if the number of input variables is 2, and different algorithms are
     \label{fig:machine_learning_classification}
 \end{figure}{}
 
-In the image \ref{fig:machine_learning_classification} the color intensity illustrates how certain the algorithm is of the classification and the number on each figure is the time it took to create that region.
+In \figref{fig:machine_learning_classification}, the color intensity illustrates how certain the algorithm is of the classification and the number on each figure is the time it took to create that region.
 \newline
 For different algorithms it is clear that the classification regions it derives are different and how the algorithm creates these regions determines how well the algorithm classifies.
 \newline
 The problem of using machine learning for classifying forest and deforested areas is that the algorithm relies too much on creating decision boundaries and by checking in which decision region a certain pixel is, but it does not check the surroundings of that pixel, which is also a important information for classification. \newline
 \newline
-For example, in the image \ref{fig:machine_learning_classification} above, if a red pixel falls in a blue region it will be wrongly labeled blue. For a SAR image it might happen that due to noise a forest pixel looks like a deforested pixel, but if all the pixels around it looks like forest pixels then this might be an indicator that that pixel is a wrongly labeled forest pixel. Even though it is not possible to make these machine learning algorithms consider this question in the learning process (this would mean interfering  in the modelling process, which would be equivalent to creating a new algorithm), it is possible to create more input data by looking at the surroundings of a pixel. This new data information can help this algorithm not to make a wrong classification. This new input data is exactly the textures of a image.
+For example, in \figref{fig:machine_learning_classification}, if a red pixel falls in a blue region it will be wrongly labeled blue. For a SAR image it might happen that due to noise a forest pixel looks like a deforested pixel, but if all the pixels around it looks like forest pixels then this might be an indicator that that pixel is a wrongly labeled forest pixel. Even though it is not possible to make these machine learning algorithms consider this question in the learning process (this would mean interfering  in the modelling process, which would be equivalent to creating a new algorithm), it is possible to create more input data by looking at the surroundings of a pixel. This new data information can help this algorithm not to make a wrong classification. This new input data is exactly the textures of a image.
 
 \section{Textures Methods}
 \label{sec:Texturization_Methods}

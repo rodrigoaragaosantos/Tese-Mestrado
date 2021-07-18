@@ -33,7 +33,7 @@ The sensor is an antenna with length $L_a$ along the azimuth direction.
 \end{figure}{}
 
 The resolution of an image in a given direction is the minimal distance between two points so it is still possible to identify the two different points on the image (also called to resolve the two different targets). In SAR there are resolution on range direction and azimuth direction, which is the minimal distance to separate two targets on range direction and azimuth direction respectively.\\
-For resolving two separate targets, it is normally considered that the spatial separation of the pulses should be higher than half of the Bandwidth of the pulse (this is visually explained in Figure \ref{fig:pulse_separation}).
+For resolving two separate targets, it is normally considered that the spatial separation of the pulses should be higher than half of the Bandwidth of the pulse (this is visually explained in \figref{fig:pulse_separation}).
 
 \begin{figure}[H]
     \centering
@@ -42,7 +42,7 @@ For resolving two separate targets, it is normally considered that the spatial s
     \label{fig:pulse_separation}
 \end{figure}{}
 
-From Figure \ref{fig:pulse_separation}, it is possible to understand why it was adopted that the temporal separation should be greater than half $\tau$. If it is greater it's reasonable to assume that it is possible to separate the targets, but if it is less than that then it's not clear the target separation.
+From \figref{fig:pulse_separation}, it is possible to understand why it was adopted that the temporal separation should be greater than half $\tau$. If it is greater it's reasonable to assume that it is possible to separate the targets, but if it is less than that then it's not clear the target separation.
 
 For SAR systems, the resolution in azimuth is equal to half the antenna length. And the resolution in range direction is given by: 
 
@@ -54,7 +54,7 @@ where $\rho_{rg}$ is the range resolution, $c$ is the speed of the light, $\tau_
 After acquiring the image of the area, it is necessary to filter the image, so it is clearer for interpretation and information extraction. This is done by using two matched filters (to maximize the signal-to-noise ratio of the image), one in the azimuth direction and the other in the range direction. 
 This process of applying these two filters is called range compression and azimuth compression.
 
-Figure \ref{fig:sar_compression} gives a summary of how the azimuth and range compression works. The focusing process is done by making convolutions (usually carried out in frequency domain) with the reference function for the received signal in the range direction and in the azimuth direction.
+\figref{fig:sar_compression} gives a summary of how the azimuth and range compression works. The focusing process is done by making convolutions (usually carried out in frequency domain) with the reference function for the received signal in the range direction and in the azimuth direction.
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{Cap1/compres.png}
@@ -76,7 +76,7 @@ Instead, if the reference area is perpendicular to the line of sight $A_\gamma$,
     \gamma^0 = \frac{\beta^0 \cdot A_\beta}{A_\theta} = \beta^0 \cdot \tan(\theta)
 \end{equation}{}
 
-A visual description of these normalized backscatter coefficients is shown in Figure \ref{fig:normalization_areas}
+A visual description of these normalized backscatter coefficients is shown in \figref{fig:normalization_areas}
 
 \begin{figure}[H]
     \centering
@@ -169,7 +169,7 @@ Once the interferogram has been computed the interferometric phase can be decomp
     \Phi_{int} = \Phi_{topo} + \Phi_{fe}
 \end{equation}
 where $\Phi_{topo}$ is the topographic component and $\Phi_{fe}$ is the flat earth component.
-The flat earth component accounts for the interferometric phase difference ocurring between two scatterers at the same topographical height but at different horizontal positions. The flat earth component is visually explained in the Figure \ref{fig:reference_geometry}.
+The flat earth component accounts for the interferometric phase difference ocurring between two scatterers at the same topographical height but at different horizontal positions. The flat earth component is visually explained in \figref{fig:reference_geometry}.
 
 \begin{figure}[H]
     \centering
@@ -244,7 +244,7 @@ What is obtained is then a estimation of the real value of the coherence, by usi
 Where $N$ is the number of independent samples used to compute the coherence estimation. 
 The absolute value of the coherence, gives information about the decorrelation level and it is also a measure of the quality of the interferogram. The phase of the coherence, also called interpherometric phase, gives information about the path difference between the two antennas used for the acquisition. 
 
-It is important to say that this estimation of the coherence is not unbiased, even though it is asymptotically unbiased \cite{Bamler}. In fact, if the values of the pixels are assumed to follow a gaussian distribution, then it is possible to find the relationship between the estimated coherence, the real value of the coherence and the number of samples used to make the estimation. This function is show in the Figure \ref{fig:bias} below.
+It is important to say that this estimation of the coherence is not unbiased, even though it is asymptotically unbiased \cite{Bamler}. In fact, if the values of the pixels are assumed to follow a gaussian distribution, then it is possible to find the relationship between the estimated coherence, the real value of the coherence and the number of samples used to make the estimation. This function is show in \figref{fig:bias}.
 
 \begin{figure}[H]
     \centering
