@@ -1,5 +1,5 @@
-%% abntex2-alf.bst, v-1.9.7 laurocesar
-%% Copyright 2012-2018 by abnTeX2 group at http://www.abntex.net.br/ 
+%% custom-abntex2-alf.bst
+%% Copyright 2021 by Maxwell Nogueira Peixoto <maxwellpxt@gmail.com>
 %%
 %% This work may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3
@@ -9,19 +9,15 @@
 %% and version 1.3 or later is part of all distributions of LaTeX
 %% version 2005/12/01 or later.
 %%
-%% This work has the LPPL maintenance status `maintained'.
-%% 
-%% The Current Maintainer of this work is the abnTeX2 team, led
-%% by Lauro César Araujo. Further information are available on 
-%% http://www.abntex.net.br/
+%% This work has the LPPL maintenance status `unmaintained'.
 %%
 %% Creator and original mantainer: Gerald Weber <gweber@codigolivre.org.br>
 %% Copyright 2001-2002 by the abnTeX group at http://abntex.codigolivre.org.br
 %%
-%% This file is an *extensive* modification from a file generated with the docstrip utility.
-%% The original source files were:
-%% merlin.mbs  (with options: `babel,nm-revf,aunm-semi,nmlm,x3,m3,dt-end,yr-com,xmth,vnum-x,volp-com,jwdpg,jwdvol,num-xser,btit-rm,bt-rm,pg-bk,add-pub,pub-date,pub-xpar,pre-pub,isbn,issn,pp,ed,abr,ednx,nfss')
-%% These sourefiles are copyrighted by Patrick W Daly
+%% This file is a modification from the `abntex2-alf.bst' file
+%% of the `abntex2' LaTeX package (version 1.9.7) copyrighted by
+%% the abnTeX2 group at http://www.abntex.net.br/
+%% The original `abntex2-alf.bst' source file can be found at https://www.ctan.org/tex-archive/macros/latex/contrib/abntex2/tex
 
 ENTRY
   { address author
