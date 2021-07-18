@@ -244,7 +244,7 @@ FUNCTION {bbl.chapter} { "cap." }
 FUNCTION {bbl.colon} {": "}
 FUNCTION {bbl.editors} { "Ed." }
 FUNCTION {bbl.editor} { "Ed." }
-FUNCTION {bbl.edby} { "editado por" }
+FUNCTION {bbl.edby} { "edited by" }
 FUNCTION {bbl.edition} { "ed." }
 FUNCTION {bbl.empty} {""}
 FUNCTION {bbl.etal}{abnt.etal.text "" = {""} {" " abnt.etal.text *} if$}
@@ -257,22 +257,22 @@ FUNCTION {bbl.ldots} %#0 use nothing, #1 use \ldots, #2 use $\ldots$, 3# use {..
    abnt.ldots.type #3 = {"{...}"}    'skip$ if$}
   {""} %for #0 use nothing
 if$}
-FUNCTION {bbl.master}  { "Mestrado" }
+FUNCTION {bbl.master}  { "Master" }
 FUNCTION {bbl.missing.year}
 {abnt.missing.year
   {"[s.d.]"} %#1
   {""}       %#0
  if$}
-FUNCTION {bbl.monography} { "Monografia" }
-FUNCTION {bbl.mthesis} { "Disserta\c{c}\~{a}o" }
+FUNCTION {bbl.monography} { "Monography" }
+FUNCTION {bbl.mthesis} { "Dissertation" }
 FUNCTION {bbl.no.address} {"[S.l.]"}
 FUNCTION {bbl.no.address.no.publisher} {"[S.l.: s.n.]"}
 FUNCTION {bbl.no.publisher} {"[s.n.]"}
 FUNCTION {bbl.number} { iso.abbreviation {"no."} {"n."} if$ }
 FUNCTION {bbl.nr} { "n." }
-FUNCTION {bbl.of} { "de" }
-FUNCTION {bbl.phd} { "Doutorado" }
-FUNCTION {bbl.phdthesis} { "Tese" }
+FUNCTION {bbl.of} { "of" }
+FUNCTION {bbl.phd} { "PhD" }
+FUNCTION {bbl.phdthesis} { "Thesis" }
 FUNCTION {bbl.pages}
   {pagename empty$
     { "p." }
@@ -293,17 +293,17 @@ FUNCTION {bbl.volume} { iso.abbreviation {"vol."} {"v."} if$ }
 
 
 MACRO {jan} {"jan."}
-MACRO {feb} {"fev."}
+MACRO {feb} {"feb."}
 MACRO {mar} {"mar."}
-MACRO {apr} {"abr."}
-MACRO {may} {"maio"}
+MACRO {apr} {"apr."}
+MACRO {may} {"may"}
 MACRO {jun} {"jun."}
 MACRO {jul} {"jul."}
-MACRO {aug} {"ago."}
-MACRO {sep} {"set."}
-MACRO {oct} {"out."}
+MACRO {aug} {"aug."}
+MACRO {sep} {"sep."}
+MACRO {oct} {"oct."}
 MACRO {nov} {"nov."}
-MACRO {dec} {"dez."}
+MACRO {dec} {"dec."}
 
 
 FUNCTION {is.num}
@@ -2053,7 +2053,7 @@ FUNCTION {set.default.abnt.variables}
   #0 'abnt.verbatim.entry :=
 }
 FUNCTION {set.default.iso.variables}
-{ #0 'iso.abbreviation := % #0 ABNT-style; #1 ISO-style
+{ #1 'iso.abbreviation := % #0 ABNT-style; #1 ISO-style
   #0 'iso.author.punctuation := % #0 ABNT (Smith, A. B.); #1 ISO (Smith, AB)
   #0 'iso.date.place := % #0 ABNT-sty; #1 ISO-style
 }
