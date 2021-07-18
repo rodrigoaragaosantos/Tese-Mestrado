@@ -56,7 +56,7 @@ it would be redundant to use linear textural information as inputs to the UNET C
 \end{figure}
 
 \section{Relevant Textures for the Change Detection Algorithm}
-As it was done in \cite{ rodrigo) we will use the method of Sum and Difference Histograms to compute the textures (ref sarker}, since they have been demonstrated to compute 
+As it was done in \cite{Rodrigo} we will use the method of Sum and Difference Histograms to compute the textures \cite{Sarker,Sarker2}, since they have been demonstrated to compute 
 useful textures to be used as additional information for machine learning algorithms and it is a texture computation method that can run in linear time. We will again give a brief overview of the method.
 
 For a given SAR image, we consider the random variable $u_{[x, y]}$ to be the absolute value of the backscatter value received by the antenna. The first step of the algorithm is to 
@@ -274,14 +274,14 @@ In Fig \ref{fig:diagrama} the proposed algorithm is represented visually.
 \section{Results}
 
 As previously mentioned, the dataset of 24 images was divided into two parts: 12 images used for training the UNET and 12 images used for validation of the UNET training.
-After that 24 images pairs were selected to assess the quality of the change detection algorithm. The 24 pairs follow the standard selection that are used to validate CDAs in the CARABAS dataset, as done in \cite{ carabas, ricardo, lucasramos}.
+After that 24 images pairs were selected to assess the quality of the change detection algorithm. The 24 pairs follow the standard selection that are used to validate CDAs in the CARABAS dataset, as done in \cite{Carabas,Ricardo,LucasRamos}.
 
 The results are presented in Table \ref{tab:my_table}, where each image M\_P was labelled in terms of Mission number (M) and flight pass (P). The compared images have different mission numbers, but the same flight pass heading.
 In Table \ref{tab:my_table} it is presented the results for the CDA algorithm using only the original image -in order to assess the quality of the CDA-  and it is also presented the result using the textural information combined with the original image -
 in order to assess the quality improvement due to the additional textural information.
 
 The quality of the algorithm can be measured in terms of probability of detection and False Alarm Rate (FAR). The proposed algorithm achieved a Probability of detection of 97\% and a False Alarm Rate of 0.034${/} km^2$, while the original algorithm proposed in the CARABAS
-challenge paper achieved a probability of detection of 97\% and a FAR of  $0.67{/} km^2$. Other recent algorithms, such as the one presented in \cite{ricardo} achieved a probability of detection of 97\% and a FAR of $0.28{/} km^2$ and \cite{Vinholi} achieved a 
+challenge paper achieved a probability of detection of 97\% and a FAR of  $0.67{/} km^2$. Other recent algorithms, such as the one presented in \cite{Ricardo} achieved a probability of detection of 97\% and a FAR of $0.28{/} km^2$ and \cite{Vinholi} achieved a 
 probability of detection of 99\% and a FAR of $0.0833{/} km^2$. 
 
 \section{Conclusion}
