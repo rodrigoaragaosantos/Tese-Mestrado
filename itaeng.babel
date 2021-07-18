@@ -107,10 +107,10 @@
 \gdef\itacoadvisortitlebabel{Prof.~Dr.}                            %{Prof.~Dr.}
 \gdef\itacoadvisorwordbabel{Co-advisor}                            %{Coorientador}
 
-\gdef\itabossnamebabel{Dean for Graduate Education and Research's Name}   
+\gdef\itabossnamebabel{Prorector of Postgraduate Education and Research's Name}   
                                                                    %{Nome do Pro-Reitor de Pos-Graduacao e Pesquisa}
 \gdef\itabosstitle{Prof.~Dr.}                                      %{Prof.~Dr.}
-\gdef\itabosswordbabel{Dean for Graduate Education and Research}   
+\gdef\itabosswordbabel{Prorector of Postgraduate Education and Research}   
                                                                    %{Pro-Reitor de Pos-Graduacao e Pesquisa}
 
 \gdef\itabosscoursenamebabel{Name of the Course Coordinator of \itaworkcourse} %{Nome do coordenador do respectivo curso de graduação}
