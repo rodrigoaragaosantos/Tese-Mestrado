@@ -1,0 +1,198 @@
+This chapter will give a brief introduction of the knowledge that is needed in order to fully understand the problem that we are trying to tackle, how we are going to solve it, and how to better interpret the results. The chapter will start by giving a description of the satellites systems that were used throughout this thesis, the dataset that was provided by each satellite, and each problem that will be tackled with each dataset - for the Amazon Rainforest dataset the problem that will be tackled is the problem of deforestation mapping and detection, meanwhile for the Swedish forest dataset, the problem that will be tackled is the change target detection problem. 
+
+The chapter will also give an introduction about the methods and techniques that one must know in order to understand the approach that was used to solve the problems; more specifically, machine learning techniques such as: random forests, neural networks, and convolutional neural networks, and signal processing techniques such as statistical signal processing and feature texture extraction.
+
+\section{Materials}
+This section will give details about the satellite systems used - the German Tandem-X satellite from DLR, the European Sentinel-1 satellite from ESA, and the Swedish CARABAS system from FFA. It will also give details about the test areas chosen to perform the study.
+
+For the deforestation detection problem it was chosen to use data from the Amazon Rainforest, focusing specifically in the Rondônia state area. Rondônia is a state in northern Brazil that is topographically composed mainly by flat lands, and plateaus with low altitude. The climate in Rondônia is called "humid equatorial", which means that the temperature variation throughout the year is very little (something that is very desirable when working with SAR acquisitions, since it is preferable to have as much little variation as possible between acquisitions) \cite{rondoniaGeography}. The pluviometric indexes in the state can reach up to 2100 mm per year, with most of the rains happening between May and September - something that one must know to better select and compare data since the rainy season can affect the image acquisition, so one must always use images from the same season when comparing acquisitions. 
+
+One of the goals of this thesis is to improve algorithms for deforestation mapping and detection, therefore Rondônia was a natural choice for a study area since it is the state with the most deforestation from the Amazon Rainforest. The Rondônia
+state already lost over 31\% of its forests and most of the remaining areas are degraded.
+For comparison, Acre, the state which borders Rondônia on the west, has 91\% of its
+original forest cover and a greater part of it is still intact \cite{rondoniaDeforestation}. 
+
+The deforestation in the Rondônia state can be easily seen with optical satellite data
+acquired with Google Earth. Deforestation follows a fairly predictable pattern, as seen in
+Figure 4.1. The pattern of deforestation is known as fishbone pattern due to its similarity
+with a fishbone skeleton. This pattern arises from the fact that deforesting is normally done
+by penetrating the forest and then deforesting along the edges of the road firstly created. Due to recent fires that happened in the year of 2019 in the Amazon Rainforest, there
+is much concern about studying and monitoring the deforestation that happens in that
+area, and considering that the Rondônia state is the area in which the deforestation is
+most critical, it was a natural choice of area to study for this thesis.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Cap2-Methods/fishbone.png}
+    \caption{Fishbone pattern of deforestation}
+    \label{fig:fishbone}
+\end{figure}
+
+For the target change detection problem the dataset used are 24 image acquisitions over a forest in northern Sweden. Unlike for the deforestation detection problem, we had no flexibility over which area to chose to perform the study, since the CARABAS dataset is a free dataset made available by the Swedish Air force Research Center. The CARABAS dataset will be given a further description in a future section of this work. 
+\subsection{The Tandem-X system and dataset}
+TerraSAR-X (TSX) and TanDEM-X (TDX), launched in June 2007 and June 2010,
+respectively, are two German SAR satellites operating in X-band, developed within a
+public/private partnership between the German Aerospace Center (DLR) and Airbus
+Defense and Space.
+The goal of both satellites is to provide SAR products for commercial purposes and
+scientific purposes, and the TanDEM-X mission has the primary goal of generating a global,
+high precision, and consistent digital elevation model (DEM) with full coverage and no
+gaps. The relevance of the mission lies in that, until now, the available DEMs of large
+parts of Earth are of low resolution, inconsistent, incomplete and commonly based on
+different data sources and survey methods.
+TanDEM-X has offered, for the first time, a global, high accuracy and homogeneous DEM.
+Besides the main goal, other secondary missions based on along-track interferometry have
+been defined as well as new techniques with bistatic SAR \cite{Alberto}. The work presented on this thesis is one of the
+possible exploitation of the activities of the TanDEM-X data.
+
+Both satellites have a center frequency of 9.65 GHz, and can operate in different modes: stripMap, scanSAR, Spotlight, staring SpotLight and TopSAR. The satellites also can use different antenna modes in order to acquire single, dual and full polarimetric data. The main systems parameters can be seen in table \ref{tab:tandem_params}.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline 
+        \multicolumn{2}{|c|}{System Parameters} \\ 
+        \hline \hline
+        Center frequency & 9.65 Ghz  \\ \hline
+        Bandwidth & 300 Mhz  \\ \hline
+        Antenna Size & 4.8 m in Azimuth, 0.7 m in elevation  \\ \hline
+        Polarization & H and V (single, dual and quad)  \\ \hline
+        Look angle range & 15-60 degrees  \\ \hline
+        Nominal operation modes & Spotlight, Stripmap, ScanSar  \\ \hline
+        Ground resolution & 0.25 m (Spotlight) - 40 m (ScanSAR) \\ \hline
+        Scene size (range) & 10 km (Spotlight) - 100 km (ScanSAR)  \\ \hline
+        Scene size (azimuth) & 5 km (Spotlight) - 150 km (ScanSAR)  \\ \hline
+        Pulse repetition frequency & 2kHz - 6.5 kHz \\ \hline
+    \end{tabular}
+    \caption{TerraSAR-X and TanDEM-X System Parameters}
+    \label{tab:tandem_params}
+\end{table}
+
+For more information regarding the TSX and TDX system the reader is referred to \cite{Alberto}.
+
+The TanDEM-X system has the advantage of being able to provide very high resolution image data, which can create problems to process the data since the data will be very large memory wise. Because of that it was chosen to work with small areas in Rondônia State. There were two images that were selected over the Rondônia state that have a nice mix of forest areas and deforested areas. The two areas can be seen in figure \ref{fig:tandem_dataset} where each colored rectangle (in colors blue and red) represent one image acquisition of the TanDEM-X system. The center of the two images have coordinated (-10.720611498968696 N, -61.269449884800494 W).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{Cap2-Methods/tandem_dataset.jpg}
+    \caption{TanDEM-X dataset available in Rondônia Area (Image provided by Google Earth).}
+    \label{fig:tandem_dataset}
+\end{figure}{}
+
+\subsection{The Sentinel-1 system and dataset}
+
+Sentinel-1 is first new space component of the Global monitoring for environment and security (GMES) satellite family, designed and developed by the European Space Agency (ESA) and funded by the European Commission. Sentinel-1 is composed of two twins satellites, Sentinel-1A and Sentinel-1B, sharing the same orbital plane with 180 degrees orbital phase difference. Its mission is to provide continuous all-weather, day-and-night imagery at C-Band(5.4 GHz). The SENTINEL-1 constellation provides high reliability, improved revisit time, geographical coverage and rapid data dissemination to support operational applications in the priority areas of marine monitoring, land monitoring and emergency services.
+
+Sentinel-1 acquires images of all global landmasses, costal zones, and covers ocean mapping at 6 days intervals. There are different modes that can be used to map landmasses and ocean mapping. The main operational mode features a swath of 250 km with resolution that is suited for most applications. The Sentinel-1 data products distributed by ESA include: raw level data (for specific usage), single look complex (distribution limited), ground range detected data with multi-looked intensity (systematically distributed) and ocean data  for retrieved geophysical parameters of the ocean (systematically distributed). 
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline 
+        \multicolumn{2}{|c|}{System Parameters} \\ 
+        \hline \hline
+        Center frequency & 5.405 GHz   \\ \hline
+        Bandwidth & 100 MHz  \\ \hline
+        Antenna Size & 12.3 m in Azimuth, 0.821 m in elevation  \\ \hline
+        Polarization & H and V (single, dual and quad)  \\ \hline
+        Look angle range & 20-46 degrees  \\ \hline
+        
+        Nominal operation modes & 
+        \vtop{\hbox{\strut Stripmap, Extra Wide Swath(EWS)}\hbox{\strut Interferometric Wide Swath(IWS)}}
+        \\ \hline
+
+        Ground resolution & 5 m (Stripmap) - 40 m (EWS) \\ \hline
+        Scene size (range) & 1000- 5000 km \\ \hline
+        Scene size (azimuth) & 80 km (Stripmap) - 400 km (EWS)  \\ \hline
+        Pulse repetition frequency & 1 - 3 kHz \\ \hline
+    \end{tabular}
+    \caption{Sentinel-1 System Parameters \cite{sentinelRef}}
+    \label{tab:sentinel_params}
+\end{table}
+
+For more information regarding the Sentinel-1 system the reader is referred to \cite{sentinelmission}.
+
+The images acquired by Sentinel-1 are a monthly interferometric time-series. The methodology and processing chain for the raw processing image data is based on the one developed in \cite{Rodrigo,Paolo}. The preprocessing steps for the generation of the images consist of a coregistration of the images with respect to a common master acquisition, normally selected as the one in the middle of the temporal stack. Afterwards, the backscatter value and coherence were estimated by using a convolutional filter with a window size of 5x19 pixels. Since the resolution of the Sentinel-1 in Interferometric Wide swath mode is of 14 m X 3.7 m, this creates a final image with resolution of approximately 70 m X 70 m. The model used for extracting the temporal correlation is the one described in \cite{Paolo}.
+
+
+\subsection{The CARABAS system and dataset}
+
+\section{Methods}
+\subsection{Texture methods for image analysis}
+\subsection{Machine learning methods to image analysis}
+
+Machine Learning methods are currently amongst the best tools for problem solving. While there are many types of learning and subdomains, most of them share some characteristics, like minimizing a loss function, the use of data to extract information and have to undergo a training process in order to ``fit'' to the data. These algorithms are also subject to the same underlying problems, which were faced and dealt with in this work, such as over/underfitting, the bias-variance tradeoff, hyperparameters tunning and regularization.
+
+Machine Learning revolutionized the field of Computer Vision, since before the experts had to handcraft kernels to be used in feature extraction, which often led to a case-by-case scenario, therefore  extremely cumbersome and over engineered. Also the field had severe problems of performance, the most challenging tasks seemed unreachable using classical methods. Deep Learning specially, offered better results to these problems with the cost of being less interpretable and more computationally expensive. 
+
+In this section, we shall present some of the most modern algorithms used to tackle challenging perceptual problems. Images, due to their high dimensionality, require Machine Learning models that are extremely flexible, in this work we propose the use of Random Forests and Convolutional Neural Networks (CNNs), more specifically a CNN used for segmentation, called U-Net.
+
+\subsubsection{Random Forest}
+
+Random Forests are Machine Learning models build upon simpler models called Decision Trees, which we will briefly discuss in order to better understand the former. 
+
+Decision Trees are basically a graphical representation of if-else rules. In these trees we start at the root and keep choosing our path downwards by comparing the features with the rules at each node, we keep doing this process until we reach a leaf. They are considered a Machine Learning algorithm because the partition rules are \textbf{learned}, the tree is usually built in a top-down approach, where at each node we decide a feature to use as a dividing rule. The chosen feature is decided based on a metric, those metrics usually consist of one of the following: maximizing the accuracy, minimizing the Gini impurity or optimizing the information gain. In Figure \ref{decision} we can see an example of a Decision Tree.
+
+\begin{figure}[H]
+    \includegraphics[width=.7\textwidth]{Cap2-Methods/Decision_Tree.jpg}
+    \centering
+	\caption{Decision Tree applied to the classical Titanic dataset. Image taken from \cite{decisionimg}.}
+	\label{decision}
+\end{figure}
+
+Decision Trees are notoriously easy to interpret and inexpensive to build, but unfortunately they are very inaccurate \cite{elements}. In order to improve this, we use some well known techniques by the Machine Learning community. We use a technique called \textbf{bagging}, in which we repeatedly select some subset of the available data (with replacement) to fit a Decision Tree, but at each node of the tree we select a random subset of the available features to be used as a partitioning rule. After this process we will have many Decision Trees and the prediction for a new input will be decided by taking the vote of the trees, this built model is called a Random Forest. The illustration of a Random Forest can be seen in Figure \ref{random}. 
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{Cap2-Methods/Random_forest_diagram_complete.png}
+    \centering
+	\caption{A Random Forest being used for classification. Image taken from \cite{randomimg}.}
+	\label{random}
+\end{figure}
+
+\subsubsection{Convolutional Neural Networks}
+
+Convolutional Neural Networks are a specialized kind of Artificial Neural Network (ANN), in the usual form of the ANN we have each neuron connected to all the neurons in the previous and next layers, as illustrated in the Figure \ref{ann}. This characteristic of an ANN makes the number of connections grow combinatorically large with input/latent dimensions, making it unfeasible to work with images.
+
+\begin{figure}[H]
+    \includegraphics[width=8cm]{Cap2-Methods/rede.png}
+    \centering
+	\caption{Representation of an Artficial Neural Network. Image taken from \cite{neuralimg}.}
+	\label{ann}
+\end{figure}
+
+In order to solve this problem, in 1988 it was firstly proposed a Convolution Neural Network \cite{cnn_gordo}, where, instead of learning all the connections, we would learn weights of a convolutional kernel, which will be applied locally to the image. Despite the great idea, CNNs did not see much success until the advent of AlexNet \cite{alex}, where CNNs were successfully used for image classification and, since then, have became the go-to norm in perceptual computer vision tasks. 
+
+CNNs work in a sliding window fashion, where each neighborhood contributes for a single pixel in the next layer. This encodes our prior belief that neighbor pixels should influence each other, which is not always true, but greatly reduces the amount of memory needed to process our input making it functional to work with images. The representation of the mechanism of a CNN can be seen in Figure \ref{cnn}.
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{Cap2-Methods/image2.png}
+    \centering
+	\caption{Representation of a Convolutional Neural Network. Image taken from \cite{cnnimg}.}
+	\label{cnn}
+\end{figure}
+
+Another key technique used with CNNs is the pooling operation, where we take regular spaced grids in the image and condense the spatial information contained in them. The most common form of pooling is the max-pooling, which takes only the maximal value at each grid. This procedure is illustrated in Figure \ref{pooling}.
+
+\begin{figure}[H]
+    \includegraphics[width=.7\textwidth]{Cap2-Methods/MaxpoolSample2.png}
+    \centering
+	\caption{Example of max pooling. Image taken from \cite{poolimg}.}
+	\label{pooling}
+\end{figure}
+
+This makes the learned representation more translation-invariant \cite{dlbook}, which is greatly desirable in some applications. Pooling is used to aggregate \textbf{semantic} information at the cost of geometric information, since we lose track of the position of the maximal pixel. Another effect of pooling is quickly shrinking the image, which reduces the number of parameters needed for the network.
+
+\subsubsection{U-Net}
+
+The U-Net \cite{unet_gordo} was a network proposed for the task of semantic segmentation, where geometrical information is vital. We saw previously how the image shrinks in the usual pipeline of a CNN, in order to circumvent this problem, the authors used a method called \textbf{transposed convolution}, where we aim to take an input and augment it while applying a learned weight kernel. The authors also used \textbf{skip connections} where we connect one part of the network directly into another (using sums or concatenation). An overview of the network can be seen in Figure \ref{unetimg}.
+
+\begin{figure}[H]
+    \includegraphics[width=.7\textwidth]{Cap2-Methods/screenshot_1.png}
+    \centering
+	\caption{U-Net original architecture. Image taken from \cite{unet_gordo}.}
+	\label{unetimg}
+\end{figure}
+
+The key takings from this work were the use of transposed convolutions exploiting the strong semantic information acquired by the network linked to the geometrical information that is stored in the downward stream of the network, the combination of these pathways granted U-Net the first place in the EM segmentation challenge. Another important point to the success of this approach is the use of skip connections to improve the backward gradient update. Since the gradient has to move a shorter path to reach the earlier layers, it usually avoids the common vanishing and exploding problems.
+
+U-Net was also used in a small dataset problem (30 images) which is approximately equal to the CARABAS dataset (24 images), proving that the method did not need huge datasets in order to fit properly.
