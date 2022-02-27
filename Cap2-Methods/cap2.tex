@@ -727,7 +727,17 @@ This makes the learned representation more translation-invariant \cite{dlbook}, 
 
 \subsubsection{U-Net}
 
-The U-Net \cite{unet_gordo} was a network proposed for the task of semantic segmentation, where geometrical information is vital. We saw previously how the image shrinks in the usual pipeline of a CNN, in order to circumvent this problem, the authors used a method called \textbf{transposed convolution}, where we aim to take an input and augment it while applying a learned weight kernel. The authors also used \textbf{skip connections} where we connect one part of the network directly into another (using sums or concatenation). An overview of the network can be seen in Figure \ref{unetimg}.
+The UNET is a convolutional neural network that was developed in the Computer Science department of the University of Freiburg for the purpose of performing image segmentation for
+biomedical pictures \cite{Unet}. It became popular because it was able to perform precise segmentations with little time (segmentation of a 512x512 image takes less than a second using a modern GPU).
+Convolutional Neural networks normally work by performing a series of convolutions and pooling filters that decrease the size of the image, while the UNET works by also 
+supplementing this usual operation pipeline with a series of successive layers in which the pooling operations are replaced by up sampling operators, therefore increasing the resolution of the output (a step called \textbf{transposed convolution}).
+The authors also used \textbf{skip connections} where we connect one part of the network directly into another (using sums or concatenation). An overview of the network can be seen in Figure \ref{unetimg}.
+The final goal is that a usual successive convolutional layer learn to create an output based on this information. 
+
+It is important to remind that an important aspect of the UNET is that there is many feature channels responsible for the up sampling step, which ensures that the UNET propagates information
+to the higher resolution layers. After the expansive path is performed, it is combined with the usual pooling operations, creating a contractive path, which makes the UNET shows an u-shaped architecture. 
+It is important also to mention that in the borders of the image, the UNET will extrapolate by mirroring the information to predict the pixels in the area. 
+\ref{unetimg} depicts the architecture of the UNET, and it's u-shape.
 
 \begin{figure}[H]
     \includegraphics[width=.7\textwidth]{Cap2-Methods/screenshot_1.png}
@@ -738,4 +748,55 @@ The U-Net \cite{unet_gordo} was a network proposed for the task of semantic segm
 
 The key takings from this work were the use of transposed convolutions exploiting the strong semantic information acquired by the network linked to the geometrical information that is stored in the downward stream of the network, the combination of these pathways granted U-Net the first place in the EM segmentation challenge. Another important point to the success of this approach is the use of skip connections to improve the backward gradient update. Since the gradient has to move a shorter path to reach the earlier layers, it usually avoids the common vanishing and exploding problems.
 
-U-Net was also used in a small dataset problem (30 images) which is approximately equal to the CARABAS dataset (24 images), proving that the method did not need huge datasets in order to fit properly.
+The proposed CDA is based on this UNET architecture and has two phases: the training phase and the inference phase.
+
+\textit{A. Training Phase}
+\newline
+In this phase the model is treated like a regular supervised machine learning model. The given UNET architecture is trained in a supervised manner with the reference map
+to be able to perform semantic image segmentation. 
+\newline
+\textit{B. Inference Phase}
+\newline
+This phase is based on the Change Detection algorithm proposed by \cite{Kevin}. This algorithm was based on modifying the original UNET two accept two images for the purpose of change detection.
+The original algorithm has 5 feature maps created by the convolutions that were generated and saved for the first image. After that, when the second image is used as input, a Difference Image (DI) is
+created at each of the 5 levels using the feature maps of the first and second image.
+The DI is created by taking the absolute value of the difference between the feature maps, and setting the difference to be zero if the difference value does not surpass a threshold value (which was found empirically), and setting it to 
+the value of the second image if it surpasses the threshold value. Intuitively this step works by setting it to zero all pixels that did not change sufficient (according to a threshold value). After that, the DI is semantically segmented, rendering a visual 
+interpretation of the collective changes that happened. A visual representation of this algorithm is show in \figref{fig:kevin_algorithm}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics{Chapter7/kevin_algorithm.jpg}
+    \caption{Inference Phase for the corresponding DI.}
+    \label{fig:kevin_algorithm}
+\end{figure}
+
+The CDA of this work is inspired by the algorithm explained above. Since the textures provide additional information, it would be very 
+hard to empirically achieve the values for the threshold of each layer (in our case it would be a vector instead of a scalar), so it was decided to perform the difference image
+just for first input layer of the UNET.
+We used the textures of Entropy and Variance, which was combined with the original image to create a three-channel tensor which was fed, and trained, on the UNET.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{Chapter7/diagrama.png}
+    \caption{ Diagram of the proposed algorithm.}
+    \label{fig:diagrama}
+\end{figure}
+
+After creating the 24 image tensors, the dataset was divided into 12 tensors for training and 12 tensors for validation purposes. 
+After the training was performed this trained UNET was used as part of the CDA.
+The proposed CDA has 4 steps, and works as follows:
+\begin{enumerate}
+    \item Feed the first tensor as an input to the UNET and get the classification
+    \item Feed the second tensor as input to the UNET, and after that alternate the classes from the final image (switch all car classification pixels by forest classification pixels and vice-versa)
+    \item Take the absolute value of the difference of the tensors, perform a bias correction (the value for the bias correction was adjusted manually). After that feed this tensor as input to the UNET.
+    \item Get the three classifications obtained prior and take the intersection of all classes (in order to a pixel to be classified as a car in the final image, it has to be a car in all the three images at the same time)
+\end{enumerate}
+
+Item 2 was added to the algorithm simply to made it more robust against false errors. By adding another necessary step to identify the change as a target change difference
+we decrease the probability of false detection, but at the same time it will also decrease the overall probability of true detection for the algorithm. 
+
+After the final image is created by the CDA, a threshold filter selection was performed to eliminate noise classification from the image - we considered only sets of pixels which had 100 or more connected components.
+
+In \figref{fig:diagrama} the proposed algorithm is represented visually.
+
