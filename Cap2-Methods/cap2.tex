@@ -114,6 +114,51 @@ For more information regarding the Sentinel-1 system the reader is referred to \
 
 The images acquired by Sentinel-1 are a monthly interferometric time-series. The methodology and processing chain for the raw processing image data is based on the one developed in \cite{Rodrigo,Paolo}. The preprocessing steps for the generation of the images consist of a coregistration of the images with respect to a common master acquisition, normally selected as the one in the middle of the temporal stack. Afterwards, the backscatter value and coherence were estimated by using a convolutional filter with a window size of 5x19 pixels. Since the resolution of the Sentinel-1 in Interferometric Wide swath mode is of 14 m X 3.7 m, this creates a final image with resolution of approximately 70 m X 70 m. The model used for extracting the temporal correlation is the one described in \cite{Paolo}.
 
+The study area covered is over a region in the Rondônia state in Brazil. The area covers the region between south latitudes 7$\degree$50$'$ and 13$\degree$50$'$, and west longitudes 59$\degree$50$'$ and 67$\degree$10$'$. Since this is an area of huge deforestation focus, the ESA has set up a 6-day repeat pass coverage with Sentinel-1 system. For this study area it was downloaded and processed a set of 12 S-1 time series according to the framework explained in figure \ref{fig:sentinelStack}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{Cap2-Methods/sentinelstack.jpg}
+    \caption{Sentinel-1 stack of acquisition images. There are four different orbits of acquisitions and each orbit provided 5 images, resulting in 20 total images (of which only 12 were selected). A dot represents a master image (the image that is used as master for the coregistration method) and the other images are slave images.}
+    \label{fig:sentinelStack}
+\end{figure}{}
+
+In table \ref{tab:sentinelStackTable} it is also possible to see the geographical description of each orbit and image acquired.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c||c|c|c|c|}
+        \hline 
+        \multicolumn{7}{|c|}{Corner Coordinates} \\ 
+        \hline
+        \textbf{Stack} & \textbf{Orbit} &\textbf{Name} &\textbf{Lat. Min} &\textbf{Lat. Max} &\textbf{Lon. Min} &\textbf{Lon. Max} \\
+        \hline
+        1&010&$TS_0$ &9$\degree$40$'$58$"$S &7$\degree$42$'$53$"$S &59$\degree$52$'$18$"$W &61$\degree$44$'$43$"$W \\
+        2&010&$TS_1$ &11$\degree$16$'$36$"$S &9$\degree$15$'$31$"$S &60$\degree$12$'$59$"$W &62$\degree$5$'$52$"$W \\
+        3&010&$TS_2$ &12$\degree$45$'$21$"$S &10$\degree$43$'$21$"$S &60$\degree$33$'$20$"$W &62$\degree$26$'$54$"$W \\
+        4&010&$TS_3$ &9$\degree$40$'$58$"$S &7$\degree$42$'$53$"$S &59$\degree$52$'$18$"$W &61$\degree$44$'$43$"$W \\
+        5&054&$TS_0$ &14$\degree$10$'$32$"$S &12$\degree$12$'$43$"$S &60$\degree$53$'$48$"$W &62$\degree$46$'$54$"$W \\
+        6*&083&$TS_0$&10$\degree$12$'$15$"$S &8$\degree$5$'$50$"$S &66$\degree$8$'$34$"$W &67$\degree$59$'$40$"$W \\
+        7*&083&$TS_1$&10$\degree$22$'$8$"$S &8$\degree$32$'$54$"$S &62$\degree$4$'$44$"$W &63$\degree$37$'$30$"$W \\
+        8*&083&$TS_2$&11$\degree$51$'$16$"$S &10$\degree$2$'$26$"$S &62$\degree$25$'$15$"$W &64$\degree$19$'$5$"$W \\
+        9*&083&$TS_3$&13$\degree$24$'$3$"$S &11$\degree$32$'$42$"$S &62$\degree$44$'$38$"$W &64$\degree$40$'$34$"$W \\
+        10&156&$TS_0$&9$\degree$24$'$34$"$S &8$\degree$4$'$15$"$S &63$\degree$53$'$30$"$W &65$\degree$56$'$2$"$W \\
+        11&156&$TS_1$&10$\degree$15$'$7$"$S &8$\degree$48$'$35$"$S &64$\degree$5$'$7$"$W &66$\degree$8$'$22$"$W \\
+        21&156&$TS_2$&10$\degree$36$'$21$"$S &9$\degree$46$'$22$"$S &64$\degree$9$'$40$"$W &66$\degree$19$'$6$"$W \\
+        \hline
+    \end{tabular}
+    \caption{Sentinel-1 stack description. The stacks marked with asterisk are images chosen for validation and others are used for the Random Forest Training.}
+    \label{tab:sentinelStackTable}
+\end{table}
+
+A visual representation of the rondonia dataset can be seen in figure \ref{fig:rondoniadataset}. The images acquisitions are overlapped with a Google Maps image of the Rondônia state. From image \ref{fig:rondoniadataset} there are 3 different pixels color that can be seen: green pixels - which represents forest areas - red pixels - which represent deforested areas - and blue pixels - which represent man-made surfaces. This reference map was created by PRODES (programa de cálculo do desflorestamento da amazônia) project.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{Cap2-Methods/rondonia_dataset.jpg}
+    \caption{Reference deforestation map for the Rondônia dataset provided by PRODES. The blue pixels represents man-made surfaces, the green pixels represents forest areas, and the red pixels represents deforested areas. The yellow number represents the corresponding acquisition orbit.}
+    \label{fig:rondoniadataset}
+\end{figure}{}
 
 \subsection{The CARABAS system and dataset}
 
@@ -121,9 +166,9 @@ The images acquired by Sentinel-1 are a monthly interferometric time-series. The
 \subsection{Texture methods for image analysis}
 \subsection{Machine learning methods to image analysis}
 
-Machine Learning methods are currently amongst the best tools for problem solving. While there are many types of learning and subdomains, most of them share some characteristics, like minimizing a loss function, the use of data to extract information and have to undergo a training process in order to ``fit'' to the data. These algorithms are also subject to the same underlying problems, which were faced and dealt with in this work, such as over/underfitting, the bias-variance tradeoff, hyperparameters tunning and regularization.
+Machine Learning methods are currently amongst the best tools for problem-solving. While there are many types of learning and subdomains, most of them share some characteristics, like minimizing a loss function, the use of data to extract information and have to undergo a training process in order to ``fit'' to the data. These algorithms are also subject to the same underlying problems, which were faced and dealt with in this work, such as over/underfitting, the bias-variance trade off, hyperparameters tunning and regularization.
 
-Machine Learning revolutionized the field of Computer Vision, since before the experts had to handcraft kernels to be used in feature extraction, which often led to a case-by-case scenario, therefore  extremely cumbersome and over engineered. Also the field had severe problems of performance, the most challenging tasks seemed unreachable using classical methods. Deep Learning specially, offered better results to these problems with the cost of being less interpretable and more computationally expensive. 
+Machine Learning revolutionized the field of Computer Vision, since before the experts had to handcraft kernels to be used in feature extraction, which often led to a case-by-case scenario, therefore  extremely cumbersome and overengineered. Also, the field had severe problems of performance, the most challenging tasks seemed unreachable using classical methods. Deep Learning specially, offered better results to these problems with the cost of being less interpretable and more computationally expensive. 
 
 In this section, we shall present some of the most modern algorithms used to tackle challenging perceptual problems. Images, due to their high dimensionality, require Machine Learning models that are extremely flexible, in this work we propose the use of Random Forests and Convolutional Neural Networks (CNNs), more specifically a CNN used for segmentation, called U-Net.
 
@@ -156,11 +201,11 @@ Convolutional Neural Networks are a specialized kind of Artificial Neural Networ
 \begin{figure}[H]
     \includegraphics[width=8cm]{Cap2-Methods/rede.png}
     \centering
-	\caption{Representation of an Artficial Neural Network. Image taken from \cite{neuralimg}.}
+	\caption{Representation of an Artificial Neural Network. Image taken from \cite{neuralimg}.}
 	\label{ann}
 \end{figure}
 
-In order to solve this problem, in 1988 it was firstly proposed a Convolution Neural Network \cite{cnn_gordo}, where, instead of learning all the connections, we would learn weights of a convolutional kernel, which will be applied locally to the image. Despite the great idea, CNNs did not see much success until the advent of AlexNet \cite{alex}, where CNNs were successfully used for image classification and, since then, have became the go-to norm in perceptual computer vision tasks. 
+In order to solve this problem, in 1988 it was firstly proposed a Convolution Neural Network \cite{cnn_gordo}, where, instead of learning all the connections, we would learn weights of a convolutional kernel, which will be applied locally to the image. Despite the great idea, CNNs did not see much success until the advent of AlexNet \cite{alex}, where CNNs were successfully used for image classification and, since then, have become the go-to norm in perceptual computer vision tasks. 
 
 CNNs work in a sliding window fashion, where each neighborhood contributes for a single pixel in the next layer. This encodes our prior belief that neighbor pixels should influence each other, which is not always true, but greatly reduces the amount of memory needed to process our input making it functional to work with images. The representation of the mechanism of a CNN can be seen in Figure \ref{cnn}.
 
