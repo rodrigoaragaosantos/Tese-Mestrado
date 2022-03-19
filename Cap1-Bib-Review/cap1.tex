@@ -10,7 +10,7 @@ Remote sensing is the science of extracting information about an object, without
 This work will focus on a specific type of sensor, the synthetic aperture radar (SAR).
 SAR is a side looking radar used in remote sensing for imaging purposes. It consists of an antenna that sequentially transmits electromagnetic waves to the Earth's surface, and registers the reflection of these transmitted waves. Through signal processing techniques, it is possible to coherently combine the received echoes registered by the SAR, creating a reflectivity scene of the area. On top of that, the coherent combination of the echoes also makes possible to record amplitude and phase of the received signal. For a more detailed explanation regarding SAR it is recommended \cite{Alberto, livro}.
 
-Figure \ref{fig:SAR_geometry} presents the basic geometry concerning the workings of a SAR system. The flight direction is called azimuth direction, and the $x$ axis is called "across-track" direction, or ground range direction. The "slant-range" direction is the direction of the line that connects the object on the ground, and the sensor.
+Figure \ref{fig:SAR_geometry} presents the basic geometry concerning the workings of a SAR system. The flight direction is called azimuth direction, and the $x$ axis is called "across-track" direction, or ground range direction. The "slant-range" direction is the direction of the line that connects the sensor and the object on the ground.
 
 \begin{figure}[H]
     \centering
@@ -19,7 +19,7 @@ Figure \ref{fig:SAR_geometry} presents the basic geometry concerning the working
     \label{fig:SAR_geometry}
 \end{figure}{}
 
-The resolution of a SAR system is the minimal distance that makes possible to detect two objects as separate objects in the image (for any distance below the resolution two objects will appear as a single object for the observer). In SAR systems, the resolution is not unique, since the system can have different resolutions in the range direction and in the azimuth direction. 
+The resolution of a SAR system is the minimal separation between two objects that makes it possible to detect them as separate objects in the image (for any distance below the resolution two objects will appear as a single object). SAR systems can have different resolutions in the range direction and in the azimuth direction.
 
 For SAR systems, the resolution in azimuth direction is equal to half the antenna length, and the resolution in range direction can be calculated by \cite{62}:
 
