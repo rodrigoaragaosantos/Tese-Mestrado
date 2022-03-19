@@ -43,11 +43,14 @@ After registering the received echoes, it is still necessary to perform image pr
 After performing the relevant convolutions, it is obtained a complex image (with amplitude and phase information) that is called the single-look complex (SLC) matrix. The amplitude value of this image represents the power reflected back to the antenna. The backscatter --- value that is analogous to reflectivity --- of the scene can be obtained by multiplying the amplitude value by a calibration constant obtained experimentally.
 The backscatter alone is of great importance to the interpretation of the image, since it alone can suffice to detect and classify objects on Earth's surface \cite{radiometric}, since different objects will present different backscatter characteristics.
 
-According to \cite{Raney,Small} it is also possible to define different backscatter measures. The backscatter value represents the reflectivity (normalized by the area of incidence), which can be measured in different directions. The backscatter previously mentioned is the reflectivity value measured in the range direction (which has area $A_\beta$), and it is called beta-naught($\beta^0$). It is also possible to measure reflectivity in the ground direction(which has area $A_\gamma$) - reflectivity value which is called gamma-naught ($\gamma^0$) - and in the direction perpendicular to the range direction (which has area $A_\sigma$) - reflectivity value which is called sigma-naught ($\sigma^0$). All these values are of importance, since they all can be used to characterize the scene and be used to perform target detection and classification. 
+According to \cite{Raney,Small}, it is also possible to define different backscatter measures. The backscatter value represents the reflectivity normalized by the area of incidence, which can be measured in different directions. The backscatter previously mentioned is measured in an area orthogonal to the range direction (which has area $A_\gamma$), and it is called gamma-naught ($\gamma^0$). It is also possible to normalize the reflectivity by the ground area, $A_\sigma$ --- the corresponding backscatter value is called sigma-naught ($\sigma^0$) --- or the area $A_\beta$ in the plane formed by the range and azimuth directions --- the corresponding backscatter is called beta-naught ($\beta^0$). All these values are of importance, since they all can be used to characterize the scene and perform target detection and classification. The relationship between $\sigma^0$, $\gamma^0$, and $\beta^0$ is given by
 
-The relationship between $\gamma^0$ and $\beta^0$ can be obtained by the formula $\gamma^0 = \beta^0 \cdot \sin(\theta)$ and the relationship between $\sigma^0$ and $\beta^0$ can be obtained by the formula $\sigma^0 = \beta^0 \cdot \tan(\theta)$, where $\theta$ is the incidence angle of the emitted pulse.
+\begin{equation}
+    \sigma^0 = \gamma^0 \cdot \cos(\theta) = \beta^0 \cdot \sin(\theta),
+\end{equation}
 
-A visual description of these normalized backscatter coefficients is shown in \figref{fig:normalization_areas}
+\noindent
+where $\theta$ is the incidence angle of the emitted pulse. A visual description of these normalized backscatter coefficients is shown in \figref{fig:normalization_areas}
 
 \begin{figure}[H]
     \centering
