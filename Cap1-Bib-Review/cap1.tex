@@ -21,15 +21,17 @@ Figure \ref{fig:SAR_geometry} presents the basic geometry concerning the working
 
 The resolution of a SAR system is the minimal separation between two objects that makes it possible to detect them as separate objects in the image (for any distance below the resolution two objects will appear as a single object). SAR systems can have different resolutions in the range direction and in the azimuth direction.
 
-For SAR systems, the resolution in azimuth direction is equal to half the antenna length, and the resolution in range direction can be calculated by \cite{62}:
+For SAR systems, the resolution in azimuth direction is equal to half the antenna length, and the resolution in range direction can be calculated by
 
 \begin{equation}
-    \delta = \frac{\lambda_c c}{4 \theta_H B}
+    \delta = \frac{\lambda_c c}{4 \theta_H B},
 \end{equation}
-where $\lambda_c$ is the wavelength corresponding to the radar central frequency, $\theta_H$
-is the aperture angle (in radians), $c$ is the speed of light and $B$ is the system bandwidth.
 
-Wavelenght-Resolution SAR systems, are radar systems with resolution in the order of the system wavelength. The SAR systems used throughout this work are wavelength-resolution SARs, so some facts concerning these systems must be mentioned. 
+\noindent
+where $\lambda_c$ is the wavelength corresponding to the radar central frequency, $\theta_H$
+is the aperture angle (in radians), $c$ is the speed of light and $B$ is the system bandwidth \cite{62}.
+
+Wavelenght-resolution SAR systems are radar systems with resolution in the order of the system wavelength. The SAR systems used throughout this work are wavelength-resolution SARs, so some facts concerning these systems must be mentioned. 
 
 When using wavelength-resolution SARs to detect targets, it is important to mention that the size of the target matters to the final image registered. According to \cite{63}, SAR images of targets with dimensions of the order of the Wavelength might present the resonance scattering phenomena \cite{63}, and targets small compared to the wavelength might present the Rayleigh scattering phenomena\cite{63}. 
 
