@@ -62,15 +62,16 @@ where $\theta$ is the incidence angle of the emitted pulse. A visual description
 After obtaining the SLC image, it is also necessary to perform additional steps such as coregistration, geocoding, calibration, among others for obtaining an image that is ready for visual interpretation. These steps are outside the scope of this work, for the curious reader it is referred \cite{Alberto} for more details concerning these image processing techniques.
 
 \subsection{The Coherence Image}
-After performing all necessary steps the final SLC image obtained is ready for visual interpretation. This SLC image alone is enough to provide results for classifying and detecting objects, and scenarios, on the Earth's surface, as it can be seen in \cite{Paolathesis,Andreathesis, 78, 79, rfsar}, but there are techniques that make possible to extract information based on combining different SLC acquisitions.
+After performing all necessary steps, the final SLC image obtained is ready for visual interpretation. This SLC image alone is enough to provide results for classifying and detecting objects and scenarios on the Earth's surface, as can be seen in \cite{Paolathesis,Andreathesis, 78, 79, rfsar}, but there are techniques that make it possible to extract information based on combining different SLC images.
 
 When two images of the same area are collected, it is possible to combine both images into a single image named the "interferometric coherence image". The coherence image can be calculated by taking the complex correlation between the pairs of corresponding pixels of the two acquisitions, and it is calculated as:
 
 \begin{equation}
-    \gamma = \frac{E[u_1u_2^*]}{\sqrt{E[|u_1|^2]E[|u_2|^2]}}
+    \gamma = \frac{E[u_1u_2^*]}{\sqrt{E[|u_1|^2]E[|u_2|^2]}},
 \end{equation}{}
 
-where $E[\cdot]$ is the expectation operator, $u_1$ is a pixel of the first image and $u_2$ is the corresponding pixel on the second image. One must keep in mind that it is not possible to compute the expected value since the probability density function (PDF) for the pixel is not known, so in practice the correlation is computed using numerical estimations around the pixel of interest. For more details concerning the numerical estimation - and the trade-offs between computing methods - of the complex coherence, the reader is referred to \cite{Bamler}. 
+\noindent
+where $E[\cdot]$ is the expectation operator, $u_1$ is a pixel of the first image and $u_2$ is the corresponding pixel on the second image. One must keep in mind that it is not possible to compute the expected value since the probability density function (PDF) for the pixel is not known, so in practice the correlation is computed using numerical estimations around the pixel of interest. For more details concerning the numerical estimation --- and the trade-offs between computing methods --- of the complex coherence, the reader is referred to \cite{Bamler}. 
 
 After extracting the complex coherence (some sources use the term correlation/decorrelation instead of coherence) between pairs of images, the final result is an image that provides relevant information for classification and target identifying purposes as it can be seen in \cite{Alberto,Paolathesis,Martone, Martone2, Martone3, first_interferometric, Krieger,Paolo, Acqua} among others.
 
