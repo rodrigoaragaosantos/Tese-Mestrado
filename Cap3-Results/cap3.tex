@@ -167,6 +167,8 @@ The overall accuracy (OA) for each image stack can be seen in Table \ref{tab:sen
     \label{tab:sentinel_table_results}
 \end{table}
 
+From the table \ref{tab:sentinel_table_results} we can see an improvement in the overall accuracy of the land cover classification map, even if the improvement is not as great as the improvement for the TANDEM-X dataset. Although the improvement is not significant, it still is non-negligible, and by keeping in mind that additional texture information can be easily added to any machine learning algorithm this results demonstrates that using textures might lead to improvement of results for every algorithm that tries to create the most accurate land cover classification map, even the state-of-the-art ones.
+
 \section{The CARABAS-II Results}
 
 The CARABAS-II dataset consists of 24 images acquisition of forests over Sweden with 25 vehicles arranged in the image. The objective of the change detection algorithm is to be able to detect the vehicles position change between acquisitions while trying to minimize the false alarm rate of such method. The change detect algorithm proposed is based on the UNET convolutional neural network, which used 12 of the 24 images for training purposes.
