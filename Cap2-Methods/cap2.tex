@@ -201,7 +201,7 @@ The radar is a VLF UHB SAR system that transmits HH-polarized radio waves in the
     \label{fig:sabreliner}
 \end{figure}
 
-In the table \cite{tab:carabas_system} the system parameters for the CARABAS-II system are presented for the
+In the table \ref{tab:carabas_system} the system parameters for the CARABAS-II system are presented for the
 flight campaigns that were used in this work. 
 
 \begin{table}[H]
@@ -430,61 +430,61 @@ The hypothesis test suggests running a $\chi^2$ statistical test to find the val
     \chi^2(d) = (\sum_i\sum_j \frac{N_d^2(i,j)}{\sum_jN_d(i,j)\sum_iN_i(i,j)} -1)
 \end{equation}
 
-\subsubsection{The Laws Textures}
-\label{sec:Laws_Textures}
+% \subsubsection{The Laws Textures}
+% \label{sec:Laws_Textures}
 
-A different way to create textures is to use 2D filters to detect different kinds of textures. Laws developed a method to measure the amount of variation of the image on a fixed sized window. The method consists of making 16 different convolutions of the original image with convolution masks and use the result to compute the texture. The 16 different filters are obtained by taking the product of the following vectors.
-\begin{align}
-L5 (Level) = 
-\begin{bmatrix}
-1&4&6&4&1
-\end{bmatrix}\\
-E5 (Edge) = 
-\begin{bmatrix}
--1&-2&0&2&1
-\end{bmatrix}\\
-R5 (Ripple) = 
-\begin{bmatrix}
--1&0&2&0&-1
-\end{bmatrix}\\
-S5 (Spot) = 
-\begin{bmatrix}
-1&-4&6&-4&1
-\end{bmatrix}
-\end{align}
+% A different way to create textures is to use 2D filters to detect different kinds of textures. Laws developed a method to measure the amount of variation of the image on a fixed sized window. The method consists of making 16 different convolutions of the original image with convolution masks and use the result to compute the texture. The 16 different filters are obtained by taking the product of the following vectors.
+% \begin{align}
+% L5 (Level) = 
+% \begin{bmatrix}
+% 1&4&6&4&1
+% \end{bmatrix}\\
+% E5 (Edge) = 
+% \begin{bmatrix}
+% -1&-2&0&2&1
+% \end{bmatrix}\\
+% R5 (Ripple) = 
+% \begin{bmatrix}
+% -1&0&2&0&-1
+% \end{bmatrix}\\
+% S5 (Spot) = 
+% \begin{bmatrix}
+% 1&-4&6&-4&1
+% \end{bmatrix}
+% \end{align}
 
-Then the 2D convolution masks are obtained by taking the product of these vectors. For example the R5S5 mask is computed as the product of R5 and S5 as following:
-\begin{equation}
-\begin{bmatrix}
--1\\0\\2\\0\\-1
-\end{bmatrix}
-\times
-\begin{bmatrix}
-1&-4&6&-4&1
-\end{bmatrix}
-=
-\begin{bmatrix}
--1&0&2&0&-1\\
-4&0&-8&0&4\\
--6&0&12&0&-6\\
-4&0&-8&0&4\\
--1&0&2&0&-1
-\end{bmatrix}
-\end{equation}
+% Then the 2D convolution masks are obtained by taking the product of these vectors. For example the R5S5 mask is computed as the product of R5 and S5 as following:
+% \begin{equation}
+% \begin{bmatrix}
+% -1\\0\\2\\0\\-1
+% \end{bmatrix}
+% \times
+% \begin{bmatrix}
+% 1&-4&6&-4&1
+% \end{bmatrix}
+% =
+% \begin{bmatrix}
+% -1&0&2&0&-1\\
+% 4&0&-8&0&4\\
+% -6&0&12&0&-6\\
+% 4&0&-8&0&4\\
+% -1&0&2&0&-1
+% \end{bmatrix}
+% \end{equation}
 
-After applying the 16 5x5 masks to the image it is necessary to generate the texture energy map on a fixed size window. Let the window size be 15x15 and $F_k[i,j]$ the result of the $kth$ mask on the pixel [i, j]. Then the texture energy map $E_k$ is defined by:
-\begin{equation}
-E_k[r,c] = \sum_{j=c-7}^{c+7}\sum_{i=r-7}^{r+7} |F_k[i,j]|   
-\end{equation}
+% After applying the 16 5x5 masks to the image it is necessary to generate the texture energy map on a fixed size window. Let the window size be 15x15 and $F_k[i,j]$ the result of the $kth$ mask on the pixel [i, j]. Then the texture energy map $E_k$ is defined by:
+% \begin{equation}
+% E_k[r,c] = \sum_{j=c-7}^{c+7}\sum_{i=r-7}^{r+7} |F_k[i,j]|   
+% \end{equation}
 
-After creating the 16 energy maps it is needed to group together similar images that perceive the textures in different directions. For example, if R5S5 detects at ripples in the vertical direction, then S5R5 detects ripples in the horizontal direction, so it is desirable to group them together to detect ripple in both directions. The average of these two images measure then the total ripple content. It is possible to group the 16 energy maps in 9 texture images as following:
-\begin{align*}
-L5E5/E5L5\qquad L5S5/S5L5\\
-L5R5/R5L5\qquad\qquad\ \ E5E5\\
-E5S5/S5E5\qquad E5R5/R5E5\\
-S5S5\qquad\qquad\ \ S5R5/R5S5\\
-R5R5
-\end{align*}
+% After creating the 16 energy maps it is needed to group together similar images that perceive the textures in different directions. For example, if R5S5 detects at ripples in the vertical direction, then S5R5 detects ripples in the horizontal direction, so it is desirable to group them together to detect ripple in both directions. The average of these two images measure then the total ripple content. It is possible to group the 16 energy maps in 9 texture images as following:
+% \begin{align*}
+% L5E5/E5L5\qquad L5S5/S5L5\\
+% L5R5/R5L5\qquad\qquad\ \ E5E5\\
+% E5S5/S5E5\qquad E5R5/R5E5\\
+% S5S5\qquad\qquad\ \ S5R5/R5S5\\
+% R5R5
+% \end{align*}
 
 
 \subsubsection{The Sum and Difference Histograms Texture}
