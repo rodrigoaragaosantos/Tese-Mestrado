@@ -3,7 +3,7 @@ This chapter will present the results of the textural information extraction of 
 The texture extraction algorithm that was chosen for this work was the SADH method. This was decided based on the fact that it achieves similar textural information quality when compared to the GLCM method, but it is less time-consuming than the latter method --- in fact it was approximately four times faster to run SADH method than to run GLCM method for the same dataset.
 
 \section{The TANDEM-X Results}
-This section present the texture results for the TANDEM-X dataset using the SADH method and the subsequent land cover classification map that was created using the texture results.
+This section present the texture results for the TANDEM-X dataset using the SADH method and the subsequent land cover classification map that was created using the texture results. The objective of this section is to assess the impact of textures in the generation of classification maps, i.e. whether they are useful for this purpose or not; afterwards we will use this texture method for the improvement of a state-of-the-art classification map using the Sentinel-1 dataset over the Rondônia state.
 
 \subsection{The TANDEM-X Texture Results}
 From the TANDEM-X dataset it was chosen to extract the textural information of the volumetric coherence (also known as volumetric decorrelation) since it has been already shown that the volumetric coherence is the key information for creating forests maps using SAR data in the X-band \cite{Paolo,Rizzoli, Alberto}. For the TANDEM-X dataset the picture of the volumetric coherence can be seen in Figure \ref{fig:gamma_vol_tandemx}.
@@ -169,7 +169,99 @@ The overall accuracy (OA) for each image stack can be seen in Table \ref{tab:sen
 
 \section{The CARABAS-II Results}
 
+The CARABAS-II dataset consists of 24 images acquisition of forests over Sweden with 25 vehicles arranged in the image. The objective of the change detection algorithm is to be able to detect the vehicles position change between acquisitions while trying to minimize the false alarm rate of such method. The change detect algorithm proposed is based on the UNET convolutional neural network, which used 12 of the 24 images for training purposes.
 
+The CDA algorithm is based on 3 dimensional image tensor, one of which is the original acquisition and the other two are textures extracted using the SADH method --- the texture chosen were the entropy and the variance. One example for a CARABAS acquisition and the two subsequent textures can be seen in Figures \ref{fig:carabas_example}, \ref{fig:entropy_example}, \ref{fig:variance_example}.
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.3\linewidth]{Cap3-Results/exemplo_carabas.jpg}
+  \caption{Example of a SAR image acquired by the CARABAS-II system.
+  The red circle shows the position of the cars hidden under a canopy of trees.}
+  \label{fig:carabas_example}
+\end{figure}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.3\linewidth]{Cap3-Results/entropy_example.png}
+  \caption{Entropy texture image of Figure \ref{fig:carabas_example}.
+  The red circle shows the position of the cars hidden under a canopy of trees.}
+  \label{fig:entropy_example}
+\end{figure}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.3\linewidth]{Cap3-Results/variance_exemplo.png}
+  \caption{Variance texture image of Figure \ref{fig:carabas_example}.
+  The red circle shows the position of the cars hidden under a canopy of trees.}
+  \label{fig:variance_example}
+\end{figure}
+
+After running the CDA algorithm proposed in section 3, we selected 24 pairs of images to assess the quality of the change detection algorithm --- the 24 pairs selected followed
+the standard selection used for CDA testing and validation of
+the CARABAS-II dataset as it was done in \cite{Carabas, Ricardo, LucasRamos}.
+
+One example image of the Change Detection algorithm can be seen in Figure \ref{fig:carabas_results}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.3\linewidth]{Cap3-Results/results_carabas.png}
+  \caption{Results for Change Detection algorithm proposed. The black pixels represent non changes and the white pixels represent detected changes(which are the vehicles that have changed position). All 25 vehicles have been detected}
+  \label{fig:carabas_results}
+\end{figure}
+
+The results for the CDA --- in terms of number of correct detections and number of false detections --- are presented in table \ref{tab:carabas_results_table} where each image M\_P
+was labelled in terms of Mission number (M) and flight pass
+(P). In Table \ref{tab:carabas_results_table} it is also presented the results
+of the CDA without the textural information to demonstrate
+the how the textures contribute as additional information to
+machine learning algorithms.
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|c||c|c|c|c|}
+       \hline
+       \vtop{\hbox{\strut Monitored}\hbox{\strut Image}} &
+       \vtop{\hbox{\strut Reference}\hbox{\strut Image}}
+       &\vtop{\hbox{\strut \vtop{\hbox{\strut Detected}\hbox{\strut Targets}}}\hbox{\strut \vtop{\hbox{\strut (with}\hbox{\strut texture)}}}}
+       &\vtop{\hbox{\strut \vtop{\hbox{\strut False}\hbox{\strut Alarms}}}\hbox{\strut \vtop{\hbox{\strut (with}\hbox{\strut texture)}}}}
+       &\vtop{\hbox{\strut \vtop{\hbox{\strut Detected}\hbox{\strut Targets}}}\hbox{\strut \vtop{\hbox{\strut (without}\hbox{\strut texture)}}}}
+       &\vtop{\hbox{\strut \vtop{\hbox{\strut False}\hbox{\strut Alarms}}}\hbox{\strut \vtop{\hbox{\strut (without}\hbox{\strut texture)}}}}
+       \\
+       \hline \hline
+       2\_1&3\_1&25&0&25&0\\
+       3\_1&4\_1&23&1&21&1\\
+       4\_1&5\_1&25&0&25&0\\
+       5\_1&2\_1&25&0&25&0\\
+       \hline
+       2\_2&4\_2&25&0&25&0\\
+       3\_2&5\_2&25&0&23&1\\
+       4\_2&2\_2&23&0&25&0\\
+       5\_2&3\_2&22&0&24&0\\
+       \hline
+       2\_3&5\_3&25&0&25&0\\
+       3\_3&2\_3&22&1&21&1\\
+       4\_3&3\_3&25&1&25&1\\
+       5\_3&4\_3&25&0&25&0\\
+       \hline
+       2\_4&3\_4&25&0&25&0\\
+       3\_4&4\_4&24&0&23&1\\
+       4\_4&5\_4&25&0&25&0\\
+       5\_4&2\_4&24&0&25&0\\
+       \hline
+       2\_5&4\_5&25&0&25&0\\
+       3\_5&5\_5&24&0&21&2\\
+       4\_5&2\_5&25&0&25&0\\
+       5\_5&3\_5&23&0&24&0\\
+       \hline
+       2\_6&5\_6&25&0&25&0\\
+       3\_6&2\_6&23&1&25&0\\
+       4\_6&3\_6&24&0&25&0\\
+       5\_6&4\_6&25&1&25&0\\
+       \hline
+  \end{tabular}
+  \caption{Results of CDA in terms of detected targets and false alarm rate  for the same image pairs considered in (\cite{Carabas}). It is also presented  the results when textural information is either used or not used as input of the proposed algorithm.}
+  \label{tab:carabas_results_table}
+\end{table}
+
+The performance of the algorithm is measured in terms of probability of detection ($P_d$) and false alarm rate (FAR). The proposed algorithm had a $P_d$ of 97\% and a FAR of $0.0034{/}km^2$. The probability of detection of the proposed algorithm is similar to other state-of-the-art algorithms like the ones proposed in \cite{Ricardo, Campos, Vinholi} but show great reduction in terms of FAR, since those algorithms presented a FAR of $=0.28{/} km^2$, $=0.0313{/} km^2$, $= 0.0833{/} km^2$ respectively.
