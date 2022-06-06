@@ -1,22 +1,11 @@
-This chapter will give a brief introduction of the knowledge that is needed in order to fully understand the problem that we are trying to tackle, how we are going to solve it, and how to better interpret the results. The chapter will start by giving a description of the satellites systems that were used throughout this thesis, the dataset that was provided by each satellite, and each problem that will be tackled with each dataset - for the Amazon Rainforest dataset the problem that will be tackled is the problem of deforestation mapping and detection, meanwhile for the Swedish forest dataset, the problem that will be tackled is the change target detection problem. 
-
-The chapter will also give an introduction about the methods and techniques that one must know in order to understand the approach that was used to solve the problems; more specifically, machine learning techniques such as: random forests, neural networks, and convolutional neural networks, and signal processing techniques such as statistical signal processing and feature texture extraction.
+This chapter gives the information needed to understand the proposed methods. The chapter starts by describing the SAR systems used for image acquisitions. Then, the datasets used to assess the proposed methods are presented. Finally, the problems tackled with each dataset are described. The Amazon Rainforest dataset is considered for the problem of deforestation mapping and detection. For the CARABAS dataset, the problem that will be tackled is the change target detection problem. The chapter also introduces the methods and techniques used as references, specifically machine learning techniques such as random forests, neural networks, convolutional neural networks, and feature texture extraction.
 
 \section{Materials}
-This section will give details about the satellite systems used - the German Tandem-X satellite from DLR, the European Sentinel-1 satellite from ESA, and the Swedish CARABAS system from FFA. It will also give details about the test areas chosen to perform the study.
+This section describes satellite systems used for data acquisition: The Tandem-X satellite, DLR, the Sentinel-1 satellite, ESA, and the CARABAS-II system, FOI. It will also detail the test areas chosen to perform the study.
 
-For the deforestation detection problem it was chosen to use data from the Amazon Rainforest, focusing specifically in the Rondônia state area. Rondônia is a state in northern Brazil that is topographically composed mainly by flat lands, and plateaus with low altitude. The climate in Rondônia is called "humid equatorial", which means that the temperature variation throughout the year is very little (something that is very desirable when working with SAR acquisitions, since it is preferable to have as much little variation as possible between acquisitions) \cite{rondoniaGeography}. The pluviometric indexes in the state can reach up to 2100 mm per year, with most of the rains happening between May and September - something that one must know to better select and compare data since the rainy season can affect the image acquisition, so one must always use images from the same season when comparing acquisitions. 
+For the deforestation detection problem, it was chosen to use data from the Amazon Rainforest, focusing specifically on the Rondônia state area. Rondônia is a state in northern Brazil that is topographically composed mainly of lands and plateaus with low altitudes. The climate in Rondônia is called "humid equatorial," which means that the temperature variation throughout the year is minimal (something that is very desirable when working with SAR acquisitions since it is preferable to have as little variation as possible between acquisitions) \cite{rondoniaGeography}. The pluviometric indexes in the state can reach up to 2100 mm per year, with most of the rains happening between May and September - something that one must know to better select and compare data since the rainy season can affect the image acquisition, so one must always use images from the same season when comparing acquisitions.
 
-One of the goals of this thesis is to improve algorithms for deforestation mapping and detection, therefore Rondônia was a natural choice for a study area since it is the state with the most deforestation from the Amazon Rainforest. The Rondônia
-state already lost over 31\% of its forests and most of the remaining areas are degraded.
-For comparison, Acre, the state which borders Rondônia on the west, has 91\% of its
-original forest cover and a greater part of it is still intact \cite{rondoniaDeforestation}. 
-
-The deforestation in the Rondônia state can be easily seen with optical satellite data
-acquired with Google Earth. Deforestation follows a fairly predictable pattern, as seen in
-Figure 4.1. The pattern of deforestation is known as fishbone pattern due to its similarity
-with a fishbone skeleton. This pattern arises from the fact that deforesting is normally done
-by penetrating the forest and then deforesting along the edges of the road firstly created. Due to recent fires that happened in the year of 2019 in the Amazon Rainforest, there
+One of the goals of this thesis is to improve algorithms for deforestation mapping and detection. Therefore, Rondônia was a natural choice for a study area since it is the state with the most deforestation in the Amazon rainforest. The Rondônia state has lost over 31\% of its forests, and most of the remaining areas are degraded. For comparison, Acre, the state which borders Rondônia on the west, has 91\% of its original forest cover, and a greater part of it is still intact \cite{rondoniaDeforestation} The deforestation in the Rondônia state can be easily seen with optical satellite data acquired with Google Earth. Deforestation follows a fairly predictable pattern, as seen in Figure \ref{fig:fishbone}. The pattern of deforestation is known as a fishbone pattern due to its similarity with a fishbone skeleton. This pattern arises because deforesting is usually done by penetrating the forest and then deforesting along the edges of the road.  Due to recent fires that happened in the year of 2019 in the Amazon Rainforest, there
 is much concern about studying and monitoring the deforestation that happens in that
 area, and considering that the Rondônia state is the area in which the deforestation is
 most critical, it was a natural choice of area to study for this thesis.
@@ -29,50 +18,27 @@ most critical, it was a natural choice of area to study for this thesis.
 \end{figure}
 
 
-Another approach that we can take to solve the problem of monitoring deforestation is anticipating when deforestation will take place instead of monitoring it after it has happened. One approach that one can take is trying to detect vehicles used for deforestation that might be concealed under tree foliage. 
+Another approach that we can take to solve the problem of monitoring deforestation is anticipating when deforestation will take place instead of monitoring it after it has happened. One strategy that one can take is trying to detect vehicles used for deforestation that might be concealed under tree foliage. There are many situations where there is a need for monitoring vehicles concealed by foliage over a large area. For example, for military applications, it might be necessary to monitor the positioning of enemy vehicles trespassing in a restricted location. For environmental purposes, it might be needed to pinpoint the position of vehicles used for illegal deforestation in overprotected forests. If SARs are to be used for such purposes, it is ideal that low-frequency systems are chosen since those provide a wide surveillance area and good foliage penetration capabilities. At low frequency (VHF-band), the main backscatter from the target area is due to large scatters, e.g., tree canopy, houses, vehicles, and other human-made objects, which will appear as very bright objects in the image.
 
-There are many situations were there is a need for monitoring vehicles concealed by foliage over a large area.
-For example, for military applications, it might be necessary to monitor the positioning of enemy vehicles trespassing
-a restricted area. For environmental purposes it might be needed to pinpoint the position of vehicles that are being used
-for illegal deforestation overprotected forests. If SARs are to be used for such purposes, it is ideal that low frequency systems
-are chosen since those provide a wide surveillance area and good foliage penetration capabilities. 
-At low frequency (VHF-band) the main backscatter from the target area is due to large scatters, e.g. tree canopy, houses,
-vehicles, and other man-made objects, which will appear as very bright objects in the image.
+The challenge related to change detection is associated with the trade-off between having high accuracy detection and a high false alarm rate. Typically, trying to increase the overall accuracy of detection algorithms will incur a high number of false alarms. Therefore when designing an algorithm for detection, it is necessary to have both good detection capabilities and a low enough false alarm rate to be used by the client. In foliage penetration applications, the primary source of clutter comes from large tree trunks, and the more sparse the forest is, the less the number of false targets will be. It is also true that the larger the tree, the higher the number of false alarms \cite{Book_ML}.
 
-The challenge related to change detection is associated with the trade-off between having high accuracy detection and high false alarm rate.
-Normally what happens is by trying to increase the overall accuracy of detection algorithms will incur in having a high number of false alarms, 
-therefore when designing an algorithm for detection it is necessary to have both good detection capabilities and a low enough false alarm rate
-to be used by the client. In foliage penetration applications, the main source of clutter comes from large tree trunks, and the more sparse the
-forest is the less will be the number of false targets. It is also true that the larger the tree then the higher will be the number of false alarms \cite{Book_ML}.
+According to \cite{Carabas} VHF band has good performance for detecting targets under trees, but there are very few VHF SAR systems in the world. To overcome this problem, researchers from the FOI released a VHF-band SAR image dataset to the public to foster the development of change detection methods for wavelength-resolution SAR systems in the VHF band, which is the dataset used in this work.
 
-The objects that will be used to assess the quality of the change detection method will be a set of 25 military vehicles distributed among a testing area.
-Since those objects are large (compared to the bandwidth of the signal), and stationary, then their radar signature will be very stable between acquisitions \cite{63}.
-This will be used as an advantage by taking acquisitions with different flight passes to suppress clutter noise from tree canopy.
-
-According to \cite{Carabas} VHF-band has good performance for detecting targets under trees, but there are very few VHF SAR systems in the world.
-To overcome this problem researchers from the FOI released a VHF-band SAR image dataset to the public to foster the development of 
-change detection methods for wavelengh-resolution SAR systems in VHF band, which is the dataset that will be used in this work.
-
-For the target change detection problem the dataset used are 24 image acquisitions over a forest in northern Sweden. Unlike for the deforestation detection problem, we had no flexibility over which area to chose to perform the study, since the CARABAS dataset is a free dataset made available by the Swedish Air force Research Center. The CARABAS dataset will be given a further description in a future section of this work. 
-
-
-\subsection{The Tandem-X system and dataset}
+\subsection{TanDEM-X dataset}
 TerraSAR-X (TSX) and TanDEM-X (TDX), launched in June 2007 and June 2010,
 respectively, are two German SAR satellites operating in X-band, developed within a
 public/private partnership between the German Aerospace Center (DLR) and Airbus
 Defense and Space.
-The goal of both satellites is to provide SAR products for commercial purposes and
-scientific purposes, and the TanDEM-X mission has the primary goal of generating a global,
+The goal of both satellites is to provide SAR products for commercial and scientific purposes, and the TanDEM-X mission has the primary goal of generating a global,
 high precision, and consistent digital elevation model (DEM) with full coverage and no
 gaps. The relevance of the mission lies in that, until now, the available DEMs of large
 parts of Earth are of low resolution, inconsistent, incomplete and commonly based on
 different data sources and survey methods.
 TanDEM-X has offered, for the first time, a global, high accuracy and homogeneous DEM.
-Besides the main goal, other secondary missions based on along-track interferometry have
-been defined as well as new techniques with bistatic SAR \cite{Alberto}. The work presented on this thesis is one of the
-possible exploitation of the activities of the TanDEM-X data.
+Besides the primary goal, other secondary missions based on along-track interferometry have
+been defined, and techniques with bistatic SAR \cite{Alberto}.
 
-Both satellites have a center frequency of 9.65 GHz, and can operate in different modes: stripMap, scanSAR, Spotlight, staring SpotLight and TopSAR. The satellites also can use different antenna modes in order to acquire single, dual and full polarimetric data. The main systems parameters can be seen in table \ref{tab:tandem_params}.
+Both satellites have a center frequency of 9.65 GHz, and can operate in different modes: StripMap, ScanSAR, Spotlight, staring SpotLight and TopSAR. The satellites also can use different antenna modes to acquire single, dual and full polarimetric data. The main systems parameters can be seen in Table \ref{tab:tandem_params}.
 
 \begin{table}[H]
     \centering
@@ -82,7 +48,7 @@ Both satellites have a center frequency of 9.65 GHz, and can operate in differen
         \hline \hline
         Center frequency & 9.65 Ghz  \\ \hline
         Bandwidth & 300 Mhz  \\ \hline
-        Antenna Size & 4.8 m in Azimuth, 0.7 m in elevation  \\ \hline
+        Antenna size & 4.8 m in Azimuth, 0.7 m in elevation  \\ \hline
         Polarization & H and V (single, dual and quad)  \\ \hline
         Look angle range & 15-60 degrees  \\ \hline
         Nominal operation modes & Spotlight, Stripmap, ScanSar  \\ \hline
@@ -95,22 +61,22 @@ Both satellites have a center frequency of 9.65 GHz, and can operate in differen
     \label{tab:tandem_params}
 \end{table}
 
-For more information regarding the TSX and TDX system the reader is referred to \cite{Alberto}.
+For more information regarding the TSX and TDX systems the reader is referred to \cite{Alberto}.
 
-The TanDEM-X system has the advantage of being able to provide very high resolution image data, which can create problems to process the data since the data will be very large memory wise. Because of that it was chosen to work with small areas in Rondônia State. There were two images that were selected over the Rondônia state that have a nice mix of forest areas and deforested areas. The two areas can be seen in figure \ref{fig:tandem_dataset} where each colored rectangle (in colors blue and red) represent one image acquisition of the TanDEM-X system. The center of the two images have coordinated (-10.720611498968696 N, -61.269449884800494 W).
+The TanDEM-X system provides very high-resolution image data, which can create problems in processing the data since the data will be very large memory-wise. Because of that, it was chosen to work with small areas in Rondônia State. Two images were selected over the Rondônia state with a nice mix of forest and deforested areas. The two areas can be seen in Figure \ref{fig:tandem_dataset}, where each colored rectangle (in colors blue and red) represents one image acquisition of the TanDEM-X system. The center of the two images has coordinates (-10.720611498968696 N, -61.269449884800494 W).
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\linewidth]{Cap2-Methods/tandem_dataset.jpg}
-    \caption{TanDEM-X dataset available in Rondônia Area (Image provided by Google Earth).}
+    \caption{The red and blue dashed lines delimit the ground areas of the SAR TanDEM-X dataset used in this thesis. The image referred to a location in Rondônia, where the center of the two areas has coordinates -10.720611498968696 N, -61.269449884800494 W.}
     \label{fig:tandem_dataset}
 \end{figure}{}
 
-\subsection{The Sentinel-1 system and dataset}
+\subsection{Sentinel-1 dataset}
 
-Sentinel-1 is first new space component of the Global monitoring for environment and security (GMES) satellite family, designed and developed by the European Space Agency (ESA) and funded by the European Commission. Sentinel-1 is composed of two twins satellites, Sentinel-1A and Sentinel-1B, sharing the same orbital plane with 180 degrees orbital phase difference. Its mission is to provide continuous all-weather, day-and-night imagery at C-Band(5.4 GHz). The SENTINEL-1 constellation provides high reliability, improved revisit time, geographical coverage and rapid data dissemination to support operational applications in the priority areas of marine monitoring, land monitoring and emergency services.
+Sentinel-1 is the first new space component of the Global monitoring for environment and security (GMES) satellite family, designed and developed by the European Space Agency (ESA) and funded by the European Commission. Sentinel-1 is composed of two twin satellites, Sentinel-1A and Sentinel-1B, sharing the same orbital plane with 180 degrees orbital phase difference. Its mission is to provide continuous all-weather, day-and-night imagery at C-Band(5.4 GHz). The SENTINEL-1 constellation provides high reliability, improved revisit time, geographical coverage, and rapid data dissemination to support operational applications in the priority areas of marine monitoring, land monitoring, and emergency services.
 
-Sentinel-1 acquires images of all global landmasses, costal zones, and covers ocean mapping at 6 days intervals. There are different modes that can be used to map landmasses and ocean mapping. The main operational mode features a swath of 250 km with resolution that is suited for most applications. The Sentinel-1 data products distributed by ESA include: raw level data (for specific usage), single look complex (distribution limited), ground range detected data with multi-looked intensity (systematically distributed) and ocean data  for retrieved geophysical parameters of the ocean (systematically distributed). 
+Sentinel-1 acquires images of all global landmasses and coastal zones and covers ocean mapping at six-day intervals. Different modes can be used to map landmasses and ocean mapping. The main operational mode features a swath of 250 km with a resolution suited for most applications. The Sentinel-1 data products distributed by ESA include raw level data (for specific usage), single look complex (distribution limited), ground range detected data with multi-looked intensity (systematically distributed), and ocean data for retrieved geophysical parameters of the ocean (systematically distributed).
 
 \begin{table}[H]
     \centering
@@ -120,7 +86,7 @@ Sentinel-1 acquires images of all global landmasses, costal zones, and covers oc
         \hline \hline
         Center frequency & 5.405 GHz   \\ \hline
         Bandwidth & 100 MHz  \\ \hline
-        Antenna Size & 12.3 m in Azimuth, 0.821 m in elevation  \\ \hline
+        Antenna size & 12.3 m in Azimuth, 0.821 m in elevation  \\ \hline
         Polarization & H and V (single, dual and quad)  \\ \hline
         Look angle range & 20-46 degrees  \\ \hline
         
@@ -129,7 +95,7 @@ Sentinel-1 acquires images of all global landmasses, costal zones, and covers oc
         \\ \hline
 
         Ground resolution & 5 m (Stripmap) - 40 m (EWS) \\ \hline
-        Scene size (range) & 1000- 5000 km \\ \hline
+        Scene size (range) & 1000 - 5000 km \\ \hline
         Scene size (azimuth) & 80 km (Stripmap) - 400 km (EWS)  \\ \hline
         Pulse repetition frequency & 1 - 3 kHz \\ \hline
     \end{tabular}
@@ -139,18 +105,19 @@ Sentinel-1 acquires images of all global landmasses, costal zones, and covers oc
 
 For more information regarding the Sentinel-1 system the reader is referred to \cite{sentinelmission}.
 
-The images acquired by Sentinel-1 are a monthly interferometric time-series. The methodology and processing chain for the raw processing image data is based on the one developed in \cite{Rodrigo,Paolo}. The preprocessing steps for the generation of the images consist of a coregistration of the images with respect to a common master acquisition, normally selected as the one in the middle of the temporal stack. Afterwards, the backscatter value and coherence were estimated by using a convolutional filter with a window size of 5x19 pixels. Since the resolution of the Sentinel-1 in Interferometric Wide swath mode is of 14 m X 3.7 m, this creates a final image with resolution of approximately 70 m X 70 m. The model used for extracting the temporal correlation is the one described in \cite{Paolo}.
+The images acquired by Sentinel-1 are a monthly interferometric time series. The methodology and processing chain for raw image data is based on the one developed in \cite{Rodrigo,Paolo}.
+ The preprocessing steps for the generation of the images consist of a coregistration of the images with respect to a common master acquisition, normally selected as the one in the middle of the temporal stack. Afterward, the backscatter value and coherence were estimated by using a convolutional filter with a window size of 5x19 pixels. Since the resolution of the Sentinel-1 in Interferometric Wide swath mode is 14 m X 3.7 m, this creates a final image with a resolution of approximately 70 m X 70 m. The model used for extracting the temporal correlation is described in \cite{Paolo}.
 
-The study area covered is over a region in the Rondônia state in Brazil. The area covers the region between south latitudes 7$\degree$50$'$ and 13$\degree$50$'$, and west longitudes 59$\degree$50$'$ and 67$\degree$10$'$. Since this is an area of huge deforestation focus, the ESA has set up a 6-day repeat pass coverage with Sentinel-1 system. For this study area it was downloaded and processed a set of 12 S-1 time series according to the framework explained in figure \ref{fig:sentinelStack}.
+The study area covered is over a region in the Rondônia state in Brazil. The area covers the region between south latitudes 7$\degree$50$'$ and 13$\degree$50$'$, and west longitudes 59$\degree$50$'$ and 67$\degree$10$'$. Since this is an area of huge deforestation focus, the ESA has set up a 6-day repeat pass coverage with the Sentinel-1 system. For this study area it was downloaded and processed a set of 12 S-1 time series according to the framework explained in Figure \ref{fig:sentinelStack}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{Cap2-Methods/sentinelstack.jpg}
-    \caption{Sentinel-1 stack of acquisition images. There are four different orbits of acquisitions and each orbit provided 5 images, resulting in 20 total images (of which only 12 were selected). A dot represents a master image (the image that is used as master for the coregistration method) and the other images are slave images.}
+    \caption{Sentinel-1 stack of acquisition images. There are four different orbits of acquisitions and each orbit provided 5 images, resulting in 20 total images (of which only 12 were selected). A dot represents a master image (the image used as a master for the coregistration method), and the other images are slave images.}
     \label{fig:sentinelStack}
 \end{figure}{}
 
-In table \ref{tab:sentinelStackTable} it is also possible to see the geographical description of each orbit and image acquired.
+In Table \ref{tab:sentinelStackTable}, it is also possible to see the geographical description of each orbit and image acquired.
 
 \begin{table}[H]
     \centering
@@ -178,21 +145,21 @@ In table \ref{tab:sentinelStackTable} it is also possible to see the geographica
     \label{tab:sentinelStackTable}
 \end{table}
 
-A visual representation of the rondonia dataset can be seen in figure \ref{fig:rondoniadataset}. The images acquisitions are overlapped with a Google Maps image of the Rondônia state. From image \ref{fig:rondoniadataset} there are 3 different pixels color that can be seen: green pixels - which represents forest areas - red pixels - which represent deforested areas - and blue pixels - which represent man-made surfaces. This reference map was created by PRODES (programa de cálculo do desflorestamento da amazônia) project.
+A visual representation of the Rondônia dataset can be seen in Figure \ref{fig:rondoniadataset}. The images acquisitions are overlapped with a Google Maps image of the Rondônia state. From Image \ref{fig:rondoniadataset}, there are three different pixels color that can be seen: green pixels - which represent forest areas - red pixels - which represent deforested areas - and blue pixels - which represent human-made surfaces. This reference map was created by PRODES (Programa de cálculo do desflorestamento da Amazônia) project.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{Cap2-Methods/rondonia_dataset.jpg}
-    \caption{Reference deforestation map for the Rondônia dataset provided by PRODES. The blue pixels represent man-made surfaces, the green pixels represent forest areas, and the red pixels represents deforested areas. The yellow number represents the corresponding acquisition orbit.}
+    \caption{ Reference deforestation map for the Rondonia dataset provided by PRODES. The blue pixels represent human-made surfaces, the green pixels represent forest areas, and the red pixels represent deforested areas. The yellow number represents the corresponding acquisition orbit.}
     \label{fig:rondoniadataset}
 \end{figure}{}
 
-\subsection{The CARABAS system and dataset}
+\subsection{CARABAS dataset}
 
 The CARABAS-II is the second generation SAR system designed by the Swedish Defense Research Agency (FOI) for FOPEN applications.
-The CARABAS-II has participated in numerous military campaigns and has been used for research purpose since the nineties.
+The CARABAS-II has participated in numerous military campaigns and has been used for research purposes since the nineties.
 The radar is a VLF UHB SAR system that transmits HH-polarized radio waves in the frequency range of 
-20-90 MHz, therefore having resolution in the range of 3.3-15 m. The radar antenna is mounted on a Sabreliner aircraft as seen in \figref{fig:sabreliner}.
+20-90 MHz, therefore having a range resolution in the range of 3.3-15 m. The radar antenna is mounted on a Sabreliner aircraft, as seen in \figref{fig:sabreliner}.
 
 \begin{figure}[H]
     \centering
@@ -229,12 +196,12 @@ flight campaigns that were used in this work.
 
 By trying to promote research on change detection algorithms for wavelength-resolution
 images, FOI created a dataset of images acquired by CARABAS-II and made it publicly available. 
-This dataset is the one used to test and assess the quality of the proposed CDA.
+This dataset is used to test and assess the quality of the proposed CDA.
 
 The dataset consists of 24 SAR images selected from over 150 images obtained during different flight campaigns.
 Each image covers the same ground area of 6 $km^2$ (3 km vertically and 2 km horizontally)
 and is given in the form of a 3000 X 2000 matrix, where each pixel size is 1 km x 1 km.
-According to \cite{ 77,62,78} the images are already calibrated, pre-processed and geocoded.
+According to \cite{ 77,62,78}, the images are already calibrated, pre-processed, and geocoded.
 
 The location of the image dataset is inside the military base station Missile Test Area North
 Vidsel in northern Sweden in 2002. The test site is a region near the village of Nausta \cite{75}.
@@ -243,9 +210,10 @@ According to \cite{75} the area also contains fields, roads and lakes.
 
 With the objective of testing CDA quality, it was deployed 25 testing targets over the testing with different configuration 
 and arrangements. The testing targets consist of ten TGB11 model military vehicles, eight TGB30 model 
-military vehicles, and seven TGGB40 model military vehicles. The dimensions of each vehicle are presented in the table \ref{tab:vehicle_dimensions}.
-From the table \ref{tab:vehicle_dimensions} it can be seen that the dimensions of the vehicles are similar to the wavelength of the CARABAS-II system,
-therefore all advantages of targets with similar dimension to the wavelength previously mentioned hold true for the dataset.
+military vehicles, and seven TGGB40 model military vehicles. The dimensions of each vehicle are presented in the table \ref{tab:vehicle_dimensions}. Since those objects
+are large (compared to the bandwidth of the signal), and stationary, then their radar
+signature will be very stable between acquisitions (ULANDER, 2004). This will be used
+as an advantage by taking acquisitions with different flight passes to suppress clutter noise from tree canopy.
 
 \begin{table}[H]
     \centering
@@ -256,7 +224,7 @@ therefore all advantages of targets with similar dimension to the wavelength pre
         TGB30 & 6.8 m & 2.5 m & 3.0 m & 8 \\ \hline
         TGB40 & 7.8 m & 2.5 m & 3.0 m & 7 \\ \hline
     \end{tabular}
-    \caption{Target dimensions}
+    \caption{Target information}
     \label{tab:vehicle_dimensions}
 \end{table}
 
@@ -268,8 +236,8 @@ southeast of the test area.
 
 \begin{figure}[H]
     \centering
-    \includegraphics{chapter6/carabas_vehicles_fisico.jpg}
-    \caption{Military vehicles used as target. (left) TGB11. (middle) TGB30. (right) TGB40. 
+    \includegraphics[scale=0.9]{chapter6/carabas_vehicles_fisico.jpg}
+    \caption{Military vehicles used as targets. (left) TGB11. (middle) TGB30. (right) TGB40. 
     This picture also depicts the vegetation characteristics of the test area.}
     \label{fig:veiculos}
 \end{figure}
@@ -344,10 +312,10 @@ This spatial relationship is given by a displacement vector $d = (d_r, d_c)$ tha
 A more mathematical way to express this matrix is given by the following definition:
 
 \begin{equation}
-    C_{d}(i,j) = \# \{(r,c) | I(r,c)=i\  \textit{and} \  I(r+d_r, c+d_c)=j \} 
+    C_{d}(i,j) = \# \{(r,c) | I(r,c)=i\  \text{and} \  I(r+d_r, c+d_c)=j \} 
 \end{equation}
 
-For example, if the grey scale image $I$ is equal to:
+For example, if the grey scale image $I$ is equal to
 
 \begin{equation}
 I=
@@ -390,7 +358,7 @@ C_{(1,1)}=
 
 In $C_{(0,1)}$ the position $(0,0)$ equals 4, which means that $j=0$ appears to the right of $i=0$ four times in the image. The position $(1,0)$ equals 2 because $j=0$ appears to the right of $i=1$ two times in the image. The position $(2,1)$ equals 0 because $j=1$ never appears to the right of $i=2$.
 
-From this grey level co-occurrence matrix it is important to generate the \textit{normalized} grey level co-occurrence matrix $N_d$ given by:
+From this grey level co-occurrence matrix it is important to generate the \textit{normalized} grey level co-occurrence matrix $N_d$ given by
 
 \begin{equation}
 \label{eq:normalized}
@@ -401,21 +369,20 @@ The following textures are features that can be obtained from normalized co-occu
 \begin{table}[H]
 \centering
 \begin{tabular}{ |c |c |}
- \hline
- Contrast & $\sum_{i,j=0}^{N-1} i\frac{N_d(i,j)}{1+(i-j)^2}$\\ 
- Dissimilarity & $\sum_{i,j=0}^{N-1} i N_d(i,j)|i-j|$\\
- Homogeneity & $\sum_{i,j=0}^{N-1}\frac{N_d(i,j)}{1+|i-j|}$\\
- Angular\ Second\ Moment & $\sum_{i,j=0}^{N-1} i N_d(i,j)^2$\\
- Correlation & $\sum_{i,j=0}^{N-1}\frac{(i-\mu)(j-\mu)N_d(i,j)}{\sigma^2}$\\
- Energy & $\sum_{i,j=0}^{N-1}N_d(i,j)^2$\\
- Entropy & $ -\sum_{i,j=0}^{N-1}N_d(i,j)\log_2(N_d(i,j))$\\
+ \hline Contrast & $\sum_{i,j=0}^{N-1} i\frac{N_d(i,j)}{1+(i-j)^2}$\\ 
+ \hline Dissimilarity & $\sum_{i,j=0}^{N-1} i N_d(i,j)|i-j|$\\
+ \hline Homogeneity & $\sum_{i,j=0}^{N-1}\frac{N_d(i,j)}{1+|i-j|}$\\
+ \hline Angular\ Second\ Moment & $\sum_{i,j=0}^{N-1} i N_d(i,j)^2$\\
+ \hline Correlation & $\sum_{i,j=0}^{N-1}\frac{(i-\mu)(j-\mu)N_d(i,j)}{\sigma^2}$\\
+ \hline Energy & $\sum_{i,j=0}^{N-1}N_d(i,j)^2$\\
+ \hline Entropy & $ -\sum_{i,j=0}^{N-1}N_d(i,j)\log_2(N_d(i,j))$\\
  \hline
 \end{tabular}
 \caption{Formula for texture calculations for GLCM Method}
 \label{table:glcm_calculations}
 \end{table}
 
-Where $\mu$ is the GLCM mean and $\sigma$ is the standard deviations of the GLCM given by:
+where $\mu$ is the GLCM mean and $\sigma$ is the standard deviations of the GLCM given by:
 
 \begin{equation}
     \mu=\sum_{i,j=0}^{N-1}iN_d(i,j)
@@ -427,7 +394,7 @@ Where $\mu$ is the GLCM mean and $\sigma$ is the standard deviations of the GLCM
 A question that rises from this method is how to choose the displacement vector $d=(d_r,d_c)$ such that the result is the best. A solution proposed by  \cite{Zucker} is to run a hypothesis test to check the displacement vector $d$ that most rejects the hypothesis that the pair of pixels separated by the displacement vector $d$ are independent, therefore accepting the hypothesis that this pair of pixels give the most information one of the another and are better suited to compute a texture feature.
 The hypothesis test suggests running a $\chi^2$ statistical test to find the value $d$ that give the most information, that is, to maximize the value:
 \begin{equation}
-    \chi^2(d) = (\sum_i\sum_j \frac{N_d^2(i,j)}{\sum_jN_d(i,j)\sum_iN_i(i,j)} -1)
+    \chi^2(d) = \left(\sum_i\sum_j \frac{N_d^2(i,j)}{\sum_jN_d(i,j)\sum_iN_i(i,j)} -1\right)
 \end{equation}
 
 % \subsubsection{The Laws Textures}
@@ -487,30 +454,31 @@ The hypothesis test suggests running a $\chi^2$ statistical test to find the val
 % \end{align*}
 
 
-\subsubsection{The Sum and Difference Histograms Texture}
+\subsubsection{The Sum and Difference Texture Histograms}
 \label{sec:sum_and_diff_hist_texture}
 \paragraph{The Single Value Decomposition}
 Let $I[k,l]$ be a discrete image which is the realization of a bi-dimensional stationary process and let $G=\{1, 2,...,N_g\}$ be the set of the $N_g$ quantized grey levels.
-Just as in the GLCM method, consider a pair of pixels $y_1$ and $y_2$ separated by a displacement vector $d = (d_1, d_2)$ such that:
+Just as in the GLCM method, consider a pair of pixels $y_1$ and $y_2$ separated by a displacement vector $d = (d_1, d_2)$ such that
 \begin{equation}
-\begin{cases}
-&y_1 = I[k,l]\\
-&y_2 = I[k+d_1, l+d_2]
-\end{cases}
+\begin{split}
+    y_1 &= I[k,l], \text{and}\\
+    y_2 &= I[k+d_1, l+d_2]
+\end{split}
 \end{equation}
-The discrete joint probability function of these two pixels is $P(y_1, y_2)$. And the probability of observing a pair of grey level occurrence $i$ and $j$ separated by a displacement vector $(d_1, d_2)$ is given by:
+
+The discrete joint probability function of these two pixels is $P(y_1, y_2)$. And the probability of observing a pair of grey level occurrence $i$ and $j$ separated by a displacement vector $(d_1, d_2)$ is given by
 \begin{equation}
-    Prob\{y_1=i,\  y_2=j\} = P(i,j,d_1,d_2) = P(i,j)
+    Prob\{y_1=i,\  y_2=j\} = P(i,j,d_1,d_2) = P(i,j),
 \end{equation}
 which does not depend on the pixel position $[k,l]$.
 
-Pay attention to the fact that an estimate of this joint distribution $P[i,j]$ is the normalized co-occurrence matrix given by \ref{eq:normalized}, such that:
+Pay attention to the fact that an estimate of this joint distribution $P[i,j]$ is the normalized co-occurrence matrix given by \ref{eq:normalized}, such that
 \begin{equation}
-    \hat{P}(i,j) = N_d[i,j] \simeq P(i,j)
+    \hat{P}(i,j) = N_d[i,j] \simeq P(i,j),
 \end{equation}
 \newline
 
-Let us consider the random vector of the two random variables $y_1$ and $y_2$. Let $Y$ be this random vector such that $Y=[y_1, y_2]^T$. Suppose that this random vector $Y$ has a co-variance matrix $C_{yy}$. The goal is to make a linear transformation on this vector such that the new vector has uncorrelated variables. Suppose the linear transformation is given by a matrix $H$ and the new random vector is $Z$ such that:
+Let us consider the random vector of the two random variables $y_1$ and $y_2$. Let $Y$ be this random vector such that $Y=[y_1, y_2]^T$. Suppose that this random vector $Y$ has a co-variance matrix $C_{yy}$. The goal is to make a linear transformation on this vector such that the new vector has uncorrelated variables. Suppose the linear transformation is given by a matrix $H$ and the new random vector is $Z$ such that
 \begin{equation}
     Z=HY
 \end{equation}{}
@@ -519,7 +487,7 @@ It is known from \cite{papoulis} that the co-variance matrix $C_{zz}$ of the ran
     C_{zz} = HC_{yy}H^T
 \end{equation}
 If we make a single value decomposition on the matrix $C_{yy}$ such that $C_{yy} = U\Lambda^2U^T 
-=U\Lambda \Lambda U^T$ and we choose the matrix $H$ such that $H = \Lambda^{-1}U^T$ then the co-variance of the random vector $Z$ is given by:
+=U\Lambda \Lambda U^T$ and we choose the matrix $H$ such that $H = \Lambda^{-1}U^T$ then the co-variance of the random vector $Z$ is given by
 \begin{equation}
     C_{zz} = HC_{yy}H^T = \Lambda^{-1}U^T U\Lambda \Lambda U^T U \Lambda^{-1} = I
 \end{equation}{}
@@ -535,9 +503,9 @@ Let us model the random vector $Y$ to have similar cross-correlation between the
 \end{equation}{}
 where
 \begin{equation}
-    \sigma_y^2\ \rho = E\{(y_1-\mu)(y_2-\mu)\} \ and \ \mu = E\{y_1\} = E\{y_2\}
+    \sigma_y^2\ \rho = E\{(y_1-\mu)(y_2-\mu)\} \ \text{and} \ \mu = E\{y_1\} = E\{y_2\},
 \end{equation}{}
-And due to stationarity 
+and due to stationarity 
 \begin{equation}
     E\{(y_1-\mu)^2\}=E\{(y_2-\mu)^2\} = \sigma_y^2
 \end{equation}{}
@@ -552,10 +520,10 @@ H =\frac{1}{\sqrt{2}}
 \end{equation}
 That results in the new random vector $Z=[z_1, z_2]^T$ that:
 \begin{equation}
-\begin{cases}
-&z_1 =\frac{y_1+y_2}{\sqrt{2}}\\
-&z_2 = \frac{y_1-y_2}{\sqrt{2}}
-\end{cases}
+\begin{split}
+z_1 &=\frac{y_1+y_2}{\sqrt{2}}, \text{and}\\
+z_2 &= \frac{y_1-y_2}{\sqrt{2}}
+\end{split}
 \end{equation}
 Such that the new co-variance matrix for $Z$ is given by:
 \begin{equation}
@@ -568,61 +536,62 @@ C_{zz}=
 
 \paragraph{Approximation of Probability Density Functions}
 Let $\alpha \in N_g$ and $\beta \in N_g$.
-If we assume that the variables for $y_1$ and $y_2$ are gaussian, then $z_1$ and $z_2$ are also gaussian and uncorrelated, therefore the joint probability function can be calculated from:
+If we assume that the variables for $y_1$ and $y_2$ are gaussian, then $z_1$ and $z_2$ are also gaussian and uncorrelated, therefore the joint probability function can be calculated from
 
 \begin{equation}
 P(y_1=\alpha, y_2=\beta) = P(z_1=\alpha + \beta, z_2=\alpha - \beta) = P_s(z_1=\alpha+\beta)\cdot P_d(z_2=\alpha-\beta) 
 \end{equation}
 
-If the variables are not gaussian then the equality is not valid, but it is still a valid approximation to the probability function $P(y_1, y_2)$. 
+If the variables are not gaussian then the equality is not valid, but it is still a valid approximation to the probability function $P(y_1, y_2)$,
 \begin{equation}
-    \hat{P}_y(i,j) = c_0\cdot P_s(i+j) \cdot P_d(i-j) \simeq P_y(i,j)
+    \hat{P}_y(i,j) = c_0\cdot P_s(i+j) \cdot P_d(i-j) \simeq P_y(i,j)\text{,}
     \label{approximation_gaussian}
 \end{equation}{}
-Where $c_0$ is a normalization constant that assures that
+where $c_0$ is a normalization constant that assures that
 \begin{equation}
     \sum_{i=1}^{N_g}\sum_{j=1}^{N_g} \hat{P}_y(i,j) = 1
-\end{equation}{}
+\end{equation}
 
 The relative error of this approximation can be computed analyzing the Kullback-Leibler Divergence between the two variables $P$ and $\hat{P}$ as follows
 \begin{equation}
 \label{eq:divergence}
     I(P, \hat{P}) = \sum_i\sum_j P_y(i,j)\cdot log(\frac{P_y(i,j)}{\hat{P}(i,j)}) = \\
     H_s + H_d - H_y -log(c_0)\geq0
-\end{equation}{}
-Where $H_s$, $H_d$ and $H_y$ are the entropies given by:
-\begin{equation}
-\begin{cases}
-&H_y = -\sum_{i=1}^{N_g}\sum_{j=1}^{N_g}P_y(i,j)\cdot log(P_y(i,j)\\
-&H_s = -\sum_{k=2}^{2N_g}P_s(k)\cdot log(P_s(k)\\
-&H_d = -\sum_{l=-N_g+1}^{N_g-1}P_d(l)\cdot log(P_d(l))
-\end{cases}
 \end{equation}
-This divergence is a measure of the error of approximating one distribution for another, and is equal to zero only when the two variables have the same distribution, therefore it will only be zero if $P(i,j)=\hat{P}(i,j)$. The importance of \ref{eq:divergence} is that it is possible to see the independence of the new variables by comparing only the entropy of the sum and difference to the entropy of the co-occurrence matrix. The closer the mutual information $I(P, \hat{P})$ is to zero, the better the approximation defined by \ref{approximation_gaussian}
+
+where $H_s$, $H_d$ and $H_y$ are the entropies given by
+\begin{equation}
+\begin{split}
+H_y &= -\sum_{i=1}^{N_g}\sum_{j=1}^{N_g}P_y(i,j)\cdot log(P_y(i,j)\\
+H_s &= -\sum_{k=2}^{2N_g}P_s(k)\cdot log(P_s(k)\\
+H_d &= -\sum_{l=-N_g+1}^{N_g-1}P_d(l)\cdot log(P_d(l))
+\end{split}
+\end{equation}
+This divergence is a measure of the error of approximating one distribution for another, and is equal to zero only when the two variables have the same distribution, therefore it will only be zero if $P(i,j)=\hat{P}(i,j)$. The importance of (\ref{eq:divergence}) is that it is possible to see the independence of the new variables by comparing only the entropy of the sum and difference to the entropy of the co-occurrence matrix. The closer the mutual information $I(P, \hat{P})$ is to zero, the better the approximation defined by (\ref{).approximation_gaussian}
 
 \paragraph{Textures Features}
-It was shown that the sum and difference are a linear transformation that uncorrelates the random variables of the pair of the pixels. Therefore, it is suggested by \cite{Unser} to replace the regular co-occurrence matrix by the associated histograms of the sum and difference estimated from the original image.
+It was shown that the sum and difference are a linear transformation that uncorrelates the random variables of the pair of the pixels. Therefore, it is suggested by \cite{Unser} to replace the regular co-occurrence matrix with the associated histograms of the sum and difference estimated from the original image.
 The non-normalized sum and difference associated with the displacement vector $d=(d_1,d_2)$ are given by:
 \begin{equation}
-\begin{cases}
+\begin{split}
 &s_{k,l} = I[k,l] + I[k+d_1, l+d_2]\\
 &d_{k,l} = I[k,l] - I[k+d_1, l+d_2]
-\end{cases}
+\end{split}
 \end{equation}
 
 And then we make the normalized histograms of these new vectors. The histograms of the sum and difference are given by:
 \begin{equation}
-\begin{cases}
+\begin{split}
 &h_s(i, d_1, d_2) = h_s(i) = |\{(k,l) \in G, \ s_{k,l} = i\}|\\
 &h_d(j, d_1, d_2) = h_d(j) = |\{(k,l) \in G, \ d_{k,l} = j\}|
-\end{cases}
+\end{split}
 \end{equation}
 And the normalized sum and difference histograms are given by:
 \begin{equation}
-\begin{cases}
+\begin{split}
 &\hat{P}_s(i) = \frac{h_s(i)}{\sum_i h_s(i)} \qquad (i=2,...,2N_g)\\
 &\hat{P}_d(i) = \frac{h_d(i)}{\sum_j h_d(i)} \qquad (j=-N_g+1, ... ,N_g-1)
-\end{cases}
+\end{split}
 \end{equation}
 And these normalized sum and difference histograms are estimates of the sum and difference probability functions given by:
 \begin{equation}
@@ -632,26 +601,23 @@ And these normalized sum and difference histograms are estimates of the sum and 
 \end{cases}
 \end{equation}
 
-
-From these estimates of the probability density functions it is possible to compute textures. There are 9 important textures that will be used through this work. On the table below there are the computation formulas for them:
-
+From these estimates of the probability density functions, it is possible to compute textures. Nine important textures will be used in this work. In Table \ref{table:sum_and_diff_calculations}, there are the computation formulas for them
 
 \begin{table}[H]
 \centering
 \begin{tabular}{ |c |c |}
- \hline
- mean & $\frac{1}{2}\sum_i i\hat{P}_s(i)$\\ 
- variance & $\frac{1}{2}(\sum_i (i-2\mu)^2\hat{P}_s(i) + \sum_j (j)^2\hat{P}_d(j))$\\
- energy & $\sum_i \hat{P}_s(i)^2 \ \sum_j \hat{P}_d(j)^2$\\
- correlation & $\frac{1}{2}(\sum_i (i-2\mu)^2\hat{P}_s(i) - \sum_j (j)^2\hat{P}_d(j))$\\
- entropy & $-\sum_i\hat{P}_s(i)log_2(\hat{P}_s(i)) - \sum_j\hat{P}_d(j)log_2(\hat{P}_d(j))$\\
- contrast & $\sum_j j^2 \hat{P}_d(j)^2$\\
- homogeneity & $\sum_j\frac{1}{1+j^2} \hat{P}_d(j)$\\
- cluster shade & $\sum_i (i-2\mu)^3 \hat{P}_s(i)$\\
- cluster prominence & $\sum_i (i-2\mu)^4 \hat{P}_s(i)$\\
+ \hline Mean & $\frac{1}{2}\sum_i i\hat{P}_s(i)$\\ 
+ \hline Variance & $\frac{1}{2}(\sum_i (i-2\mu)^2\hat{P}_s(i) + \sum_j (j)^2\hat{P}_d(j))$\\
+ \hline Energy & $\sum_i \hat{P}_s(i)^2 \ \sum_j \hat{P}_d(j)^2$\\
+ \hline Correlation & $\frac{1}{2}(\sum_i (i-2\mu)^2\hat{P}_s(i) - \sum_j (j)^2\hat{P}_d(j))$\\
+ \hline Entropy & $-\sum_i\hat{P}_s(i)log_2(\hat{P}_s(i)) - \sum_j\hat{P}_d(j)log_2(\hat{P}_d(j))$\\
+ \hline Contrast & $\sum_j j^2 \hat{P}_d(j)^2$\\
+ \hline Homogeneity & $\sum_j\frac{1}{1+j^2} \hat{P}_d(j)$\\
+ \hline Cluster shade & $\sum_i (i-2\mu)^3 \hat{P}_s(i)$\\
+ \hline Cluster prominence & $\sum_i (i-2\mu)^4 \hat{P}_s(i)$\\
  \hline
 \end{tabular}
-\caption{Formula for texture calculations for Sum and Difference Histograms Method}
+\caption{Some Sum and Difference Histograms Method}
 \label{table:sum_and_diff_calculations}
 \end{table}
 
@@ -659,22 +625,20 @@ From these estimates of the probability density functions it is possible to comp
 It is also important to know which size the window should be to compute the histograms for the sum and difference. Through this work the window size chosen was to be a regular window of size 10x10.
 The number of gray levels is also important. Through this work, unless specified, the images will be normalized and scaled manually to have 10 different grey levels.
 \\
-Theoretically, if the variables were gaussians, then this method would give the same result as the Gray-Level Co-Occurrence matrix method, since if the variables are gaussians are uncorrelated then they are independent and the formula given by $(4.29)$ holds exactly and is not just and approximation. If they are not gaussians then the approximation is not perfect, but there is a great computational advantage to use this method, since making histograms of 1-D vectors is much faster than extracting a 2-D co-occurrence matrix. On the next section it will be analyzed if this method gives a nice result compared to the other 2 and if it is worth it to use this method due to the computational advantage.
-
+Theoretically, if the variables were gaussians, then this method would give the same result as the Gray-Level Co-Occurrence matrix method, since if the variables are gaussians are uncorrelated then they are independent and the formula given by $(4.29)$ holds exactly and is not just and approximation. If they are not gaussians then the approximation is not perfect, but there is a great computational advantage to use this method, since making histograms of 1-D vectors is much faster than extracting a 2-D co-occurrence matrix.
 
 \subsection{Machine learning methods to image analysis}
 
-Machine Learning methods are currently among the best tools for problem-solving. While there are many types of learning and subdomains, most of them share some characteristics, like minimizing a loss function, the use of data to extract information and have to undergo a training process in order to ``fit'' to the data. These algorithms are also subject to the same underlying problems, which were faced and dealt with in this work, such as over/underfitting, the bias-variance trade off, hyperparameters tunning and regularization.
+Machine Learning methods are currently among the best tools for problem-solving. While there are many types of learning and subdomains, most share some characteristics, like minimizing a loss function, using data to extract information, and undergoing a training process to "fit" the data. These algorithms are also subject to the same underlying problems faced and dealt with in this work, such as over/underfitting, the bias-variance trade-off, hyperparameters tunning, and regularization.
 
-Machine Learning revolutionized the field of Computer Vision, since before the experts had to handcraft kernels to be used in feature extraction, which often led to a case-by-case scenario, therefore  extremely cumbersome and overengineered. Also, the field had severe problems of performance, the most challenging tasks seemed unreachable using classical methods. Deep Learning specially, offered better results to these problems with the cost of being less interpretable and more computationally expensive. 
+Machine Learning revolutionized the field of Computer Vision even before experts had to handcraft kernels to be used in feature extraction, which often led to a case-by-case scenario, therefore extremely cumbersome and overengineered. Also, the field had severe problems with performance, and the most challenging tasks seemed unreachable using classical methods. Specifically, Deep Learning offered better results to these problems with the cost of being less interpretable and more computationally expensive.
 
-In this section, we shall present some of the most modern algorithms used to tackle challenging perceptual problems. Images, due to their high dimensionality, require Machine Learning models that are extremely flexible, in this work we propose the use of Random Forests and Convolutional Neural Networks (CNNs), more specifically a CNN used for segmentation, called U-Net.
+This section shall present some of the most modern algorithms used to tackle challenging perceptual problems. Due to their high dimensionality, images require Machine Learning models that are highly flexible. In this thesis, we propose using Random Forests and Convolutional Neural Networks (CNNs), more specifically a CNN used for segmentation, called U-Net.
 
 \subsubsection{Random Forest}
+Random Forests are Machine Learning models built upon simpler models called Decision Trees, which we will briefly discuss to understand the former better.
 
-Random Forests are Machine Learning models build upon simpler models called Decision Trees, which we will briefly discuss in order to better understand the former. 
-
-Decision Trees are basically a graphical representation of if-else rules. In these trees we start at the root and keep choosing our path downwards by comparing the features with the rules at each node, we keep doing this process until we reach a leaf. They are considered a Machine Learning algorithm because the partition rules are \textbf{learned}, the tree is usually built in a top-down approach, where at each node we decide a feature to use as a dividing rule. The chosen feature is decided based on a metric, those metrics usually consist of one of the following: maximizing the accuracy, minimizing the Gini impurity or optimizing the information gain. In Figure \ref{decision} we can see an example of a Decision Tree.
+Decision Trees are basically a graphical representation of if-else rules. In these trees, we start at the root and choose our path downwards by comparing the features with the rules at each node. We keep doing this process until we reach a leaf. They are considered a Machine Learning algorithm because the partition rules are learned, and the tree is usually built in a top-down approach, where we decide on a feature to use as a dividing rule at each node. The chosen feature is selected based on a metric; those metrics usually consist of one of the following: maximizing the accuracy, minimizing the Gini impurity, or optimizing the information gain. In Figure \ref{decision}, we can see an example of a Decision Tree.
 
 \begin{figure}[H]
     \includegraphics[width=.7\textwidth]{Cap2-Methods/Decision_Tree.jpg}
@@ -683,10 +647,10 @@ Decision Trees are basically a graphical representation of if-else rules. In the
 	\label{decision}
 \end{figure}
 
-Decision Trees are notoriously easy to interpret and inexpensive to build, but unfortunately they are very inaccurate \cite{elements}. In order to improve this, we use some well known techniques by the Machine Learning community. We use a technique called \textbf{bagging}, in which we repeatedly select some subset of the available data (with replacement) to fit a Decision Tree, but at each node of the tree we select a random subset of the available features to be used as a partitioning rule. After this process we will have many Decision Trees and the prediction for a new input will be decided by taking the vote of the trees, this built model is called a Random Forest. The illustration of a Random Forest can be seen in Figure \ref{random}. 
+Decision Trees are notoriously easy to interpret and inexpensive to build, but unfortunately, they are inaccurate \cite{elements}. We use some well-known techniques from the Machine Learning community to improve this. We use a method called bagging, in which we repeatedly select some subset of the available data (with replacement) to fit a Decision Tree. Still, at each node of the tree, we select a random subset of the available features to be used as a partitioning rule. After this process, we will have many Decision Trees, and the prediction for a new input will be decided by taking the vote of the trees. This built model is called a Random Forest. The illustration of a Random Forest can be seen in Figure \ref{random}.
 
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{Cap2-Methods/Random_forest_diagram_complete.png}
+    \includegraphics[width=0.7\textwidth]{Cap2-Methods/Random_forest_diagram_complete.png}
     \centering
 	\caption{A Random Forest being used for classification. Image taken from \cite{randomimg}.}
 	\label{random}
@@ -694,7 +658,8 @@ Decision Trees are notoriously easy to interpret and inexpensive to build, but u
 
 \subsubsection{Convolutional Neural Networks}
 
-Convolutional Neural Networks are a specialized kind of Artificial Neural Network (ANN), in the usual form of the ANN we have each neuron connected to all the neurons in the previous and next layers, as illustrated in the Figure \ref{ann}. This characteristic of an ANN makes the number of connections grow combinatorically large with input/latent dimensions, making it unfeasible to work with images.
+Convolutional Neural Networks are specialized Artificial Neural Networks (ANN). In the usual form of the ANN, we have each neuron connected to all the neurons in the previous and subsequent layers, as illustrated in Figure \ref{ann}. This characteristic of an ANN makes the number of connections grow combinatorically large with input/latent dimensions, making it unfeasible to work with images.
+
 
 \begin{figure}[H]
     \includegraphics[width=8cm]{Cap2-Methods/rede.png}
@@ -723,7 +688,7 @@ Another key technique used with CNNs is the pooling operation, where we take reg
 	\label{pooling}
 \end{figure}
 
-This makes the learned representation more translation-invariant \cite{dlbook}, which is greatly desirable in some applications. Pooling is used to aggregate \textbf{semantic} information at the cost of geometric information, since we lose track of the position of the maximal pixel. Another effect of pooling is quickly shrinking the image, which reduces the number of parameters needed for the network.
+This makes the learned representation more translation-invariant \cite{dlbook}, which is desirable in some applications. Pooling is used to aggregate \textbf{semantic} information at the cost of geometric information since we lose track of the position of the maximal pixel. Another effect of pooling is quickly shrinking the image, which reduces the number of parameters needed for the network.
 
 \subsubsection{U-Net}
 
@@ -740,7 +705,7 @@ It is important also to mention that in the borders of the image, the UNET will 
 \ref{unetimg} depicts the architecture of the UNET, and it's u-shape.
 
 \begin{figure}[H]
-    \includegraphics[width=.7\textwidth]{Cap2-Methods/screenshot_1.png}
+    \includegraphics[width=.9\textwidth]{Cap2-Methods/screenshot_1.png}
     \centering
 	\caption{U-Net original architecture. Image taken from \cite{unet_gordo}.}
 	\label{unetimg}
@@ -766,15 +731,12 @@ interpretation of the collective changes that happened. A visual representation 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics{Chapter7/kevin_algorithm.jpg}
+    \includegraphics[width=.9\textwidth]{Chapter7/kevin_algorithm.jpg}
     \caption{Inference Phase for the corresponding DI.}
     \label{fig:kevin_algorithm}
 \end{figure}
 
-The CDA of this work is inspired by the algorithm explained above. Since the textures provide additional information, it would be very 
-hard to empirically achieve the values for the threshold of each layer (in our case it would be a vector instead of a scalar), so it was decided to perform the difference image
-just for first input layer of the UNET.
-We used the textures of Entropy and Variance, which was combined with the original image to create a three-channel tensor which was fed, and trained, on the UNET.
+The CDA of this work is inspired by the algorithm explained above. Since the textures provide additional information, it would be very hard to empirically achieve the values for the threshold of each layer (in our case, it would be a vector instead of a scalar), so it was decided to perform the difference image just for first input layer of the UNET. We used the textures of Entropy and Variance, which were combined with the original image to create a three-channel tensor that was fed and trained on the UNET.
 
 \begin{figure}[ht]
     \centering
@@ -783,9 +745,7 @@ We used the textures of Entropy and Variance, which was combined with the origin
     \label{fig:diagrama}
 \end{figure}
 
-After creating the 24 image tensors, the dataset was divided into 12 tensors for training and 12 tensors for validation purposes. 
-After the training was performed this trained UNET was used as part of the CDA.
-The proposed CDA has 4 steps, and works as follows:
+After creating the 24 image tensors, the dataset was divided into 12 tensors for training and 12 tensors for validation purposes. After the training was performed, this trained UNET was used as part of the CDA. The proposed CDA has 4 steps and works as follows
 \begin{enumerate}
     \item Feed the first tensor as an input to the UNET and get the classification
     \item Feed the second tensor as input to the UNET, and after that alternate the classes from the final image (switch all car classification pixels by forest classification pixels and vice-versa)

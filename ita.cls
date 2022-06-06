@@ -578,8 +578,9 @@
 %==============================================================================
 % CIP ... Verso da Folha de Rosto
 %==============================================================================
-\newcommand{\@makecippage}{%
-% \includepdf[width=\paperwidth]{folharod (1).pdf}
+ \newcommand{\@makecippage}
+{
+\includepdf[width=\paperwidth]{bizucip.pdf}
 % 	\newpage%
 %   \pdfbookmark[0]{\namecip}{cip}
 % 	\thispagestyle{empty}
@@ -598,7 +599,7 @@
 %         \vfill
 
 }
-% definição do quadro
+% % definição do quadro
 % \def\@cipwindow{%
 %         \framebox[\textwidth]{%
 %         \begin{minipage}{\textwidth - 10mm}%
@@ -636,30 +637,30 @@
 %           \MakeUppercase{\@authorlast}, \@authorfirst. \textbf{\@title}. \@publyear.                     \NumPenultimaPagina f. \ifthenelse{\equal{\itaoptionlevel}{tg}}{\itaciptg2babel}{\itacip2babel} \\}
 %       \end{onehalfspacing}
 % }
-% % Cessao de Direitos
+% Cessao de Direitos
 
-% \def\@rights{%
-%     \includepdf[width=\paperwidth]{folharo (1).pdf}
-% 			 \begin{onehalfspacing}
-%       \vspace*{\stretch{4}}
-%       {\normalsize\textbf{\itacedirnamebabel}} \par
-%       {\setlength{\baselineskip}{0.7\baselineskip}
-%       {\footnotesize \itacipauthorname} {\normalsize \@authorfirst\ \@authorlast} \\
-%       {\footnotesize \itacipworktitlebabel} {\normalsize \@title.} \\
-%       {\footnotesize \itacipworktype} {\normalsize\ifthenelse{\equal{\itaoptionlevel}{tg}}{\itatglevel}{\itaworklevel} / \@publyear} \\ }
+\def\@rights{%
+    % \includepdf[width=\paperwidth]{folharo (1).pdf}
+			 \begin{onehalfspacing}
+      \vspace*{\stretch{4}}
+      {\normalsize\textbf{\itacedirnamebabel}} \par
+      {\setlength{\baselineskip}{0.7\baselineskip}
+      {\footnotesize \itacipauthorname} {\normalsize \@authorfirst\ \@authorlast} \\
+      {\footnotesize \itacipworktitlebabel} {\normalsize \@title.} \\
+      {\footnotesize \itacipworktype} {\normalsize\ifthenelse{\equal{\itaoptionlevel}{tg}}{\itatglevel}{\itaworklevel} / \@publyear} \\ }
 
-%       \vspace{\baselineskip}
+      \vspace{\baselineskip}
 
-%       \parbox[c]{\textwidth}{\normalsize\setlength{\baselineskip}{0.7\baselineskip} \ifthenelse{\equal{\itaoptionlevel}{tg}}{\itacesdirtgtextbabel}{\itacesdirtextbabel} \\}
+      \parbox[c]{\textwidth}{\normalsize\setlength{\baselineskip}{0.7\baselineskip} \ifthenelse{\equal{\itaoptionlevel}{tg}}{\itacesdirtgtextbabel}{\itacesdirtextbabel} \\}
 
-%       \vspace*{\stretch{2}}
-%       \rule{75mm}{0.2mm}\\
-%       {\normalsize\setlength{\baselineskip}{0.7\baselineskip}
-%           \@authorfirst\ \@authorlast\\
-% 	   \@itaauthoraddress\\
-% 	   \@itaauthorcep\ -- \@itaauthorcity\\}
-% 	   \end{onehalfspacing}
-% }
+      \vspace*{\stretch{2}}
+      \rule{75mm}{0.2mm}\\
+      {\normalsize\setlength{\baselineskip}{0.7\baselineskip}
+          \@authorfirst\ \@authorlast\\
+	   \@itaauthoraddress\\
+	   \@itaauthorcep\ -- \@itaauthorcity\\}
+	   \end{onehalfspacing}
+}
 
 %==============================================================================
 %%% Banca Examinadora...
@@ -674,72 +675,72 @@
    
   %  \includepdf[width=\paperwidth]{folha (1).pdf}
 
-% 	 \ifthenelse{\equal{\itaoptionlevel}{tg}}
-% 	     {
-% 			 \begin{spacing}{1.0}
-%       \begin{center}
-%          \itaformatworktitle{\MakeUppercase{\@title}}
-%          \vfill
-%          \small{\itathesisapprovedmemberstg}
-% 				 \vspace*{\stretch{3}}
+	 \ifthenelse{\equal{\itaoptionlevel}{tg}}
+	     {
+			 \begin{spacing}{1.0}
+      \begin{center}
+         \itaformatworktitle{\MakeUppercase{\@title}}
+         \vfill
+         \small{\itathesisapprovedmemberstg}
+				 \vspace*{\stretch{3}}
 			 		 
-% 			 	 \hspace{3cm}\hrulefill\hspace{3cm}
-% 				 \par 
-% 				 \small{\@authorfirst\ \@authorlast
-% 				 \par
-% 				 \@authorword\ifthenelse{\equal{\authorgendermf}{masc}}{}{\if@eng \else a\fi}}
-% 				 \vspace*{\stretch{1}}
+			 	 \hspace{3cm}\hrulefill\hspace{3cm}
+				 \par 
+				 \small{\@authorfirst\ \@authorlast
+				 \par
+				 \@authorword\ifthenelse{\equal{\authorgendermf}{masc}}{}{\if@eng \else a\fi}}
+				 \vspace*{\stretch{1}}
 			 		 
-% 			 	 \hspace{3cm}\hrulefill\hspace{3cm}
-% 				 \par 
-% 				 \small{\itaadvisorname\ (\@itaadvisorinst )
-% 				 \par
-% 				 \itaadvisorwordbabelll}
-%          \vspace*{\stretch{1}}
+			 	 \hspace{3cm}\hrulefill\hspace{3cm}
+				 \par 
+				 \small{\itaadvisorname\ (\@itaadvisorinst )
+				 \par
+				 \itaadvisorwordbabelll}
+         \vspace*{\stretch{1}}
 			 		
-% 				 \@ifundefined{@coadvisor}{}{      % Co-advisor eh opcional
-% 			 	 \hspace{3cm}\hrulefill\hspace{3cm}
-% 				 \par 
-% 				 \small{\@itacoadvisorname\ (\@itacoadvisorinst )
-% 				 \par
-% 				 \itacoadvisorwordbabelll}
-% 				 \vspace*{\stretch{1}}
-% 				 }
+				 \@ifundefined{@coadvisor}{}{      % Co-advisor eh opcional
+			 	 \hspace{3cm}\hrulefill\hspace{3cm}
+				 \par 
+				 \small{\@itacoadvisorname\ (\@itacoadvisorinst )
+				 \par
+				 \itacoadvisorwordbabelll}
+				 \vspace*{\stretch{1}}
+				 }
 				
-% 			 	 \hspace{3cm}\hrulefill\hspace{3cm}
-% 				 \par 
-% 				 \small{\@bosscourse}
-% 				 \vspace*{\stretch{2}}
+			 	 \hspace{3cm}\hrulefill\hspace{3cm}
+				 \par 
+				 \small{\@bosscourse}
+				 \vspace*{\stretch{2}}
 				
-% 				 \if@eng
-% 						\small{S{\~a}o Jos{\'e} dos Campos: \@publmonth\ \@publday, \@publyear.}
-% 				 \else
-% 						\small{S{\~a}o Jos{\'e} dos Campos, \@publday\ de \@publmonth\ de \@publyear.}
-% 				 \fi
+				 \if@eng
+						\small{S{\~a}o Jos{\'e} dos Campos: \@publmonth\ \@publday, \@publyear.}
+				 \else
+						\small{S{\~a}o Jos{\'e} dos Campos, \@publday\ de \@publmonth\ de \@publyear.}
+				 \fi
 				
-% 			 \end{center}
-% 			 \end{spacing}
+			 \end{center}
+			 \end{spacing}
 			 
-% 			 } 
-% 	     {	
-% 	     \begin{spacing}{1.0}
-%       \begin{center}
-%          \itaformatworktitle{\MakeUppercase{\@title}}
-%          \vfill
-%          \itaformatauthorname{\@authorfirst\ \@authorlast}
-% 				 \vfill
-% 			 \end{center}
+			 } 
+	     {	
+	     \begin{spacing}{1.0}
+      \begin{center}
+         \itaformatworktitle{\MakeUppercase{\@title}}
+         \vfill
+         \itaformatauthorname{\@authorfirst\ \@authorlast}
+				 \vfill
+			 \end{center}
 			
-% 			 \raggedright{\normalsize{\namepageexaminers}}
-%       \vfill
+			 \raggedright{\normalsize{\namepageexaminers}}
+      \vfill
     
-%       \raggedright\@memberslist
+      \raggedright\@memberslist
         
-%       \end{spacing}
-%       \vfill
-%       \center
-%       \large\textbf{ITA}
-%       }
+      \end{spacing}
+      \vfill
+      \center
+      \large\textbf{ITA}
+      }
 }
 
 %==============================================================================

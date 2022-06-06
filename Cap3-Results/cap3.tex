@@ -1,23 +1,19 @@
-This chapter will present the results of the textural information extraction of the datasets and show the classification results obtained. It will be divided in three sections: the first section consists of the textures results for the TANDEM-X dataset and the land cover classification map obtained, the second section comprises the textures results for the SENTINEL-1 dataset and the land cover classification map created, and the last section presents the textures results for the CARABAS-II dataset and the results for the change detection algorithm that has been proposed.  
+This chapter is divided into three sections. The first section presents the results of the texture extraction for the TANDEM-X dataset and the land cover classification map obtained. The second section comprises the texture results for the SENTINEL-1 dataset and the land cover classification map. Finally, the third section presents the results of the texture extraction for the CARABAS-II dataset and the results for the proposed change detection algorithm. 
 
-The texture extraction algorithm that was chosen for this work was the SADH method. This was decided based on the fact that it achieves similar textural information quality when compared to the GLCM method, but it is less time-consuming than the latter method --- in fact it was approximately four times faster to run SADH method than to run GLCM method for the same dataset.
-
-\section{The TANDEM-X Results}
-This section present the texture results for the TANDEM-X dataset using the SADH method and the subsequent land cover classification map that was created using the texture results. The objective of this section is to assess the impact of textures in the generation of classification maps, i.e. whether they are useful for this purpose or not; afterwards we will use this texture method for the improvement of a state-of-the-art classification map using the Sentinel-1 dataset over the Rondônia state.
+\section{Results: TANDEM-X dataset}
+This section aims to assess the impact of textures in generating classification maps, i.e., whether they are useful for this purpose or not. It presents the texture results for the TANDEM-X dataset using the Sum and Difference Histogram (SADH) method, and the land cover classification map created using the texture results. Afterward, we use the texture method to improve a state-of-the-art classification map using the Rôndonia dataset acquired with the Sentinel-1 SAR system. 
 
 \subsection{The TANDEM-X Texture Results}
-From the TANDEM-X dataset it was chosen to extract the textural information of the volumetric coherence (also known as volumetric decorrelation) since it has been already shown that the volumetric coherence is the key information for creating forests maps using SAR data in the X-band \cite{Paolo,Rizzoli, Alberto}. For the TANDEM-X dataset the picture of the volumetric coherence can be seen in Figure \ref{fig:gamma_vol_tandemx}.
-
+It is well-known that volumetric coherence (also known as volumetric decorrelation) is the key information for creating forest maps using SAR data in the X-band \cite{Paolo,Rizzoli, Alberto}. Thus, it was chosen to extract the textural information of the volumetric coherence from the TANDEM-X dataset. An example of the volumetric coherence obtained from the TANDEM-X dataset can be seen in Figure \ref{fig:gamma_vol_tandemx}.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\linewidth]{Cap3-Results/coSSC_master_gamma_vol.png}
-    \caption{Volumetric coherence acquisition of Amazon Rainforest area}
+    \includegraphics[width=0.7\linewidth]{Cap3-Results/coSSC_master_gamma_vol.png}
+    \caption{A volumetric coherence acquisition of an area in the Amazon rainforest.}
     \label{fig:gamma_vol_tandemx}
 \end{figure}
 
-Afterwards, each texture of the SADH method was extract for the area seen in Figure \ref{fig:gamma_vol_tandemx}. The image results for each image can be seen in Figure \ref{fig:tandemx_textures}.
+The data presented in Figure \ref{fig:gamma_vol_tandemx} is used as input for the SADH method. The obtained texture results for each image can be seen in Figure \ref{fig:tandemx_textures}. In the next section, we present the land cover classification map generated with this textural information and compare it to other available classification maps.
 
-In the next section it will be shown the land cover classification map that we were able to create with these additional textural information and how it compares to other classification maps already available.
 \begin{figure}
     \centering
     \begin{subfigure}[b]{0.4\linewidth}
@@ -70,14 +66,12 @@ In the next section it will be shown the land cover classification map that we w
       \includegraphics[width=\linewidth]{Cap3-Results/sum_and_diff_textures/varianceimage.png}
        \caption{Variance Texture Image}
     \end{subfigure}
-    \caption{Sum and Difference Texture Images for the TANDEM-X Dataset.}
+    \caption{Sum and Difference Texture Images for the TANDEM-X dataset}
     \label{fig:tandemx_textures}
   \end{figure}
 
 \subsection{The TANDEM-X Classification Map}
-By combining the SADH information extracted for the TANDEM-X dataset with the original information that was available and using it as input to a Random Forest Algorithm we were able to generate a classification map for the Amazon Rainforest area. The random forest algorithm was trained using the reference map that was provided by DLR. Due to computational limitations not all textures were used, but just some of them. The textures chosen as input to the Random
-Forest algorithms were: Cluster Shade, Cluster Prominence, Contrast, Variance. Besides
-that, the coherence was also given as an input to the Random Forest Algorithm. The classification results are summarized in Table \ref{tab:tandemx_results}.
+We generated a classification map by combining the SADH information extracted for the TANDEM-X dataset with the original coherence image and using it as input to the Random Forest algorithm. The random forest algorithm was trained using the reference map provided by DLR. Due to computational limitations, only some textures were used: Cluster Shade, Cluster Prominence, Contrast, and Variance. Besides that, the coherence image was also given as an input to the Random Forest Algorithm. The classification results are summarized in Table \ref{tab:tandemx_results}.
 
 \begin{table}[H]
     \centering
@@ -116,36 +110,24 @@ that, the coherence was also given as an input to the Random Forest Algorithm. T
         Variance/Coherence & 4.70\% \\ \hline
         Variance & 46.78\% \\ \hline
     \end{tabular}
-    \caption{Forest classification probability of error results with different textures combinations}
+    \caption{Probability of error of forest and deforested area classification considering different texture combinations.}
     \label{tab:tandemx_results}
 \end{table}
 
-From the Table \ref{tab:tandemx_results} it can be seen that it is possible to reduce the error probability from 4.70\% (using only the coherence image) down to 1.29\% by combining it with additional textural information such as: contrast, cluster shade, cluster prominence and variance.
+From Table \ref{tab:tandemx_results}, it can be seen that it is possible to reduce the error probability from 4.70\% (using only the coherence image) down to 1.29\% by combining it with additional textural information such as contrast, cluster shade, cluster prominence, and variance. It is important to notice that the coherence image used is a high-quality image acquired with ideal conditions that yield a clear separation between the forest and deforested areas. However, SARs images acquired with other systems are generally not suitable for classification. The double-satellite system TANDEM-X has the advantage of not having temporal decorrelation between images since they are taken at the same time. One must also keep in mind that the frequency band of operation and image resolution are key factors for the quality of the final classification map, so one texture combination that works well in one system might not work as well as in other systems. In the next section, this method is used with images that are not suited to make a classification to assess the performance gain the textures can provide in non-ideal conditions.
 
-Even though this improvement might seem surprising it is important to notice that the
-coherence image used was a high quality image acquired with ideal conditions that yields a clear separation between the forest and deforested areas,
-but normally the SARs acquisitions are not always this good for classification, specially if
-it is not used a double satellite system like TANDEM-X (which has the advantage of not
-having temporal decorrelation between images since they are taken at the same time). One must also keep in mind that the frequency band of operation and image resolution is a key factor for the quality of the final classification map, so one texture combination that works well in one system might not work as well as in another system.
-On
-the next section this method will be used on acquisitions that are not so suited to make a
-classification in order to see the improvement that the textures can provide in non-ideal
-conditions.
+\section{Results: Sentinel-1 dataset}
+The Sentinel-1 dataset consists of SAR images over the Rondônia State, divided into three classes: forest, deforested, and artificial (human-made) surfaces. As mentioned in Chapter 3, the dataset consists of 12 image stacks, 8 used for Random Forest training (which used PRODES classification reference map \cite{prodes}), and four for validation purposes. The Sentinel-1 dataset is not as well suited for making forest classification maps as the TANDEM-X dataset. Thus, we use texture methods to improve the classification performance. The results are assessed in terms of overall accuracy, i.e., the number of pixels that were correctly classified divided by the number of pixels in the dataset. For explanations about different accuracy measures, such as average accuracy, precision, recall, and F-score, the reader is referred to \cite{Book_ML}.
 
-\section{The Sentinel-1 Results}
-The Sentinel-1 dataset is not as well suited for making forest classification maps as the TANDEM-X dataset, so it will provide insightful information of how well texture methods can improve results when ideal conditions are not present. The Sentinel-1 dataset consists of image acquisitions over the Rondônia State and consists mainly of three different classes: forest areas, deforested areas, and artificial surfaces (i.e. man-made surfaces). 
+To generate a classification map, the state-of-the-art method is used to create forest maps using Sentinel-1 data as described in \cite{Paolo}. The state-of-the-art method uses a combination of radar brightness in the plane perpendicular to the line of sight ($\gamma^0$ coefficient), incidence angle ($\theta_{inc}$), long-term coherence term ($\rho_{LT}$), and temporal decorrelation constant ($\tau$). This method is run for the Sentinel-1 dataset without the textural information and with the additional textural information. The overall accuracy results are compared to assess the impact that the texture information can make in creating classification maps.
 
-As mentioned in chapter 3, the dataset consists of 12 image stacks, 8 of which were used for Random Forest training (which used PRODES classification reference map \cite{prodes}), and four were used for validation purposes. The results will be assessed in terms of overall accuracy, i.e. the number of pixels that were correctly classified divided by the number of pixels in the dataset. For explanations about different measures of accuracy such as average accuracy, precision, recall, F-score, the reader is referred to \cite{Book_ML}.
+It was obtained 18 texture results organized in two groups with nine results. The texture information was generated by the SADH method using the displacement vector equal to 1 unit in the horizontal (9 textures results) and vertical (9 textures results) directions. As a reminder, the texture information that SADH methods can create are average, cluster shade, cluster, prominence, contrast, correlation, energy, entropy, homogeneity, and variance.
 
-In order to try to generate the most accurate classification map possible, it will be used the state-of-the-art method for the creation of forest maps using Sentinel-1 data as described in \cite{Paolo}. The state-of-the-art method uses a combination of: radar brightness in the plane perpendicular to line of sight ($\gamma^0$ coefficient), incidence angle ($\theta_{inc}$), long-term coherence term ($\rho_{LT}$), and temporal decorrelation constant ($\tau$). This method will be run for the Sentinel-1 dataset without the textural information, and this method will also be run for the Sentinel-1 dataset with the additional textural information and overall accuracy results will be compared in order to access the impact that the texture information can make in the creation of classification maps. 
-
-The texture results that were used were 18 in total: the 9 texture information that can be generated by SADH method using the displacement vector equal to 1 unit in the horizontal direction, and 9 other textures that can be generated by SADH method using the displacement vector equal to 1 unit in the vertical direction. As a reminder, the texture methods that can be created by SADH methods are: average, cluster shade, cluster prominence, contrast, correlation, energy, entropy, homogeneity, and variance.
-
-The classification results for the 4 validation stacks of the Sentinel-1 dataset can be seen in Figure \ref{img:sentinel_results}.
+The classification results for the 4 validation stacks (defined in Table \ref{tab:sentinelStackTable}) of the Sentinel-1 dataset can be seen in Figure \ref{img:sentinel_results}.
 
 \begin{figure}
     \centering
-    \includegraphics{Cap3-Results/sentinel1-classificationresults.jpg}
+    \includegraphics[width=0.9\linewidth]{Cap3-Results/sentinel1-classificationresults.jpg}
     \caption{Comparison between the PRODES reference map (left) and the final results of the Random Forest algorithm using SADH textures (right). The white square identifies a region of interest in which the maps are clearly different.
     Such an area corresponds to the Pacaás Novos National Park.}
     \label{img:sentinel_results}
@@ -163,61 +145,49 @@ The overall accuracy (OA) for each image stack can be seen in Table \ref{tab:sen
         Stack 8 & 85.03 \% & 86.49 \% \\ \hline
         Stack 9 & 84.84 \% & 87.66 \% \\  \hline
     \end{tabular}
-    \caption{Overall accuracy for the four images stack in Figure \ref{img:sentinel_results}.}
+    \caption{Overall accuracy for the four image stacks presented in Figure \ref{img:sentinel_results}.}
     \label{tab:sentinel_table_results}
 \end{table}
 
-From the table \ref{tab:sentinel_table_results} we can see an improvement in the overall accuracy of the land cover classification map, even if the improvement is not as great as the improvement for the TANDEM-X dataset. Although the improvement is not significant, it still is non-negligible, and by keeping in mind that additional texture information can be easily added to any machine learning algorithm this results demonstrates that using textures might lead to improvement of results for every algorithm that tries to create the most accurate land cover classification map, even the state-of-the-art ones.
+From Table \ref{tab:sentinel_table_results}, we can see an improvement in the overall accuracy of the land cover classification map, even if the gain is not as significant as the improvement for the TANDEM-X dataset. Still, the gain is not negligible. Considering that additional texture information can be easily added to any machine learning algorithm, these results demonstrate that using textures might improve the performance of every algorithm that tries to create more accurate land cover classification maps.
 
-\section{The CARABAS-II Results}
+\section{Results: CARABAS-II dataset}
 
-The CARABAS-II dataset consists of 24 images acquisition of forests over Sweden with 25 vehicles arranged in the image. The objective of the change detection algorithm is to be able to detect the vehicles position change between acquisitions while trying to minimize the false alarm rate of such method. The change detect algorithm proposed is based on the UNET convolutional neural network, which used 12 of the 24 images for training purposes.
-
-The CDA algorithm is based on 3 dimensional image tensor, one of which is the original acquisition and the other two are textures extracted using the SADH method --- the texture chosen were the entropy and the variance. One example for a CARABAS acquisition and the two subsequent textures can be seen in Figures \ref{fig:carabas_example}, \ref{fig:entropy_example}, \ref{fig:variance_example}.
+The CARABAS-II dataset consists of 24 images of forests in northern Sweden with 25 vehicles hidden under the foliage. The objective is to detect the position of the vehicles. The dataset was organized for the change detection approach. The objective is to maximize the detection of target positions considering the changes between acquisitions and minimize the false alarm rate of such a method.
+The proposed CDA algorithm is based on a 3-dimensional image tensor, one of which is the original acquisition; the other two are textures extracted using the SADH method -- the textures chosen were the entropy and the variance. The proposed CDA is based on the UNET convolutional neural network, which used 12 out of the 24 images for training purposes. One example of a CARABAS-II SAR image and two textures obtained from that image can be seen in Figures \ref{fig:carabas_example}, \ref{fig:entropy_example}, \ref{fig:variance_example}.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.3\linewidth]{Cap3-Results/exemplo_carabas.jpg}
+  \includegraphics[width=0.8\linewidth]{Cap3-Results/exemplo_carabas.jpg}
   \caption{Example of a SAR image acquired by the CARABAS-II system.
-  The red circle shows the position of the cars hidden under a canopy of trees.}
+  The red circle shows the position of the cars hidden under the canopy of trees.}
   \label{fig:carabas_example}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.3\linewidth]{Cap3-Results/entropy_example.png}
+  \includegraphics[width=0.8\linewidth]{Cap3-Results/entropy_example.png}
   \caption{Entropy texture image of Figure \ref{fig:carabas_example}.
-  The red circle shows the position of the cars hidden under a canopy of trees.}
+  The red circle shows the position of the cars hidden under the canopy of trees.}
   \label{fig:entropy_example}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.3\linewidth]{Cap3-Results/variance_exemplo.png}
+  \includegraphics[width=0.8\linewidth]{Cap3-Results/variance_exemplo.png}
   \caption{Variance texture image of Figure \ref{fig:carabas_example}.
-  The red circle shows the position of the cars hidden under a canopy of trees.}
+  The red circle shows the position of the cars hidden under the canopy of trees.}
   \label{fig:variance_example}
 \end{figure}
 
-After running the CDA algorithm proposed in section 3, we selected 24 pairs of images to assess the quality of the change detection algorithm --- the 24 pairs selected followed
-the standard selection used for CDA testing and validation of
-the CARABAS-II dataset as it was done in \cite{Carabas, Ricardo, LucasRamos}.
-
-One example image of the Change Detection algorithm can be seen in Figure \ref{fig:carabas_results}.
+After running the CDA algorithm proposed in Section 3, we selected 24 pairs of images to assess the quality of the change detection algorithm -- the 24 pairs selected followed the standard selection used for CDA testing and validation of the CARABAS-II dataset as done in \cite{Carabas, Ricardo, LucasRamos}. One output of the proposed CDA can be seen in Figure \ref{fig:carabas_results}.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.3\linewidth]{Cap3-Results/results_carabas.png}
-  \caption{Results for Change Detection algorithm proposed. The black pixels represent non changes and the white pixels represent detected changes(which are the vehicles that have changed position). All 25 vehicles have been detected}
+  \includegraphics[width=0.8\linewidth]{Cap3-Results/results_carabas.png}
+  \caption{Results for proposed CDA. The black pixels represent non-changes, and the white pixels represent detected changes (the vehicles whose positions have been changed). All 25 vehicles were detected.}
   \label{fig:carabas_results}
 \end{figure}
-
-The results for the CDA --- in terms of number of correct detections and number of false detections --- are presented in table \ref{tab:carabas_results_table} where each image M\_P
-was labelled in terms of Mission number (M) and flight pass
-(P). In Table \ref{tab:carabas_results_table} it is also presented the results
-of the CDA without the textural information to demonstrate
-the how the textures contribute as additional information to
-machine learning algorithms.
 
 \begin{table}[h]
   \centering
@@ -262,8 +232,6 @@ machine learning algorithms.
        5\_6&4\_6&25&1&25&0\\
        \hline
   \end{tabular}
-  \caption{Results of CDA in terms of detected targets and false alarm rate  for the same image pairs considered in (\cite{Carabas}). It is also presented  the results when textural information is either used or not used as input of the proposed algorithm.}
-  \label{tab:carabas_results_table}
+  \caption{
+    Results of CDA in terms of detected targets and false alarm rate for the same image pairs considered in ((LUNDBERG et al., 2006b)). It also presents the results when textural information is either used or not used as input of the proposed algorithm.}
 \end{table}
-
-The performance of the algorithm is measured in terms of probability of detection ($P_d$) and false alarm rate (FAR). The proposed algorithm had a $P_d$ of 97\% and a FAR of $0.0034{/}km^2$. The probability of detection of the proposed algorithm is similar to other state-of-the-art algorithms like the ones proposed in \cite{Ricardo, Campos, Vinholi} but show great reduction in terms of FAR, since those algorithms presented a FAR of $=0.28{/} km^2$, $=0.0313{/} km^2$, $= 0.0833{/} km^2$ respectively.

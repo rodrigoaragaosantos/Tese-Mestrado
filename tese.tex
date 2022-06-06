@@ -127,7 +127,7 @@
 \itaauthoraddress{Rua Bandeira Paulista 97}{São Paulo -- Sp}
 
 % Titulo da Tese/Dissertação
-\title{Spatial Textures SAR Data for Forest Mapping and Target Changing Detection}
+\title{Spatial Textures SAR Data for Forest Mapping and Target Change Detection}
 
 % Orientador
 \advisorgender{masc}                    % masc ou fem
@@ -135,11 +135,11 @@
 
 % Coorientador (Caso não haja coorientador, colocar ambas as variáveis \coadvisorgender e \coadvisor comentadas, com um % na frente)
 \coadvisorgender{masc}	% masc ou fem
-\coadvisor{Prof.~Dr.}{Renato Machado}{}
+\coadvisor{Prof.~Dr.}{Renato Machado}{ITA}
 
 % Pró-reitor da Pós-graduação
 \bossgender{masc}	% masc ou fem
-\boss{Prof.~Dr.}{Pedro Teixeira Lacava}
+\boss{Prof.~Dra.}{Emília Villani}
 
 %Coordenador do curso no caso de TG
 % \bosscoursegender{masc} % masc ou fem
@@ -154,9 +154,9 @@
 
 % membros da banca examinadora
 
-\examiner{Prof.~Dr.}{Marcelo da Silva Pinho}{Presidente}{ITA}
-\examiner{Prof.~Dr.}{Renato Machado}{}{ITA}
-\examiner{Prof.~Dr.}{Felix Dieter Antreich}{}{ITA}
+\examiner{Prof.~Dr.}{Felix Dieter Antreich}{Chairperson}{ITA}
+\examiner{Prof.~Dr.}{Jurandir Pires}{External Member}{UNICAMP}
+\examiner{Prof.~Dr.}{Dimas Alves}{Internal Member}{ITA}
 
 % Data da defesa (mês em maiúsculo, se trabalho em inglês, e minúsculo se trabalho em português) 
 \date{18}{Novembro}{2021}
@@ -171,6 +171,7 @@
 \begin{document} % Folha de Rosto e Capa para o caso do TG
 \maketitle % faz folha de rosto e a capa do TG
 
+% \includepdf[width=\paperwidth]{bizucip.pdf}
 % Dedicatoria: Nao esqueca essa secao  ... :-)
 \begin{itadedication}
 A todos que tornaram um pouco mais fácil a jornada até aqui
@@ -212,8 +213,8 @@ A todos que tornaram um pouco mais fácil a jornada até aqui
 %\listoftables %opcional
 
 % Lista de abreviaturas
-\listofabbreviations
-\input{Cap0/listaabreviaturas} %opcional
+% \listofabbreviations
+% \input{Cap0/listaabreviaturas} %opcional
 
 % Lista de simbolos
 %\listofsymbols
@@ -240,50 +241,9 @@ A todos que tornaram um pouco mais fácil a jornada até aqui
 \label{cap: results}
 \input{Cap3-Results/cap3.tex}
 
-% \chapter{Theoretical Background}
-% \label{cap:intro}
-% \input{Cap1/cap1}
-
-% \chapter{Classification Maps generated with SAR Images}
-% \label{cap:requisitos}
-% \input{Cap2/cap2}
-
-% \chapter{Material}
-% \label{cap:material rondonia}
-% \input{Chapter2-real/chapter2_real.tex}
-
-% \chapter{Textures Methods for Image Analysis}
-% \label{cap:texture_methods}
-% \input{Chapter3/chapter3.tex}
-
-% \chapter{Analysis of Texture Results}
-% \label{cap:analysis_texture_results}
-% \input{Chapter4/chapter4.tex}
-
-% \chapter{Classification Results}
-% \label{cap:classification_results}
-% \input{Chapter5/chapter5.tex}
-
-% \input{Parts/part2.tex}
-
-% \chapter{The CARABAS System and challenge problem}
-% \label{cap:carabas_chapter}
-% \input{Chapter6/chapter6.tex}
-
-% \chapter{Textures Applications for Change Detection Algorithms}
-% \label{cap:cda_chapter}
-% \input{Chapter7/chapter7.tex}
-
-% \chapter{Conclusion}
-% \label{cap:conclusion}
-% \input{Conclusion/conclusion.tex}
-
-% \chapter{Methodology}
-% \input{metodologia}
-
-% \chapter{Final Remarks}
-% \label{cap:comentarios finais}
-% \input{Final-Remarks/finalremarks}
+\chapter{Conclusion}
+\label{cap: conclusion}
+\input{Cap4-Conclusion/cap4.tex}
 
 
 % REFERENCIAS BIBLIOGRAFICAS
@@ -306,28 +266,29 @@ A todos que tornaram um pouco mais fácil a jornada até aqui
 \printglossary
 
 
-% % Folha de Registro do Documento
-% % Valores dos campos do formulario
-% \FRDitadata{15 de dezembro de 2020}
-% \FRDitadocnro{DCTA/ITA/TC-047/2020} %(o número de registro você solicita a biblioteca)
-% \FRDitaorgaointerno{Instituto Tecnológico de Aeronáutica -- ITA}
-% %Exemplo no caso de pós-graduação: Instituto Tecnol{\'o}gico de Aeron{\'a}utica -- ITA
-% \FRDitapalavrasautor{
-% Radares de abertura sintética; SAR; Land Cover Classification; Engenharia eletrônica; Machine Learning
-% }
-% \FRDitapalavrasresult{Radares de abertura sintética; Processamento de imagens; Aprendizagem (inteligência artificial);
-% Redes neurais; Algoritmos; Engenharia eletrônica.}
-% %Exemplo no caso de graduação (TG):
-% \FRDitapalavraapresentacao{ITA, São José dos Campos. Curso de Graduação em Engenharia Eletrônica. Orientador: Prof. Dr.
-% Marcelo da Silva Pinho. Publicado em 2020.}
-% %Exemplo no caso de pós-graduação (msc, dsc):
-% %\FRDitapalavraapresentacao{ITA, São José dos Campos. Curso de Graduação. Programa de Graduação em Engenharia Eletrônica. Área de Microondas e Optoeletrônica. Orientador: Prof.~José Edimar Barbosa Oliveira. Defesa em 25/06/2018. Publicada em 25/06/2018.}
-% \FRDitaresumo{\input{Cap0/abstract}}
-% %  Primeiro Parametro: Nacional ou Internacional -- N/I
-% %  Segundo parametro: Ostensivo, Reservado, Confidencial ou Secreto -- O/R/C/S
-% \FRDitaOpcoes{N}{O}
-% % Cria o formulario
-% \itaFRD
+% Folha de Registro do Documento
+% Valores dos campos do formulario
+\FRDitadata{????}
+\FRDitadocnro{???} %(o número de registro você solicita a biblioteca)
+\FRDitaorgaointerno{Instituto Tecnológico de Aeronáutica -- ITA}
+%Exemplo no caso de pós-graduação: Instituto Tecnol{\'o}gico de Aeron{\'a}utica -- ITA
+\FRDitapalavrasautor{
+Radares de abertura sintética; SAR; Land Cover Classification; Engenharia eletrônica; Machine Learning; Change Detection Algorithm
+}
+\FRDitapalavrasresult{Radares de abertura sintética; Processamento de imagens; Aprendizagem (inteligência artificial);
+Redes neurais; Algoritmos; Engenharia eletrônica.}
+%Exemplo no caso de graduação (TG):
+\FRDitapalavraapresentacao{ITA, São José dos Campos. Curso de Mestrado. Programa de Pós-Graduação em Engenharia Eletrônica
+e Computação. Área de Telecomunicações. Orientador: Prof. Dr. Marcelo Pinho. Co-Orientador: Prof. Dr. Renato Machado. Defesa em
+01/07/2022.}
+%Exemplo no caso de pós-graduação (msc, dsc):
+%\FRDitapalavraapresentacao{ITA, São José dos Campos. Curso de Graduação. Programa de Graduação em Engenharia Eletrônica. Área de Microondas e Optoeletrônica. Orientador: Prof.~José Edimar Barbosa Oliveira. Defesa em 25/06/2018. Publicada em 25/06/2018.}
+\FRDitaresumo{\input{Cap0/abstract}}
+%  Primeiro Parametro: Nacional ou Internacional -- N/I
+%  Segundo parametro: Ostensivo, Reservado, Confidencial ou Secreto -- O/R/C/S
+\FRDitaOpcoes{N}{O}
+% Cria o formulario
+\itaFRD
 
 \end{document}
 % Fim do Documento. O massacre acabou!!! :-)

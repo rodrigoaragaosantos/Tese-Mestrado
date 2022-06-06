@@ -3,79 +3,34 @@ with the purpose of converting it to non-forest use. It can be used to convert l
 crops or urban use and includes the conversion of forests with purposes of agriculture, fuel extraction,
 construction or manufacturing. Human made deforestation is a phenomenon common to all forests in the world, but
 the most common occurrence of deforestation is in tropical forests \cite{Alina} --- according to a 2017 study from the University of Maryland,
-tropical forests lost an area of 158,000 square kilometers in 2017, an area the size of Bangladesh \cite{maryland}.
-
-Approximately 38\% of Earth's land surface is currently covered by forests \cite{WWF}. This is only two thirds of the existing
+tropical forests lost an area of 158,000 square kilometers in 2017, an area the size of Bangladesh \cite{maryland}. Approximately 38\% of Earth's land surface is currently covered by forests \cite{WWF}. This is only two thirds of the existing
 forest coverage before the expansion of agriculture in the last century \cite{WID}. The United Nations Framework Convention on Climate Change
 says that the major cause of deforestation is due to agriculture. Subsistence farming is responsible for 49\% of deforestation; commercial agriculture
 is responsible for 33\%; logging is responsible for 13\%; and fuel extraction is responsible for 6\% \cite{UNFCCC}.
 
-Deforestation has significant impact on the Earth's environment, therefore, it can also have significant impact on human life currently living on the planet.
-The most notable environmental effects of deforestation are those on the soil, on the biodiversity, and of atmospheric or hydrological nature.
+As deforestation has a significant impact on the Earth's environment, it can also significantly impact human life living on the planet. The most notable environmental effects of deforestation are those on the soil, biodiversity, and atmospheric or hydrological nature. The most troublesome atmospheric effects of deforestation are related to global warming since deforestation is not only a contributor to it, but also
+one of the major causes of the greenhouse effect. Tropical deforestation alone is responsible for over 20\% of world greenhouse emissions \cite{Chirac}. The hydrological effects are also concerning since deforestation is heavily affected by the water cycle. Trees are responsible for extracting water from the soil and releasing it into the atmosphere; therefore, when a forest is removed, the atmosphere receives much less water, and a drier climate ensues. Deforestation also reduces soil cohesion so that erosion, flooding, and landslides become more frequent \cite{Rogge}.
 
-The most troublesome atmospheric effects of deforestation are related to global warming since deforestation is not only a contributor to it, but
-one of the major causes of the greenhouse effect. Tropical deforestation alone is responsible for over 20\% of world greenhouse emissions \cite{Chirac}.
+Deforestation can also cause a reduction in biodiversity since a degraded environment can impact the lives of different species  \cite{umich}. Because tropical forests are the most diverse ecosystems on Earth (about 80\% of Earth's ecosystem can be found here), and they are the most common place of deforestation, most of Earth's biodiversity is at risk \cite{Mogato}. Besides environmental effects, deforestation can have a relevant economic impact. According to the World Economic Forum, half of the global gross domestic product (GDP) depends upon nature. For every dollar invested in nature restoration, there is a long-term profit of 9 dollars. According to 2008's Convention on Biological Diversity, deforestation impacts could diminish the world's GDP by up to 7\% by the year 2050.
 
-The hydrological effects are also concerning since the water cycle is heavily affected by deforestation. Trees are responsible for extracting water from the soil
-and releasing it into the atmosphere, therefore, when a forest is removed, the atmosphere receives much less water, and a drier climate ensues. Deforestation also reduces soil cohesion,
-so that erosion, flooding, and landslides become more frequent \cite{Rogge}.
-
-Deforestation can also cause reduction in biodiversity, since a degraded environment can impact the life of different species \cite{umich}. Because
-tropical forests are the most diverse ecosystems in Earth (about 80\% of Earth's ecosystem can be found there),
-and they are the most common place of deforestation, the majority of Earth's biodiversity is at risk \cite{Mogato}.
-
-Besides environmental effects, deforestation can have significant economical effects. According to the World Economic Forum, half of the global gross domestic product (GDP)
-is dependent upon nature, and, for every dollar invested in nature restoration, there is a long term profit of 9 dollars.
-According to 2008's Convention on Biological Diversity, deforestation impacts could diminish the world's GDP by up to 7\% in the year of 2050.
-
-Due to these reasons, deforestation problems are one of the biggest concerns of the 21st century and are something that countries are interested in dealing with. Motivated by the fact the deforestation in tropical forests is mostly related to illegal
-logging, which can be hard to detect, this thesis proposes solutions that can improve the monitoring and detection of illegal deforestation.
+Due to the reasons mentioned above, deforestation is one of the biggest concerns of the 21st century and is something that countries are interested in combating. Motivated by the fact that deforestation in tropical forests is mainly related to illegal logging, which can be hard to detect, this thesis proposes solutions to improve the monitoring of deforestation and detection of camouflage activities under the foliage.
 
 \section{Objective}
+Monitoring deforestation in extensive areas is only possible by using remote sensing. According to \cite{Schott1996RemoteST}, "remote sensing is the acquisition of information about an object or phenomenon without making physical contact with the object, in contrast to in situ or on-site observation." In the context of this thesis, remote sensing refers to the use of satellite or aircraft-based sensors to observe and obtain information about objects on Earth. The problem of detecting and classifying objects and areas on Earth is called land cover classification. It is a fundamental research topic with applications in geography, ecology, geology, forestry, land policy, planning, etc. With this in mind, the objective of this work is to present new techniques of land cover classification, target detection based on change detection, all using synthetic aperture radar (SAR) data.
 
-If one is trying to detect when and where, illegal deforestation is happening, one must understand the problems that come with it. There are multiple problems that must be dealt with, the first one being: which approach will be used for
-monitoring this illegal deforestation. On this thesis, it was chosen to use remote sensing techniques to aid on the solution of this problem.
+This Master's thesis considers two different problems, i.e., one related to identifying deforested areas in SAR images and the other is on target detection in forestry. For the first problem, a method is proposed to create a land cover map, which is updated regularly, making it possible to identify areas where deforestation exists. There are some drawbacks to this method: creating land cover classification maps is a very time-consuming task, and the overall accuracy of the maps is not high enough to provide a robust detection for small changes in forest coverage \cite{Rodrigo}, which means that it is hard to detect when small areas were deforested. The approach proposed for the second problem is more creative: since man-made objects are easier to detect using SAR data \cite{manmade}, one can try to detect man-made objects used for deforestation, such as vehicles. One advantage of this method is that vehicles are made of metallic materials, which possess high reflectivity, facilitating their detection using SAR. On the other hand, vehicles are small compared to the size of forest areas, so their detection will not always be easy. The proposed methods for these two problems were tested and validated.
 
-According to \cite{Schott1996RemoteST} remote sensing is ``the acquisition of information about an object or phenomenon without making physical contact with the object, in contrast to in situ or on-site observation''. In the context of this thesis, remote sensing
-refers to the use of satellite or aircraft-based sensors to observe and obtain information about objects on Earth.
-
-The problem of detecting and classifying objects and areas on Earth is called land cover classification.
-It is a fundamental research topic with applications in geography,
-ecology, geology, forestry, land policy, planning, etc. With this in mind, the objective of this work is to present
-new techniques of land cover classification, target detection, and change detection,
-all using synthetic aperture radar (SAR) data, focusing on the detection of forest and non forest areas and on the detection of deforestation.
-
-This thesis considers two different approaches to detect illegal deforestation with SAR data.
-The first approach is to create a land cover map, update it regularly, and compare the differences to identify
-areas where deforestation is happening.
-There are some drawbacks to this method: creating land cover classification maps is a very time-consuming task,
-and the overall accuracy of the maps is not high enough to provide a robust detection
-for small changes in forest coverage \cite{Rodrigo},
-which means that it is hard to detect when small areas were deforested.
-The second approach is more creative: since man-made objects are easier to detect using SAR data \cite{manmade},
-one can try to detect man-made objects used for deforestation such as vehicles.
-One advantage of this method is that vehicles are made of metallic materials,
-which possess high reflectivity, facilitating their detection using SAR.
-On the other hand, vehicles are small compared to the size of forest areas,
-so their detection will not always be easy.
-In this thesis, methods operating by each of these two approaches are developed and validated.
-
+\section{Document Organization}
 This thesis consists of two parts: the first part is focused on the creation of land cover classification maps
 using SAR data, a work that was developed in the German Aerospace Center (DLR), in the year of 2019, under the supervision of Dr. Paola Rizzoli and Andrea Pulella; the second part concerns the
 change detection of vehicles hidden under tree foliage using SAR data, a work that was developed at the Aeronautics Institute of Technology (ITA) during the years of 2020 and 2021, under the supervision of Prof. Dr. Marcelo Pinho and Prof. Dr. Renato Machado.
 
-\section{Document Organization}
-The remainder of this dissertation is organized as follows:
+The remainder of this Master's thesis is organized as follows:
 
 \begin{itemize}
-    \item Chapter 2 - Bibliographic Review: this chapter presents a bibliographic review of SAR, a review of methods of using SAR data for the creation
-          of land cover classification maps, and a review of SAR methods for the problem of change target detection.
-    \item Chapter 3 - Methods and Materials: this chapter presents the methods proposed for the creation of the land cover classification maps, the methods proposed for the
-          task of change detection, and also presents a review about textural information (a key concept used in this thesis for the solution of both problems). This chapter also presents
-          the datasets used for both problems: the Sentinel-1 \& TANDEM-X dataset over the Amazon rainforest (used for the Land Cover Classification problem), and the CARABAS-II dataset (used for the change detection problem).
-    \item Chapter 4 - Analysis of Texture Results: this chapter presents the results of the textural information extraction of the datasets and shows why it is relevant to the solution of the problem
-    \item Chapter 5 - Classification Results of the Land Coverage Map: this chapter will present the classification results of the creation of the land coverage map using Sentinel-1 SAR data and the textural information that was previously extracted.
-    \item Chapter 6 - Results of the Change Detection Algorithm: this chapter will present the results of the proposed change detection algorithm using SAR data using CARABAS-II SAR Data and the textural information that was previously extracted.
-    \item Chapter 7 - Conclusion: This chapter will summarize the dissertation results and propose further improvements that could be developed in the future.
+    \item Chapter 2 - Bibliographic Review: this chapter presents a bibliographic review of SAR, a review of methods of using SAR data to create land cover classification maps, and a review of SAR methods for the problem of change target detection.
+    \item Chapter 3 - Methods and Materials: this chapter presents the methods proposed for creating the land cover classification maps and change detection. Also, the chapter presents a review of textural information (a key concept used in this thesis for the solution of both problems), the datasets used for both problems: the Sentinel-1 and TANDEM-X dataset over the Amazon rainforest (used for the Land Cover Classification problem), and the CARABAS-II dataset (used for the target detection problem).
+    \item Chapter 4 - Results: this chapter presents the results of the textural information extraction using the datasets and some discussions. It will also present the classification results of creating the land coverage map using the Sentinel-1 SAR data and the textural information previously extracted. Furthermore, this chapter presents the results of the proposed change detection algorithm using the CARABAS-II SAR data and the textural information previously extracted.
+    \item Chapter 5 - Final Remarks: This chapter summarizes the main dissertation contributions and proposes further investigations for the future.
 \end{itemize}
 

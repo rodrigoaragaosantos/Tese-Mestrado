@@ -1,0 +1,22 @@
+In this chapter, a general conclusion from the analysis of all techniques presented is laid
+out, as well as ideas for further development of the new techniques created in this work.
+
+\section{Conclusion}
+
+This thesis has presented a study of state-of-the-art techniques for land cover Classification and change target detection, discussing their methods, results and trade-offs. Afterwards, it was introduced a method that was proven to improve all state-of-the-art techniques that rely on Machine Learning for classification: the textural information method. 
+
+By combining the textural information with the amplitude information for TANDEM-X SAR image acquisitions, and using this information as inputs for a Random Forest classification algorithm a land cover classification map with overall accuracy of over 98\% was achieved. As mentioned in chapter 4, TANDEM-X data is an ideal data for the creation of land cover classification maps, so a high accuracy is expected. In order to assess the quality of this method, it was also created land cover maps using SENTINEL-1 SAR data combined with its textural information. For the SENTINEL-1 dataset an improvement was also achieved when using Random Forest classifiers.
+
+The second part of this thesis tried to combine the textural information with machine learning techniques to create a change detection algorithm. By using convolutional neural networks combined with textural information it was proposed an algorithm that had a 97\% probability of target detections for the CARABAS-1 dataset. The textural information also proved to be valuable to reduce the overall False Alarm rate of Change Detection algorithms. The proposed Change Detection algorithm showed similar accuracy
+when compared to other state-of-the-art methods, but presented significant improvements in terms of FAR, having it decreased almost three times when compared to similar CNN based algorithms. 
+
+\section{Future investigations}
+There are several improvements that can be done to the algorithms proposed, which could lead to an overall improvement of the time complexity, and the overall accuracy of the algorithms.
+
+The first improvement that should be performed is to better find which Machine Learning technique is better suited for the problem being solved. The land cover classification maps created in this thesis relied on the Random Forest algorithm, but this might not be technique better suited for this problem, as on the past years convolutional neural networks seemed to perform better than random forest techniques. This concern is also valid for the change detection algorithm proposed.
+
+Another improvement that will be done in future works is to better investigate how to better combine the textural information that will be fed as inputs for the classifiers. For the change detection algorithm proposed, it was chosen to use a 3-dimensional tensor, something that creates a problem if more textural information is chosen to be added, since more dimensions would create bottlenecks when tuning parameters, training the network and evaluating the output. Some old techniques suggest taking the ratio of the inputs (valid for 2 dimensional inputs), and some more sophisticated techniques rely on deep learning algorithms for deciding which better information to select and how to combine them. Using a deep learning approach would solve the biggest open question of this work - which textural information should one use for the classifier - but most likely it would not be feasible for most works since deep learning techniques rely on immense machine power, something not available for most scientists. 
+
+Some other concerns that could lead to an improvement are matter of parameters tuning for the textural method: on this work it was used only textures that use displacement vector of 1 unit in horizontal distance, but there is no evidence that suggest that this approach yields better results (although intuition would agree with this approach). Due to time constraints there was no time to select multiple displacement vectors, or investigate which one would yield an optimal result.
+
+
